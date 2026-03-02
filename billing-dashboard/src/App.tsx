@@ -201,7 +201,7 @@ function App() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           boat: boat.Boat,
-          hull: boat.HullTotal,
+          hull: boat.override ? (parseFloat(boat.Total) - parseFloat(boat.Anode || '0')).toFixed(2) : boat.HullTotal,
           anode: boat.Anode,
           anodeType: boat.AnodeType,
           total: boat.Total,

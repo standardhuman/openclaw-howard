@@ -1,6 +1,6 @@
 {
   "month": "February 2026",
-  "generatedAt": "2026-03-01T19:58:00.000Z",
+  "generatedAt": "2026-03-02T00:02:28.180Z",
   "boats": [
     {
       "boat": "Andiamo",
@@ -450,7 +450,13 @@
       "anodeType": "",
       "total": "303.08",
       "priceNote": "",
-      "conditionsFound": true
+      "conditionsFound": true,
+      "override": {
+        "type": "percent",
+        "value": -50,
+        "note": "",
+        "updatedAt": "2026-03-01T20:19:15.267Z"
+      }
     },
     {
       "boat": "Glass Slipper",
@@ -464,9 +470,9 @@
       "growthPercent": "0.0%",
       "growthDesc": "Minimal",
       "hullTotal": "239.60",
-      "anode": "14.66",
+      "anode": "29.66",
       "anodeType": "1\" shaft",
-      "total": "254.26",
+      "total": "269.26",
       "priceNote": "",
       "conditionsFound": true
     },

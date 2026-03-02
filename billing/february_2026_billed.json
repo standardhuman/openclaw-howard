@@ -12,5 +12,257 @@
     "billedAt": "2026-03-01T19:52:49.691Z",
     "amount": "166.13",
     "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6G2iEbT3YrW03CAiSEMxmP"
+  },
+  "Psycho Tiller": {
+    "invoiceId": "in_1T6GK5EbT3YrW03CgTcx2JEt",
+    "status": "charged",
+    "billedAt": "2026-03-01T20:10:46.596Z",
+    "amount": "197.56",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GK5EbT3YrW03CgTcx2JEt"
+  },
+  "Pazzo Express": {
+    "invoiceId": "in_1T6GKBEbT3YrW03C2JKfjLAS",
+    "status": "charged",
+    "billedAt": "2026-03-01T20:10:52.811Z",
+    "amount": "166.13",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GKBEbT3YrW03C2JKfjLAS"
+  },
+  "JGPC": {
+    "invoiceId": "in_1T6GKWEbT3YrW03CqnYVuL8w",
+    "status": "charged",
+    "billedAt": "2026-03-01T20:11:14.323Z",
+    "amount": "152.66",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GKWEbT3YrW03CqnYVuL8w"
+  },
+  "Zeno": {
+    "invoiceId": "in_1T6GLSEbT3YrW03CyUK5Faqu",
+    "status": "sent",
+    "billedAt": "2026-03-01T20:12:08.835Z",
+    "amount": "161.64",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GLSEbT3YrW03CyUK5Faqu"
+  },
+  "Twilight Zone": {
+    "invoiceId": "in_1T6GLWEbT3YrW03C5qjjCpbc",
+    "status": "charged",
+    "billedAt": "2026-03-01T20:12:16.050Z",
+    "amount": "99.00",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GLWEbT3YrW03C5qjjCpbc"
+  },
+  "Que Sera Sera": {
+    "invoiceId": "in_1T6GMfEbT3YrW03Cc98Kd6TF",
+    "status": "charged",
+    "billedAt": "2026-03-01T20:13:27.035Z",
+    "amount": "98.78",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GMfEbT3YrW03Cc98Kd6TF"
+  },
+  "Joyous Spirit": {
+    "invoiceId": "in_1T6GNHEbT3YrW03CJaWjaRnF",
+    "status": "charged",
+    "billedAt": "2026-03-01T20:14:05.051Z",
+    "amount": "123.48",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GNHEbT3YrW03CJaWjaRnF"
+  },
+  "Martha": {
+    "invoiceId": "in_1T6GNuEbT3YrW03CWOki7nJb",
+    "status": "charged",
+    "billedAt": "2026-03-01T20:14:43.218Z",
+    "amount": "185.21",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GNuEbT3YrW03CWOki7nJb"
+  },
+  "Get Smart": {
+    "invoiceId": "in_1T6GO5EbT3YrW03ClZoYhkYH",
+    "status": "charged",
+    "billedAt": "2026-03-01T20:14:55.877Z",
+    "amount": "112.25",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GO5EbT3YrW03ClZoYhkYH"
+  },
+  "Glitch": {
+    "invoiceId": "in_1T6GOJEbT3YrW03CZjD3YTvM",
+    "status": "charged",
+    "billedAt": "2026-03-01T20:15:09.527Z",
+    "amount": "99.00",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GOJEbT3YrW03CZjD3YTvM"
+  },
+  "Pineapple Express": {
+    "invoiceId": "in_1T6GOSEbT3YrW03CiwBh4tba",
+    "status": "charged",
+    "billedAt": "2026-03-01T20:15:17.095Z",
+    "amount": "112.25",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GOSEbT3YrW03CiwBh4tba"
+  },
+  "Marla Hooch": {
+    "invoiceId": "in_1T6GOZEbT3YrW03C9x0CDK0H",
+    "status": "sent",
+    "billedAt": "2026-03-01T20:15:22.295Z",
+    "amount": "168.38",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GOZEbT3YrW03C9x0CDK0H"
+  },
+  "Meliora": {
+    "invoiceId": "in_1T6GOiEbT3YrW03CknMBOGKO",
+    "status": "sent",
+    "billedAt": "2026-03-01T20:15:31.060Z",
+    "amount": "125.72",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GOiEbT3YrW03CknMBOGKO"
+  },
+  "Maiden California": {
+    "invoiceId": "in_1T6GPCEbT3YrW03CWhCg2UHm",
+    "status": "charged",
+    "billedAt": "2026-03-01T20:16:04.578Z",
+    "amount": "99.00",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GPCEbT3YrW03CWhCg2UHm"
+  },
+  "Jennie Ann": {
+    "invoiceId": "in_1T6GPlEbT3YrW03CSefe68kc",
+    "status": "charged",
+    "billedAt": "2026-03-01T20:16:38.839Z",
+    "amount": "218.21",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GPlEbT3YrW03CSefe68kc"
+  },
+  "Perpetua": {
+    "invoiceId": "in_1T6GPtEbT3YrW03CoVbQlMbr",
+    "status": "charged",
+    "billedAt": "2026-03-01T20:16:46.732Z",
+    "amount": "240.78",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GPtEbT3YrW03CoVbQlMbr"
+  },
+  "Freja": {
+    "invoiceId": "in_1T6GQ1EbT3YrW03CH95WmdsA",
+    "status": "charged",
+    "billedAt": "2026-03-01T20:16:55.095Z",
+    "amount": "228.43",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GQ1EbT3YrW03CH95WmdsA"
+  },
+  "Beleza": {
+    "invoiceId": "in_1T6GT8EbT3YrW03ChmdxFIit",
+    "status": "charged",
+    "billedAt": "2026-03-01T20:20:08.381Z",
+    "amount": "151.54",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6GT8EbT3YrW03ChmdxFIit"
+  },
+  "Blue Note": {
+    "invoiceId": "in_1T6JlGEbT3YrW03CEQDtIv6H",
+    "status": "charged",
+    "billedAt": "2026-03-01T23:51:05.002Z",
+    "amount": "134.70",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6JlGEbT3YrW03CEQDtIv6H"
+  },
+  "Mojo": {
+    "invoiceId": "in_1T6JlQEbT3YrW03CxjI2sJPY",
+    "status": "charged",
+    "billedAt": "2026-03-01T23:51:13.394Z",
+    "amount": "148.17",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6JlQEbT3YrW03CxjI2sJPY"
+  },
+  "Robin": {
+    "invoiceId": "in_1T6JlqEbT3YrW03CFlaKSySs",
+    "status": "sent",
+    "billedAt": "2026-03-01T23:51:37.398Z",
+    "amount": "235.73",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6JlqEbT3YrW03CFlaKSySs"
+  },
+  "VillaSey": {
+    "invoiceId": "in_1T6Jn4EbT3YrW03CCLOEo8h4",
+    "status": "charged",
+    "billedAt": "2026-03-01T23:52:57.001Z",
+    "amount": "266.71",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6Jn4EbT3YrW03CCLOEo8h4"
+  },
+  "Kelly": {
+    "invoiceId": "in_1T6JnEEbT3YrW03CEe0o6Nfn",
+    "status": "sent",
+    "billedAt": "2026-03-01T23:53:03.003Z",
+    "amount": "179.60",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6JnEEbT3YrW03CEe0o6Nfn"
+  },
+  "Tandem": {
+    "invoiceId": "in_1T6JnLEbT3YrW03CFl7Pze2S",
+    "status": "charged",
+    "billedAt": "2026-03-01T23:53:12.546Z",
+    "amount": "222.26",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6JnLEbT3YrW03CFl7Pze2S"
+  },
+  "Indefatigable": {
+    "invoiceId": "in_1T6JnSEbT3YrW03CGVkp2LWH",
+    "status": "charged",
+    "billedAt": "2026-03-01T23:53:19.749Z",
+    "amount": "193.07",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6JnSEbT3YrW03CGVkp2LWH"
+  },
+  "Magic Juan": {
+    "invoiceId": "in_1T6JnaEbT3YrW03CimUuKhIE",
+    "status": "charged",
+    "billedAt": "2026-03-01T23:53:28.198Z",
+    "amount": "148.17",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6JnaEbT3YrW03CimUuKhIE"
+  },
+  "High Road": {
+    "invoiceId": "in_1T6JnjEbT3YrW03CRpwacbWy",
+    "status": "charged",
+    "billedAt": "2026-03-01T23:53:37.461Z",
+    "amount": "181.84",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6JnjEbT3YrW03CRpwacbWy"
+  },
+  "Second Wind": {
+    "invoiceId": "in_1T6JoSEbT3YrW03Ctja7757x",
+    "status": "charged",
+    "billedAt": "2026-03-01T23:54:22.481Z",
+    "amount": "154.34",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6JoSEbT3YrW03Ctja7757x"
+  },
+  "Aleph Null": {
+    "invoiceId": "in_1T6JoaEbT3YrW03CYHEOzMoC",
+    "status": "charged",
+    "billedAt": "2026-03-01T23:54:29.478Z",
+    "amount": "112.25",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6JoaEbT3YrW03CYHEOzMoC"
+  },
+  "Diva": {
+    "invoiceId": "in_1T6JohEbT3YrW03CmZMskY2o",
+    "status": "sent",
+    "billedAt": "2026-03-01T23:54:33.726Z",
+    "amount": "125.72",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6JohEbT3YrW03CmZMskY2o"
+  },
+  "Fernando Augusto": {
+    "invoiceId": "in_1T6JpiEbT3YrW03CfeXAsI0q",
+    "status": "charged",
+    "billedAt": "2026-03-01T23:55:40.565Z",
+    "amount": "166.69",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6JpiEbT3YrW03CfeXAsI0q"
+  },
+  "Sarah": {
+    "invoiceId": "in_1T6JprEbT3YrW03CnVLcGUON",
+    "status": "charged",
+    "billedAt": "2026-03-01T23:55:48.432Z",
+    "amount": "116.74",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6JprEbT3YrW03CnVLcGUON"
+  },
+  "Two Truths": {
+    "invoiceId": "in_1T6Jq0EbT3YrW03C3KrQe4DV",
+    "status": "charged",
+    "billedAt": "2026-03-01T23:55:57.590Z",
+    "amount": "107.76",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6Jq0EbT3YrW03C3KrQe4DV"
+  },
+  "Dream Catcher": {
+    "invoiceId": "in_1T6JqkEbT3YrW03CoShihonw",
+    "status": "sent",
+    "billedAt": "2026-03-01T23:56:40.552Z",
+    "amount": "154.34",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6JqkEbT3YrW03CoShihonw"
+  },
+  "Glass Slipper": {
+    "invoiceId": "in_1T6K3PEbT3YrW03CYcEeor97",
+    "status": "sent",
+    "billedAt": "2026-03-02T00:09:46.758Z",
+    "amount": "269.26",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6K3PEbT3YrW03CYcEeor97"
+  },
+  "Islander Bahama": {
+    "invoiceId": "in_1T6KCPEbT3YrW03C0bsKT9hT",
+    "status": "sent",
+    "billedAt": "2026-03-02T00:19:04.837Z",
+    "amount": "314.48",
+    "stripeUrl": "https://dashboard.stripe.com/invoices/in_1T6KCPEbT3YrW03C0bsKT9hT"
   }
 }

@@ -189,8 +189,10 @@ export function calculateGrowthSurcharge(growth: string[]): { percent: number, d
 }
 
 // Determine anode type and cost from notes
-// Pricing: 30% markup on supplier cost (sale_price), $2 minimum markup
+// Pricing: 30% markup on supplier cost (sale_price), $2 minimum markup + $15 installation per anode
 // See README.md for full pricing reference and Supabase lookup instructions
+const ANODE_INSTALLATION_FEE = 15.00; // per anode installed
+
 export function parseAnodeFromNotes(notes: string | null, anodes: string[]): { type: string, cost: number } | null {
   if (!anodes.includes('Replaced') || !notes) return null;
   
@@ -214,34 +216,34 @@ export function parseAnodeFromNotes(notes: string | null, anodes: string[]): { t
   if (notesLower.includes('1-1/8') || notesLower.includes('1 1/8')) {
     const isHeavy = notesLower.includes('heavy');
     const unitPrice = isHeavy ? 18.17 : 16.82;  // Reliance X-4H vs Camp X-4
-    return { type: `${count > 1 ? count + 'x ' : ''}1-1/8" ${isHeavy ? 'heavy ' : ''}shaft`, cost: unitPrice * count };
+    return { type: `${count > 1 ? count + 'x ' : ''}1-1/8" ${isHeavy ? 'heavy ' : ''}shaft`, cost: (unitPrice + ANODE_INSTALLATION_FEE) * count };
   }
   
   // 1-1/4" shaft anodes
   if (notesLower.includes('1-1/4') || notesLower.includes('1 1/4')) {
     const isHeavy = notesLower.includes('heavy');
     const unitPrice = isHeavy ? 22.54 : 17.32;  // Reliance X-5H vs Camp X-5
-    return { type: `${count > 1 ? count + 'x ' : ''}1-1/4" ${isHeavy ? 'heavy ' : ''}shaft`, cost: unitPrice * count };
+    return { type: `${count > 1 ? count + 'x ' : ''}1-1/4" ${isHeavy ? 'heavy ' : ''}shaft`, cost: (unitPrice + ANODE_INSTALLATION_FEE) * count };
   }
   
   // 1" shaft anodes
   if (notesLower.includes('1-inch') || notesLower.includes('1"') || (notesLower.includes('shaft') && !notesLower.includes('/'))) {
     const isHeavy = notesLower.includes('heavy');
     const unitPrice = isHeavy ? 17.76 : 14.66;  // Camp X-3A vs Camp X-3
-    return { type: `${count > 1 ? count + 'x ' : ''}1" ${isHeavy ? 'heavy ' : ''}shaft`, cost: unitPrice * count };
+    return { type: `${count > 1 ? count + 'x ' : ''}1" ${isHeavy ? 'heavy ' : ''}shaft`, cost: (unitPrice + ANODE_INSTALLATION_FEE) * count };
   }
   
   // Other specific types
   if (notesLower.includes('beneteau') && notesLower.includes('30')) {
-    return { type: 'Beneteau 30mm prop', cost: 28.37 * count };
+    return { type: 'Beneteau 30mm prop', cost: (28.37 + ANODE_INSTALLATION_FEE) * count };
   }
   if (notesLower.includes('612') || (notesLower.includes('hull') && notesLower.includes('anode'))) {
-    return { type: '612H hull', cost: 143.04 * count };
+    return { type: '612H hull', cost: (143.04 + ANODE_INSTALLATION_FEE) * count };
   }
   if (notesLower.includes('variprop') || notesLower.includes('df-80')) {
-    return { type: 'DF-80 Variprop', cost: 46.46 * count };
+    return { type: 'DF-80 Variprop', cost: (46.46 + ANODE_INSTALLATION_FEE) * count };
   }
   
   // Default to 1" shaft if "replaced" but type unclear
-  return { type: `${count > 1 ? count + 'x ' : ''}1" shaft`, cost: 14.66 * count };
+  return { type: `${count > 1 ? count + 'x ' : ''}1" shaft`, cost: (14.66 + ANODE_INSTALLATION_FEE) * count };
 }

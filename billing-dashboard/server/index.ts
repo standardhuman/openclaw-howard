@@ -227,7 +227,10 @@ async function getCustomerInfo(boatName: string): Promise<{ email: string | null
     const props = data.results?.[0]?.properties;
     if (!props) return { email: null, ownerName: null };
     
-    const email = props.Email?.email || null;
+    // Billing Email takes priority over Email for Stripe lookups
+    const billingEmail = props['Billing Email']?.email || null;
+    const contactEmail = props.Email?.email || null;
+    const email = billingEmail || contactEmail;
     const firstName = props['First Name']?.rich_text?.[0]?.plain_text || '';
     const lastName = props['Last Name']?.rich_text?.[0]?.plain_text || '';
     const ownerName = [firstName, lastName].filter(Boolean).join(' ') || null;
