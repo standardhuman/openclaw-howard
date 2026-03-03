@@ -1,147 +1,197 @@
 {
-  "lastUpdated": "2026-02-13T19:06:06-08:00",
+  "lastUpdated": "2026-03-03T06:30:00-08:00",
   "needsAttention": [
     {
       "title": "2024 Tax Return",
       "status": "OVERDUE",
-      "detail": "~$12,343 estimated",
+      "detail": "CPA engaged — Elan Kamesar",
       "urgency": "critical",
       "icon": "🚨",
-      "details": "Estimated liability ~$9,200 + ~$3,100 penalties = ~$12,343. True 2024 gross: $67,666. CPA candidates: Dimov Tax (866-681-2140), Mary Geong (510-654-4417), Chang & Associates (510-548-1962). Howard has corrected income reconciliation ready. Next step: decide on CPA vs DIY prep."
-    },
-    {
-      "title": "Insurance Broker Response",
-      "status": "RESOLVED 2/12",
-      "detail": "USL&H required — confirmed by Novamar",
-      "urgency": "low",
-      "icon": "⏳",
-      "details": "Henry Medina (Novamar Insurance Group) confirmed 2/12/2026: USL&H endorsement IS required for in-water dive service. Standard CA state WC is NOT sufficient. To add W-2 employee to GL policy, broker needs: employee name+DOB, new gross receipts estimate, estimated payroll. RLI GL does NOT cover employee liability. Contact: Henry Medina (619) 226-8661, Henry@novamar.net. Katrina Kashishian also at Novamar now (moved from Mariners General)."
+      "details": "~11 months overdue. Estimated ~$12,343 with penalties. CPA: Elan Kamesar (ekamesar@gmail.com, rec'd by Ben Emmert-Aronson). Email sent Mar 2 covering 2024 personal return + 2025 S-Corp. Awaiting reply."
     },
     {
       "title": "1120-S Filing",
       "status": "Due March 15",
-      "detail": "29 days remaining",
-      "urgency": "medium",
+      "detail": "12 days — file or extend",
+      "urgency": "high",
       "icon": "📋",
-      "details": "S-Corp tax filing for SailorSkills LLC. Need to reconcile 2025 income/expenses, confirm officer compensation (reasonable salary test), and file by March 15 or request extension. Howard can help prep the financial summary."
+      "details": "S-Corp return due March 15. Quinn recommends Form 7004 extension. Missing: YNAB business expenses, anode inventory count, owner distributions. CPA email sent. EDD Account ID: 291-1666-2."
     },
     {
-      "title": "Gmail OAuth",
-      "status": "Expired",
-      "detail": "Re-authenticate to restore email access",
+      "title": "Crew Party",
+      "status": "March 5",
+      "detail": "2 days away — prep today",
+      "urgency": "high",
+      "icon": "🎉",
+      "details": "Latitude 38 launch event. Business cards overdue, elevator pitch due 3/4. QR landing page for provider signups needed. Biggest Network Economies catalyst of Q1."
+    },
+    {
+      "title": "Fouad/Andiamo Dispute",
+      "status": "Email ready",
+      "detail": "Response drafted, needs sending",
       "urgency": "medium",
-      "icon": "🔑",
-      "details": "Gmail OAuth token expired. Need to re-authenticate through Google Cloud Console to restore Howard's email access. This blocks email checking, sending, and inbox monitoring. Quick fix — just need to go through the OAuth flow again."
+      "icon": "⚠️",
+      "details": "Customer disputes growth charges on Andiamo (44ft power, twin props). Full evidence doc + email draft ready. Video proof, weather data (28-30mph winds), pricing page reference."
     },
     {
-      "title": "USCG Vessel Documentation Expired",
+      "title": "Beleza Overcharge",
+      "status": "Needs refund",
+      "detail": "~$151 overcharged via Stripe",
+      "urgency": "medium",
+      "icon": "💳",
+      "details": "Bug sent boat.HullTotal to Stripe instead of adjusted amount. Overcharged ~$151. Bug fixed in code. Partial refund needed in Stripe."
+    },
+    {
+      "title": "USCG Vessel Documentation",
       "status": "Expired 4/30/2025",
-      "detail": "Maris COD lapsed ~9.5 months — renew/reinstate ASAP",
+      "detail": "Maris COD lapsed ~10 months",
       "urgency": "high",
       "icon": "⚓",
-      "details": "Coast Guard Certificate of Documentation for Maris (Official #1149206) expired 4/30/2025. Requires reinstatement (not just renewal) since >30 days lapsed. Cost: $26 + $5 late fee = $31. Renew online at uscg.mil/nvdc or call (800) 799-8362. Expired COD may affect insurance coverage (check RLI policy requirements). Address on file: 201 University Ave, Slip O-699."
+      "details": "Coast Guard Certificate of Documentation for Maris (Official #1149206) expired 4/30/2025. Requires reinstatement ($31). May affect insurance coverage."
     }
   ],
   "sprintProgress": {
     "appName": "SailorSkills Pro",
     "launchDate": "2026-03-01",
-    "overallProgress": 85,
-    "openIssues": 6,
-    "currentBuild": "TestFlight 9",
+    "overallProgress": 95,
+    "openIssues": 3,
+    "currentBuild": "TestFlight Build 55",
     "weeks": [
-      {
-        "label": "Week 1",
-        "progress": 90
-      },
-      {
-        "label": "Week 2",
-        "progress": 90
-      },
-      {
-        "label": "Week 3",
-        "progress": 100
-      },
-      {
-        "label": "Week 4",
-        "progress": 60
-      }
+      { "label": "Week 1", "progress": 100 },
+      { "label": "Week 2", "progress": 100 },
+      { "label": "Week 3", "progress": 100 },
+      { "label": "Week 4", "progress": 100 },
+      { "label": "Launch", "progress": 80 }
     ],
     "issues": [
-      {
-        "title": "Missing condition details in service logs",
-        "status": "open"
-      },
-      {
-        "title": "Voice recording processing fails on staging",
-        "status": "open"
-      },
-      {
-        "title": "Send Invoice button not wired to backend",
-        "status": "open"
-      },
-      {
-        "title": "Anode management UI needs photo upload",
-        "status": "open"
-      },
-      {
-        "title": "Auto-calculated billing rounding errors",
-        "status": "in-progress"
-      },
-      {
-        "title": "Push notification setup for appointment reminders",
-        "status": "open"
-      }
+      { "title": "GoPro BLE connects but WiFi enable fails", "status": "open" },
+      { "title": "Brian field test of Build 55 pending", "status": "open" },
+      { "title": "Cyrus security remediation — service role key in bundle", "status": "open" }
     ]
   },
   "projects": [
     {
       "name": "SailorSkills Pro",
-      "status": "in-progress",
-      "progress": 85,
-      "metric": "16 days to launch",
-      "nextAction": "Complete Week 4 sprint tasks",
+      "status": "launched",
+      "progress": 95,
+      "metric": "Build 55 in TestFlight",
+      "nextAction": "Brian field test + GoPro verification",
       "icon": "🚀",
       "checklist": [
-        {
-          "text": "Production deployment",
-          "done": false
-        },
-        {
-          "text": "Send Invoice button wired",
-          "done": false
-        },
-        {
-          "text": "Voice recording processing",
-          "done": false
-        },
-        {
-          "text": "Push notifications configured",
-          "done": false
-        },
-        {
-          "text": "TestFlight Build 18 submitted",
-          "done": true
-        }
+        { "text": "Build 55 submitted to TestFlight", "done": true },
+        { "text": "Stripe sandbox configured", "done": true },
+        { "text": "Pricing engine complete", "done": true },
+        { "text": "Boat data backfilled", "done": true },
+        { "text": "OpenTelemetry instrumented", "done": true },
+        { "text": "Brian field test on device", "done": false },
+        { "text": "GoPro BLE/WiFi fix verified", "done": false },
+        { "text": "Security remediation (service role key)", "done": false }
       ],
       "recentActivity": [
-        "TestFlight Build 18 submitted",
-        "Voice data transform fixed",
-        "Auto-calculated billing added",
-        "Anode management UI started"
+        "Build 55 in TestFlight",
+        "OpenTelemetry + custom spans added",
+        "Stripe sandbox set up",
+        "Pricing engine complete"
+      ]
+    },
+    {
+      "name": "SailorSkills Marketplace",
+      "status": "in-progress",
+      "progress": 60,
+      "metric": "Demo March 5 (Crew Party)",
+      "nextAction": "Seed trust graph, QR signup page",
+      "icon": "🌐",
+      "checklist": [
+        { "text": "Trust graph schema + traversal", "done": true },
+        { "text": "Network search page", "done": true },
+        { "text": "Placeholder profiles", "done": true },
+        { "text": "Location hierarchy (Bay Area)", "done": true },
+        { "text": "Admin trust graph CRUD", "done": true },
+        { "text": "Provider signup QR page", "done": false },
+        { "text": "Seed ~150 boat owners + ~25 providers", "done": false },
+        { "text": "Mobile nav scroll fix", "done": false }
       ],
-      "docs": [
-        {
-          "label": "MVP Tracker",
-          "url": "obsidian://open?vault=Brian%27s%20Vault&file=SailorSkills/Development/MVP%20Tracker"
-        },
-        {
-          "label": "TODO.md",
-          "url": "https://github.com/standardhuman/sailorskills-pro/blob/main/pro/TODO.md"
-        },
-        {
-          "label": "Architecture Diagram",
-          "url": "obsidian://open?vault=Brian%27s%20Vault&file=SailorSkills/Architecture-backup-20260127/ecosystem-diagram"
-        }
+      "recentActivity": [
+        "Trust graph + traversal functions deployed",
+        "Admin bulk-add tools built",
+        "Placeholder claim flow shipped",
+        "Location picker (Bay Area marinas)"
+      ]
+    },
+    {
+      "name": "Mission Control Dashboard",
+      "status": "starting",
+      "progress": 10,
+      "metric": "Spec complete, build starting",
+      "nextAction": "Marcel builds from Reese's spec",
+      "icon": "🖥️",
+      "checklist": [
+        { "text": "Plan doc written", "done": true },
+        { "text": "Reese spec complete", "done": true },
+        { "text": "Marcel briefed", "done": true },
+        { "text": "Backend scaffolding", "done": false },
+        { "text": "Team page (replaces team.briancline.co)", "done": false },
+        { "text": "Calendar (cron viz)", "done": false },
+        { "text": "Tasks (Kanban)", "done": false },
+        { "text": "Memory browser", "done": false },
+        { "text": "System health page", "done": false }
+      ],
+      "recentActivity": [
+        "Reese completed full dashboard spec (17 endpoints, 7 pages)",
+        "Marcel in architecture mode",
+        "3 new midday crons added",
+        "Dawn Patrol reverse prompting added"
+      ]
+    },
+    {
+      "name": "Taxes",
+      "status": "in-progress",
+      "progress": 30,
+      "metric": "CPA engaged, docs gathering",
+      "nextAction": "Follow up with Elan, file Form 7004 extension",
+      "icon": "💰",
+      "checklist": [
+        { "text": "CPA found (Elan Kamesar)", "done": true },
+        { "text": "CPA email sent with full context", "done": true },
+        { "text": "Income reconciliation complete", "done": true },
+        { "text": "1099-K reconciliation clean", "done": true },
+        { "text": "10 tax docs collected and filed", "done": true },
+        { "text": "YNAB business expenses exported", "done": false },
+        { "text": "Anode inventory counted", "done": false },
+        { "text": "Owner distributions documented", "done": false },
+        { "text": "File 2024 personal return", "done": false },
+        { "text": "File/extend 2025 1120-S", "done": false }
+      ],
+      "recentActivity": [
+        "CPA email sent to Elan Kamesar (Mar 2)",
+        "Quinn tax review completed",
+        "10 docs organized in ~/AI/finance/",
+        "Obsidian tax overview created"
+      ]
+    },
+    {
+      "name": "Billing Dashboard",
+      "status": "active",
+      "progress": 85,
+      "metric": "38 boats, $6,689.58 Feb total",
+      "nextAction": "Psycho Tiller correction, Tom Purcell invoices",
+      "icon": "📊",
+      "checklist": [
+        { "text": "Price adjustment feature", "done": true },
+        { "text": "Charge breakdown modal", "done": true },
+        { "text": "Smart charge/invoice labels", "done": true },
+        { "text": "Anode installation fee ($15/ea)", "done": true },
+        { "text": "Missing conditions checker", "done": true },
+        { "text": "JSON + CSV dual billing", "done": true },
+        { "text": "Stripe override passthrough fix", "done": true },
+        { "text": "Beleza refund (~$151)", "done": false },
+        { "text": "Tom Purcell open invoices", "done": false }
+      ],
+      "recentActivity": [
+        "February billing generated — $6,689.58",
+        "Anode installation fee added",
+        "Stripe override fix deployed",
+        "65 YouTube videos uploaded"
       ]
     },
     {
@@ -152,462 +202,121 @@
       "nextAction": "Revisit in a few months",
       "icon": "⏸️",
       "checklist": [
-        {
-          "text": "Term sheet drafted",
-          "done": true
-        },
-        {
-          "text": "Revenue model built",
-          "done": true
-        },
-        {
-          "text": "Insurance quote obtained",
-          "done": false
-        },
-        {
-          "text": "Training plan outlined",
-          "done": false
-        }
+        { "text": "Term sheet drafted", "done": true },
+        { "text": "Revenue model built", "done": true },
+        { "text": "Insurance research complete", "done": true },
+        { "text": "USL&H requirement confirmed", "done": true },
+        { "text": "Training plan outlined", "done": false }
       ],
       "recentActivity": [
-        "Sarah postponed diving venture",
-        "Term sheet cost analysis added",
-        "Revenue model built"
-      ],
-      "docs": [
-        {
-          "label": "Term Sheet",
-          "url": "obsidian://open?vault=Brian%27s%20Vault&file=SailorSkills/Business/Employee%20Expansion/Sarah%20Contractor%20Term%20Sheet"
-        },
-        {
-          "label": "Revenue Model",
-          "url": "obsidian://open?vault=Brian%27s%20Vault&file=SailorSkills/Business/Employee%20Expansion/Revenue%20Model"
-        },
-        {
-          "label": "Piece-Rate Compliance",
-          "url": "obsidian://open?vault=Brian%27s%20Vault&file=SailorSkills/Business/Employee%20Expansion/Piece-Rate%20Compliance"
-        },
-        {
-          "label": "W-2 vs 1099",
-          "url": "obsidian://open?vault=Brian%27s%20Vault&file=SailorSkills/Business/Employee%20Expansion/W-2%20vs%201099%20Comparison"
-        }
+        "Sarah postponed — needs stable income first",
+        "USL&H confirmed required by Novamar broker",
+        "Full cost analysis: ~$3,500-4,800/yr WC"
       ]
     },
     {
-      "name": "Taxes",
-      "status": "overdue",
-      "progress": 10,
-      "metric": "Need CPA",
-      "nextAction": "File 2024 return, prep 1120-S",
-      "icon": "💰",
+      "name": "Detailing Site",
+      "status": "launched",
+      "progress": 100,
+      "metric": "Live at sailorskills.com/detailing",
+      "nextAction": "Monitor inquiries",
+      "icon": "✨",
       "checklist": [
-        {
-          "text": "Find CPA or decide DIY",
-          "done": false
-        },
-        {
-          "text": "File 2024 personal return",
-          "done": false
-        },
-        {
-          "text": "Prep 1120-S filing",
-          "done": false
-        },
-        {
-          "text": "Reconcile income with Howard",
-          "done": true
-        }
+        { "text": "Landing page built", "done": true },
+        { "text": "Quote form (Resend)", "done": true },
+        { "text": "Deployed to Vercel", "done": true },
+        { "text": "Subdomain configured", "done": true }
       ],
       "recentActivity": [
-        "Income reconciliation completed",
-        "CPA candidates identified",
-        "Penalty estimates calculated"
-      ],
-      "docs": [
-        {
-          "label": "Tax Notes",
-          "url": "obsidian://open?vault=Brian%27s%20Vault&file=SailorSkills/Business/Employee%20Expansion/Tax%20Impact%20on%20Cash%20Flow"
-        }
+        "Marcel built and deployed detailing site",
+        "Form sends to standardhuman@gmail.com"
       ]
     },
     {
-      "name": "Email Infrastructure",
-      "status": "in-progress",
-      "progress": 66,
-      "metric": "2/3 domains verified",
-      "nextAction": "Verify remaining domain",
-      "icon": "📧",
+      "name": "NVC Course Site",
+      "status": "launched",
+      "progress": 100,
+      "metric": "Live at newt-bailey.vercel.app",
+      "nextAction": "Share with class",
+      "icon": "💬",
       "checklist": [
-        {
-          "text": "briancline.co verified",
-          "done": true
-        },
-        {
-          "text": "sailorskills.com verified",
-          "done": true
-        },
-        {
-          "text": "needsarenormal.com transfer",
-          "done": false
-        },
-        {
-          "text": "Resend Pro configured",
-          "done": true
-        }
+        { "text": "Content collected from Gmail (26 resources)", "done": true },
+        { "text": "8 pages built", "done": true },
+        { "text": "Deployed to Vercel", "done": true }
       ],
       "recentActivity": [
-        "Resend Pro setup complete",
-        "briancline.co domain verified",
-        "needsarenormal.com transfer initiated"
-      ],
-      "docs": [
-        {
-          "label": "Resend Dashboard",
-          "url": "https://resend.com/domains"
-        }
-      ]
-    },
-    {
-      "name": "OpenClaw Cost Optimization",
-      "status": "in-progress",
-      "progress": 75,
-      "metric": "$1,600→$50-150/mo target",
-      "nextAction": "Test DeepSeek as daily driver",
-      "icon": "⚡",
-      "checklist": [
-        {
-          "text": "Usage audit completed ($1,073/20 days)",
-          "done": true
-        },
-        {
-          "text": "Heartbeats disabled (saved ~$113/mo)",
-          "done": true
-        },
-        {
-          "text": "Local embeddings (no OpenAI dependency)",
-          "done": true
-        },
-        {
-          "text": "DeepSeek V3.2 configured ($0.28/$0.42/MTok)",
-          "done": true
-        },
-        {
-          "text": "Kimi K2.5 configured (free via NVIDIA)",
-          "done": true
-        },
-        {
-          "text": "Gemini Flash image fallback configured",
-          "done": true
-        },
-        {
-          "text": "Cowork skills ported (6 business plugins)",
-          "done": true
-        },
-        {
-          "text": "Test DeepSeek as daily driver",
-          "done": false
-        },
-        {
-          "text": "Set up Anthropic API key (cold spare)",
-          "done": false
-        },
-        {
-          "text": "Build claude-telegram-bridge escape hatch",
-          "done": false
-        }
-      ],
-      "recentActivity": [
-        "Gemini 2.5 Flash set as imageModel fallback",
-        "DeepSeek V3.2 + Reasoner configured and tested",
-        "Kimi K2.5 (NVIDIA free tier) configured",
-        "Local embeddings via node-llama-cpp + Metal GPU",
-        "Heartbeats disabled — were 21% of API calls",
-        "Full usage audit: $1,073 over 20 days",
-        "6 Anthropic Cowork plugins ported to OpenClaw skills"
-      ],
-      "docs": []
-    },
-    {
-      "name": "Obsidian / Dashboard",
-      "status": "just started",
-      "progress": 15,
-      "metric": "Just set up",
-      "nextAction": "Configure Dataview queries",
-      "icon": "🗂️",
-      "checklist": [
-        {
-          "text": "Obsidian vault created",
-          "done": true
-        },
-        {
-          "text": "Dataview plugin installed",
-          "done": true
-        },
-        {
-          "text": "Web dashboard deployed",
-          "done": true
-        },
-        {
-          "text": "Dataview queries configured",
-          "done": false
-        },
-        {
-          "text": "Dashboard interactive features",
-          "done": false
-        }
-      ],
-      "recentActivity": [
-        "Web dashboard deployed to dashboard.briancline.co",
-        "Obsidian Dataview + Charts installed",
-        "Dashboard built in Obsidian"
-      ],
-      "docs": [
-        {
-          "label": "Dashboard Repo",
-          "url": "https://github.com/standardhuman/dashboard"
-        }
+        "Marcel built 8-page course site",
+        "All weekly content + daily reflections included"
       ]
     }
   ],
   "timeAllocation": [
-    {
-      "label": "SailorSkills Pro Dev",
-      "value": 35,
-      "color": "#89b4fa",
-      "details": "Jacques building Pro app (TestFlight Build 18). Recent: voice data transform, auto-calculated billing, anode management. 17 days to March 1 launch."
-    },
-    {
-      "label": "Hull Cleaning (diving)",
-      "value": 30,
-      "color": "#a6e3a1",
-      "details": "Active hull cleaning operations in Oakland/Berkeley marina. Regular clients: Scott Cyphers, Dennis Zinn. Revenue stream while building Pro app."
-    },
-    {
-      "label": "Business / Planning",
-      "value": 15,
-      "color": "#f9e2af",
-      "details": "Sarah's hiring/term sheet analysis, revenue modeling, insurance research, strategic planning for SailorSkills expansion. Mariners General WC quote pending."
-    },
-    {
-      "label": "Taxes / Finance",
-      "value": 5,
-      "color": "#f38ba8",
-      "details": "2024 tax return overdue (~$12,343 estimated). 1120-S due March 15. Need to find CPA or prepare DIY. Income reconciliation done."
-    },
-    {
-      "label": "Infrastructure / Tools",
-      "value": 10,
-      "color": "#cba6f7",
-      "details": "Cost optimization: 4 model providers configured (Opus/DeepSeek/Kimi/Gemini). Heartbeats off, local embeddings. Email infra (Resend Pro). Dashboard. 6 Cowork skills ported. TOS escape hatch in progress."
-    },
-    {
-      "label": "Personal",
-      "value": 5,
-      "color": "#94e2d5",
-      "details": "Car maintenance (smog check needed), TMC group coordination, personal errands. Keeping it minimal during sprint push."
-    }
+    { "label": "SailorSkills Pro", "value": 25, "color": "#89b4fa", "details": "Build 55 in TestFlight. Waiting on Brian's field test. Security remediation pending." },
+    { "label": "Marketplace", "value": 20, "color": "#a6e3a1", "details": "Trust graph shipped. Crew Party demo prep. QR provider signup page needed." },
+    { "label": "Hull Cleaning (diving)", "value": 25, "color": "#74c7ec", "details": "15-20 hrs/week. 92 active clients, ~43 services/month, ~$6,400/month revenue." },
+    { "label": "AI Org / Dashboard", "value": 15, "color": "#cba6f7", "details": "13 agents, Mission Control rebuild starting. 3 new midday crons. Reverse prompting added." },
+    { "label": "Taxes / Finance", "value": 10, "color": "#f38ba8", "details": "2024 return overdue. 1120-S due Mar 15. CPA engaged. Extension recommended." },
+    { "label": "Personal / TMC", "value": 5, "color": "#94e2d5", "details": "TMC circles, Communication Dojo, Crew Party networking." }
   ],
   "recentActivity": [
-    {
-      "text": "Gemini 2.5 Flash configured as image fallback for all models",
-      "date": "2026-02-13",
-      "details": "Set imageModel.primary to google/gemini-2.5-flash-preview. Screenshots now work on DeepSeek and Kimi (text-only models) by auto-routing to Gemini for vision analysis. Free tier."
-    },
-    {
-      "text": "Multi-model setup complete: Opus + DeepSeek + Kimi + Gemini",
-      "date": "2026-02-13",
-      "details": "Configured 4 model providers. /model opus ($5/$25 MTok), /model deepseek ($0.28/$0.42), /model kimi (free), plus Gemini Flash for images. Target: $50-150/month vs $1,600. Aliases configured for easy switching."
-    },
-    {
-      "text": "Local embeddings + heartbeats disabled — $150+/mo saved",
-      "date": "2026-02-13",
-      "details": "Switched memory search from OpenAI API to local node-llama-cpp with Metal GPU acceleration. Disabled heartbeats (were 21% of API calls, ~$113/mo wasted with empty HEARTBEAT.md). Combined savings: ~$150/month."
-    },
-    {
-      "text": "6 Anthropic Cowork plugins ported to OpenClaw skills",
-      "date": "2026-02-13",
-      "details": "Ported product-management, finance, legal, customer-support, sales, marketing skills from Anthropic's open-source Cowork plugins. 2,140 lines total. All passing validation."
-    },
-    {
-      "text": "Insurance broker confirmed USL&H required for dive work",
-      "date": "2026-02-12",
-      "details": "Henry Medina at Novamar confirmed that in-water dive service requires WC policy with USL&H endorsement, not standard state WC. Estimated cost ~$3,500-4,800/yr for $36K-48K payroll. Also confirmed RLI GL does not cover employee liability. Katrina moved from Mariners General to Novamar."
-    },
-    {
-      "text": "Bullet journal to-dos integrated into tracking",
-      "date": "2026-02-12",
-      "details": "Digitized bullet journal to-do items into dashboard tracking system. Categories: Business, Personal, TMC. Now trackable and checkable from the web dashboard."
-    },
-    {
-      "text": "Sarah postponed diving venture — door left open",
-      "date": "2026-02-12",
-      "details": "Sarah decided to postpone the diving venture for personal reasons. The door is left open for future collaboration. Term sheet and revenue model work preserved for when she's ready."
-    },
-    {
-      "text": "Web dashboard deployed to dashboard.briancline.co",
-      "date": "2026-02-12",
-      "details": "Static dashboard deployed via Vercel with auto-deploy from GitHub. Catppuccin Mocha theme, Chart.js donut, password-gated. Data-driven via data.json."
-    },
-    {
-      "text": "Insurance email sent to Mariners General",
-      "date": "2026-02-11",
-      "details": "Sent inquiry about workers compensation classification type for hull cleaning operations. Need to know WC type for insurance planning regardless of Sarah's decision."
-    },
-    {
-      "text": "Dashboard built in Obsidian",
-      "date": "2026-02-11",
-      "details": "Set up Obsidian vault with Dataview and Charts plugins. Created initial dashboard views for project tracking. Decided to also build a web version for mobile access."
-    },
-    {
-      "text": "Term sheet cost analysis added",
-      "date": "2026-02-11",
-      "details": "Added Section 16 to Sarah's term sheet: per-boat economics at 50% and 45%, monthly projections, strategic considerations for each rate."
-    },
-    {
-      "text": "Resend Pro setup, briancline.co verified",
-      "date": "2026-02-11",
-      "details": "Set up Resend Pro for transactional email. Verified briancline.co domain with DNS records. Two of three domains now verified."
-    },
-    {
-      "text": "needsarenormal.com transfer initiated",
-      "date": "2026-02-11",
-      "details": "Started domain transfer for needsarenormal.com. Waiting for transfer to complete before DNS verification for email sending."
-    },
-    {
-      "text": "Obsidian Dataview + Charts installed",
-      "date": "2026-02-11",
-      "details": "Installed Dataview and Charts community plugins in Obsidian. Configured for project tracking queries and visual progress charts."
-    },
-    {
-      "text": "Email to broker re: WC type",
-      "date": "2026-02-11",
-      "details": "Follow-up email to insurance broker about workers compensation classification type for marine hull cleaning services."
-    },
-    {
-      "text": "TestFlight Build 14",
-      "date": "2026-02-10",
-      "details": "Submitted TestFlight Build 14 for SailorSkills Pro. Includes latest UI improvements and bug fixes from Week 3 sprint."
-    },
-    {
-      "text": "Revenue model built for Sarah",
-      "date": "2026-02-09",
-      "details": "Built comprehensive revenue model for Sarah's diving venture: per-boat economics, monthly projections at different rates, break-even analysis."
-    },
-    {
-      "text": "Customer onboarding: Scott Cyphers, Dennis Zinn",
-      "date": "2026-02-05",
-      "details": "Onboarded two new hull cleaning customers. Set up in system with boat details, scheduling preferences, and billing information."
-    }
+    { "text": "Mission Control upgrade — spec complete, Marcel building", "date": "2026-03-03", "details": "Reese wrote full dashboard spec (17 API endpoints, 7 pages). Marcel starting build. dashboard.briancline.co." },
+    { "text": "3 new midday crons + reverse prompting in Dawn Patrol", "date": "2026-03-03", "details": "10am Progress Pulse, 2pm Afternoon Memory Capture, 5pm Pre-Debrief Staging. Dawn Patrol now starts with Howard's #1 focus recommendation." },
+    { "text": "CPA email sent to Elan Kamesar", "date": "2026-03-02", "details": "Comprehensive email covering 2024 personal return, 2025 S-Corp, retro payroll, EDD back-filing." },
+    { "text": "NVC course site launched", "date": "2026-03-02", "details": "Marcel built 8-page site at newt-bailey.vercel.app with all Communication Dojo content." },
+    { "text": "Noa Mission Control analysis completed", "date": "2026-03-02", "details": "Analyzed Alex Finn's dashboard video. 4 gaps identified: reverse prompting, cron calendar, midday automation, multi-model Council." },
+    { "text": "Org restructure complete — 13 agents always-on", "date": "2026-03-01", "details": "All agents have workspace, memory, identity, Telegram channel. Cross-agent comms enabled. Team directory in all AGENTS.md." },
+    { "text": "Detailing site launched at sailorskills.com/detailing", "date": "2026-03-01", "details": "Marcel built combined landing + quote form. Resend integration." },
+    { "text": "65 YouTube videos uploaded", "date": "2026-02-28", "details": "BOATY video pipeline ported to TypeScript. 14 failed (quota). Starlink viable at ~56 GB/month." },
+    { "text": "February billing generated — $6,689.58", "date": "2026-02-27", "details": "38 boats. Anode installation fee added. Stripe override fix deployed." },
+    { "text": "Andiamo/Fouad case documented", "date": "2026-02-26", "details": "Full evidence doc with video proof, weather data, pricing references. Email draft ready." }
   ],
   "todos": {
     "Business": [
-      {
-        "text": "Email CPA — questions: (1) Should boat transfer to S-Corp? (used exclusively for biz, already deducting slip+insurance), (2) 2024 personal return prep, (3) 2025 1120-S filing (due 3/15)",
-        "done": false
-      },
-      {
-        "text": "Find Navier tax docs",
-        "done": false
-      },
-      {
-        "text": "Reconcile YNAB",
-        "done": false
-      },
-      {
-        "text": "Mike (Southern Cross) — reply w/ portal link",
-        "done": false
-      },
-      {
-        "text": "Ask Jacques — what's in, what's out",
-        "done": false
-      },
-      {
-        "text": "Write sprint status on white board",
-        "done": false
-      },
-      {
-        "text": "File Form 576D — boat property tax declaration (Alameda County, ~10mo overdue). Call assessor (510) 272-3836 to check status.",
-        "done": false
-      },
-      {
-        "text": "Claim unclaimed property from Blue Shield via sco.ca.gov ($100+, insurance benefit/claim payment)",
-        "done": false
-      },
-      {
-        "text": "Mail lien release form + $20 check to Clerk-Recorder (1106 Madison St, Oakland 94607) to clear boat tax lien from records",
-        "done": false
-      },
-      {
-        "text": "Renew USCG vessel documentation for Maris — expired 4/30/2025, reinstate at uscg.mil/nvdc ($31)",
-        "done": false
-      }
+      { "text": "Crew Party elevator pitch — draft and finalize (due 3/4)", "done": false },
+      { "text": "Crew Party business cards — order or print today", "done": false },
+      { "text": "QR landing page for provider signups at Crew Party", "done": false },
+      { "text": "Follow up with Elan Kamesar (CPA) if no reply by 3/5", "done": false },
+      { "text": "File Form 7004 extension for 1120-S before March 15", "done": false },
+      { "text": "Send Fouad dispute email", "done": false },
+      { "text": "Refund Beleza ~$151 overcharge in Stripe", "done": false },
+      { "text": "Resolve Tom Purcell open invoices (Que Sera Sera)", "done": false },
+      { "text": "Create Islander 30 Notion entry (Jay Amado)", "done": false },
+      { "text": "Retry 14 failed YouTube uploads", "done": false },
+      { "text": "Export YNAB business expenses for CPA", "done": false },
+      { "text": "Count anode inventory for tax docs", "done": false },
+      { "text": "Renew USCG vessel documentation — Maris ($31)", "done": false },
+      { "text": "File Form 576D — boat property tax declaration", "done": false }
     ],
     "Personal": [
-      {
-        "text": "Smog car",
-        "done": false
-      },
-      {
-        "text": "Plan Portland trip — visit Christina Hart, aiming for spring. Finalize dates.",
-        "done": false
-      }
+      { "text": "Smog car", "done": false },
+      { "text": "Email Progressive claims file request (Subaru)", "done": false },
+      { "text": "Plan Portland trip — visit Christina Hart", "done": false }
     ],
     "TMC": [
-      {
-        "text": "Send Jimmy Carr DOATCEO interview to the men",
-        "done": false,
-        "link": "https://www.youtube.com/watch?v=uHLAazKUU68"
-      },
-      {
-        "text": "Make Team No Events page — spreadsheet → calendar + invites",
-        "done": false
-      }
+      { "text": "Send Jimmy Carr DOATCEO interview to the men", "done": false, "link": "https://www.youtube.com/watch?v=uHLAazKUU68" },
+      { "text": "Make Team No Events page", "done": false }
     ]
   },
   "deadlines": [
-    {
-      "date": "2026-02-11",
-      "text": "Waiting on insurance broker",
-      "icon": "⏳",
-      "status": "waiting"
-    },
-    {
-      "date": "2026-03-01",
-      "text": "Pro app launch",
-      "icon": "🚀",
-      "daysAway": 16
-    },
-    {
-      "date": "2026-03-15",
-      "text": "1120-S filing deadline",
-      "icon": "📋",
-      "daysAway": 29
-    },
-    {
-      "date": "2026-03-01",
-      "text": "Sarah training — ON HOLD",
-      "icon": "⏸️",
-      "note": "Revisit in a few months"
-    }
+    { "date": "2026-03-04", "text": "Elevator pitch due", "icon": "🎤", "daysAway": 1 },
+    { "date": "2026-03-05", "text": "Crew Party — Latitude 38", "icon": "🎉", "daysAway": 2 },
+    { "date": "2026-03-15", "text": "1120-S filing deadline", "icon": "📋", "daysAway": 12 },
+    { "date": "2026-03-01", "text": "Pro app launched", "icon": "🚀", "status": "done" },
+    { "date": "2026-02-11", "text": "Sarah hiring — ON HOLD", "icon": "⏸️", "status": "on-hold" }
   ],
   "agents": [
-    {
-      "name": "Howard",
-      "emoji": "🪨",
-      "status": "Active",
-      "role": "Main assistant"
-    },
-    {
-      "name": "Jacques",
-      "emoji": "🔧",
-      "status": "Active",
-      "role": "Pro app dev"
-    },
-    {
-      "name": "Marcel",
-      "emoji": "🎨",
-      "status": "Configured",
-      "role": "TBD"
-    }
+    { "name": "Howard", "emoji": "🪨", "status": "Active", "role": "Chief of Staff — org ops, daily rhythm, shared services" },
+    { "name": "Jacques", "emoji": "🔧", "status": "Active", "role": "Pro App Lead (senior IC)" },
+    { "name": "Marcel", "emoji": "🎨", "status": "Active", "role": "Marketplace Lead (senior IC) — building Mission Control" },
+    { "name": "Reese", "emoji": "📋", "status": "Active", "role": "PM for Pro + Marketplace" },
+    { "name": "Blake", "emoji": "🔍", "status": "Active", "role": "QA (code-level review)" },
+    { "name": "Cyrus", "emoji": "🛡️", "status": "Active", "role": "Security" },
+    { "name": "Milo", "emoji": "📢", "status": "Active", "role": "Marketing" },
+    { "name": "Quinn", "emoji": "📊", "status": "Active", "role": "Business Ops / Finance" },
+    { "name": "Rio", "emoji": "🌊", "status": "Active", "role": "Wellbeing" },
+    { "name": "Noa", "emoji": "🔬", "status": "Active", "role": "Research Analyst" },
+    { "name": "Kai", "emoji": "⚡", "status": "Active", "role": "Strategy" },
+    { "name": "Sage", "emoji": "🤝", "status": "Active", "role": "Sales" },
+    { "name": "Avery", "emoji": "⚖️", "status": "Active", "role": "Legal / Admin" }
   ]
 }
