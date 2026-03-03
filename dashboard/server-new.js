@@ -64,12 +64,7 @@ function json(res, data, status = 200) {
 function gwRPC(method) {
   try {
     const out = execSync(`openclaw gateway call ${method} --json 2>/dev/null`, { timeout: 10000 }).toString();
-    // Extract JSON from output (may have non-JSON warnings before it)
-    const jsonStart = out.indexOf('{');
-    const jsonStartArr = out.indexOf('[');
-    const start = jsonStart === -1 ? jsonStartArr : jsonStartArr === -1 ? jsonStart : Math.min(jsonStart, jsonStartArr);
-    if (start === -1) return null;
-    return JSON.parse(out.slice(start));
+    return JSON.parse(out);
   } catch { return null; }
 }
 
@@ -132,16 +127,7 @@ function handleAPI(req, res, pathname, query) {
   // GET /api/agents
   if (pathname === '/api/agents') {
     const data = readJSON(DATA_FILE);
-    const agents = data?.agents || [];
-    // Ensure Rio is included (may be missing from collect-data.js)
-    if (!agents.find(a => a.name === 'Rio')) {
-      agents.push({
-        name: 'Rio', emoji: '🌊', role: 'Wellbeing Coach', team: 'On-Demand',
-        station: "Crow's Nest", status: 'standby', costThisMonth: 0,
-        totalTokens: 0, lastActive: '—', tasksCompleted: 0, currentTask: '',
-      });
-    }
-    return json(res, { agents });
+    return json(res, { agents: data?.agents || [] });
   }
 
   // GET /api/activity
