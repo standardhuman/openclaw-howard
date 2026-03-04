@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-04T19:36:04.931Z",
+  "lastUpdated": "2026-03-04T21:36:04.945Z",
   "needsAttention": [
     {
       "title": "2024 Tax Return",
@@ -700,13 +700,13 @@
       "station": "Helm",
       "avatar": "/avatars/howard-robot-v2.png",
       "status": "active",
-      "costThisMonth": 131.86,
-      "totalTokens": 74989186,
-      "lastActive": "3m ago",
-      "lastActiveTs": 1772652780035,
-      "currentTask": "Let's deploy as a subdomain. Give me a status update on the rest of the site mig",
-      "tasksCompleted": 32,
-      "productivity": 57
+      "costThisMonth": 138.85,
+      "totalTokens": 79201768,
+      "lastActive": "2m ago",
+      "lastActiveTs": 1772660024039,
+      "currentTask": "OK great. Let's revisit the scheduling system. Maybe we can dispatch our QA spec",
+      "tasksCompleted": 33,
+      "productivity": 58
     },
     {
       "name": "Jacques",
@@ -732,13 +732,13 @@
       "station": "Workshop",
       "avatar": "/avatars/marcel-robot-v2.png",
       "status": "active",
-      "costThisMonth": 92.74,
-      "totalTokens": 81361613,
+      "costThisMonth": 99.81,
+      "totalTokens": 89987715,
       "lastActive": "just now",
-      "lastActiveTs": 1772652959511,
+      "lastActiveTs": 1772660159477,
       "currentTask": "[media attached: /Users/brian/.openclaw/media/inbound/file_24---4a9133fd-fd24-47",
-      "tasksCompleted": 343,
-      "productivity": 58
+      "tasksCompleted": 348,
+      "productivity": 59
     },
     {
       "name": "Noa",
@@ -888,15 +888,15 @@
   "organization": {
     "monthlyCosts": {
       "actual": 549,
-      "apiEquivalent": 373.6,
+      "apiEquivalent": 387.66,
       "infrastructure": 349,
       "target": 500
     },
     "anthropic": {
       "plan": "Max 20X",
       "planCost": 200,
-      "apiEquivalentUsage": 224.6,
-      "savings": 24.6,
+      "apiEquivalentUsage": 238.66,
+      "savings": 38.66,
       "apiUsage": null,
       "source": "transcript-estimate"
     },
@@ -917,18 +917,18 @@
     "costsByModel": [
       {
         "name": "claude-opus-4-6",
-        "cost": 224.6,
+        "cost": 238.66,
         "percent": 100
       }
     ],
     "costsByAgent": [
       {
         "agent": "Howard",
-        "cost": 131.86
+        "cost": 138.85
       },
       {
         "agent": "Marcel",
-        "cost": 92.74
+        "cost": 99.81
       },
       {
         "agent": "Jacques",
@@ -985,123 +985,123 @@
   "recentActivity": [
     {
       "icon": "🪨",
-      "text": "Howard:   Scheduler is live at **schedule.briancline.co**. Take a look — it should have ",
-      "time": "3m ago",
+      "text": "Howard: Blake's on it — full end-to-end QA of schedule.briancline.co. He'll test functio",
+      "time": "2m ago",
       "agent": "Howard"
     },
     {
-      "icon": "🎨",
-      "text": "Marcel: All good. Here's the report:  **Scheduler app is live at https://schedule.brianc",
-      "time": "3m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Live and serving. Let me do a quick check that the SPA routing works too.",
-      "time": "3m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Domain added. Let me verify it's resolving.",
-      "time": "4m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Deployed. Now add the custom domain.",
-      "time": "4m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Build succeeds. Now deploy to Vercel.",
-      "time": "4m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: vercel.json SPA rewrites look correct. Let me build and deploy.",
-      "time": "4m ago",
-      "agent": "Marcel"
-    },
-    {
       "icon": "🪨",
-      "text": "Howard: Marcel's deploying the scheduler. Here's the full site migration status:  **✅ Do",
+      "text": "Howard: Done. 24 Wix band-aids removed, 196 clean redirects live. Note it's now aliased ",
       "time": "4m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard:   That's expected — the scheduler app exists in the codebase (`~/AI/business/bri",
+      "text": "Howard: Here's my take on which to keep vs remove:  **Keep** (real value — customers/pub",
       "time": "6m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Both tasks are done — he's idle. Contact form working, service pages deployed wi",
-      "time": "6m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Dashboard data collected. Costs tracked at $549/mo actual vs $369.94/mo API-equi",
-      "time": "15m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: Marcel's fixes are deployed:  - **Images** — all replaced with high-res versions",
-      "time": "16m ago",
+      "text": "Howard: Wix is dead. 🪦",
+      "time": "7m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Contact form fix is deployed. Vercel will rebuild with the new env var.  Here's ",
-      "time": "16m ago",
+      "text": "Howard:   That's Phase 1 complete. All service pages live on briancline.co, all 220 redi",
+      "time": "7m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Now update the from address in the contact API:",
-      "time": "16m ago",
+      "text": "Howard: Here's what just happened:  **220 redirects are live on Vercel.** Every sailorsk",
+      "time": "7m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now let me update the docs:",
+      "time": "7m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: All working. Now let me also update the www CNAME while we're at it:",
+      "time": "8m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Redirects are working. Let me test a few more:",
+      "time": "8m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now let me test a redirect:",
+      "time": "8m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: The A record still points to Wix (23.236.62.147). I need to update it to Vercel'",
+      "time": "8m ago",
       "agent": "Howard"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: All good - the HOME link is there, my grep just didn't match it since it doesn't",
-      "time": "17m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Wait, the HOME link isn't showing. Let me check:",
-      "time": "17m ago",
+      "text": "Marcel: All good. Let me send the update back to Howard:",
+      "time": "8m ago",
       "agent": "Marcel"
     },
     {
       "icon": "🪨",
-      "text": "Howard: The contact form is sending from `onboarding@resend.dev` which is their sandbox.",
-      "time": "17m ago",
+      "text": "Howard: Deployed. Now I need to assign the sailorskills.com domain to this project.",
+      "time": "8m ago",
       "agent": "Howard"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Let me verify the fixes are live:",
-      "time": "17m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Deployed. Let me verify the key pages:",
-      "time": "17m ago",
+      "text": "Marcel: Let me verify the content and image load:",
+      "time": "8m ago",
       "agent": "Marcel"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Got the API key pattern. That detailing key is domain-specific though. Let me ch",
-      "time": "17m ago",
+      "text": "Howard: Those Zoho links are dead (Marcel's audit confirmed 400s). I'll redirect them to",
+      "time": "9m ago",
       "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: The domain is on Vercel but not assigned to a project yet. I'll create a lightwe",
+      "time": "9m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Need to add diving.html to the Vite input config:",
+      "time": "9m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Hmm — 404. The `diving.html` is at the root but Vite might not be including it i",
+      "time": "9m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Let me verify:",
+      "time": "9m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Now deploy:",
+      "time": "10m ago",
+      "agent": "Marcel"
     }
   ],
   "billing": {
@@ -1157,16 +1157,16 @@
     ],
     "monthlySummary": {
       "actual": 549,
-      "apiEquivalent": 373.6,
+      "apiEquivalent": 387.66,
       "anthropicPlan": 200,
-      "anthropicApiEquiv": 224.6,
-      "anthropicSavings": 24.6,
+      "anthropicApiEquiv": 238.66,
+      "anthropicSavings": 38.66,
       "otherApis": 0,
       "infrastructure": 349
     }
   },
   "metadata": {
-    "lastUpdated": "2026-03-04T19:36:04.932Z",
+    "lastUpdated": "2026-03-04T21:36:04.945Z",
     "version": "3.0",
     "source": "Real data from session transcripts + curated static data"
   }

@@ -198,4 +198,22 @@ Full team built during Feb 15 hackathon. Personas at `~/clawd/agents/`. Roster a
 
 **Dawn Patrol Kindle Delivery Fix (Feb 23):** Plain .txt emails cause Kindle E999 error (emoji/Unicode). HTML attachment works. Cron updated to generate `/tmp/dawn-patrol.html`. Also removed `--from standardhuman@gmail.com` flag (not verified as Send As alias; default sending address works fine).
 
-*Last updated: February 23, 2026*
+## Domain Restructure: briancline.co (March 2026)
+
+**Architecture:** sailorskills.com = Marketplace/Pro platform. briancline.co = Brian's personal marine services (/diving, /detailing, /training, /deliveries). Paths not subdomains — one nav, one brand, better SEO.
+
+**Phase 1 (Wix recreation) — mostly complete:**
+- Marcel built all service pages + /training/faq at briancline.co
+- High-res images from Wix CDN, nav links updated, booking CTAs → mailto:brian@sailorskills.com
+- Scheduler app live at schedule.briancline.co
+- Link audit in progress (Mar 4) — YouTube/article links reported broken
+
+**Phase 2:** Redesign in Marketplace visual style (future).
+
+**Remaining:** Fix broken links, update www.sailorskills.com CNAME (still → wixdns.net), update Google Business Profile, set up redirects sailorskills.com/diving → briancline.co/diving.
+
+**No DBA needed** — operates under Sailor Skills LLC regardless of website domain.
+
+**Obsidian doc:** `SailorSkills/Business/Domain Restructure - briancline.co.md`
+
+*Last updated: March 4, 2026*
