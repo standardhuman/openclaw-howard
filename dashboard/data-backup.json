@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T19:36:05.392Z",
+  "lastUpdated": "2026-03-05T21:36:04.959Z",
   "needsAttention": [
     {
       "title": "2024 Tax Return",
@@ -699,13 +699,13 @@
       "team": "Core Team",
       "station": "Helm",
       "avatar": "/avatars/howard-robot-v2.png",
-      "status": "active",
-      "costThisMonth": 166.06,
-      "totalTokens": 90917528,
-      "lastActive": "2m ago",
-      "lastActiveTs": 1772739268135,
-      "currentTask": "Poker Night's fine. I added a test event for March 15 that's not showing up.",
-      "tasksCompleted": 42,
+      "status": "standby",
+      "costThisMonth": 178.38,
+      "totalTokens": 94758572,
+      "lastActive": "7m ago",
+      "lastActiveTs": 1772746128899,
+      "currentTask": "Ok. By the way I didn't see anything about a summary and a test plan. Where did ",
+      "tasksCompleted": 43,
       "productivity": 59
     },
     {
@@ -732,12 +732,12 @@
       "station": "Workshop",
       "avatar": "/avatars/marcel-robot-v2.png",
       "status": "active",
-      "costThisMonth": 118.79,
-      "totalTokens": 105884210,
+      "costThisMonth": 123.2,
+      "totalTokens": 111223554,
       "lastActive": "just now",
-      "lastActiveTs": 1772739359494,
+      "lastActiveTs": 1772746559533,
       "currentTask": "Excellent. Marcel are you familiar with phase 2 of our website migration that we",
-      "tasksCompleted": 437,
+      "tasksCompleted": 447,
       "productivity": 61
     },
     {
@@ -888,15 +888,15 @@
   "organization": {
     "monthlyCosts": {
       "actual": 549,
-      "apiEquivalent": 433.85,
+      "apiEquivalent": 450.58,
       "infrastructure": 349,
       "target": 500
     },
     "anthropic": {
       "plan": "Max 20X",
       "planCost": 200,
-      "apiEquivalentUsage": 284.85,
-      "savings": 84.85,
+      "apiEquivalentUsage": 301.58,
+      "savings": 101.58,
       "apiUsage": null,
       "source": "transcript-estimate"
     },
@@ -917,18 +917,18 @@
     "costsByModel": [
       {
         "name": "claude-opus-4-6",
-        "cost": 284.85,
+        "cost": 301.58,
         "percent": 100
       }
     ],
     "costsByAgent": [
       {
         "agent": "Howard",
-        "cost": 166.06
+        "cost": 178.38
       },
       {
         "agent": "Marcel",
-        "cost": 118.79
+        "cost": 123.2
       },
       {
         "agent": "Jacques",
@@ -984,124 +984,124 @@
   },
   "recentActivity": [
     {
+      "icon": "🎨",
+      "text": "Marcel: Both items done:  **1. Migration applied** — `20260305000000_sailing_lessons.sql",
+      "time": "6m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Now deploy the edge functions, commit, and push:",
+      "time": "6m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Now update the Google Calendar function to handle sailing events:",
+      "time": "6m ago",
+      "agent": "Marcel"
+    },
+    {
       "icon": "🪨",
-      "text": "Howard:   What row number is the test event in? I'll update the test function to check t",
-      "time": "2m ago",
+      "text": "Howard:   You're right — looking at the screenshot, my response to \"What do you think?\" ",
+      "time": "7m ago",
       "agent": "Howard"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected. Costs tracking at $549/mo actual vs $433.46/mo API-equ",
+      "text": "Marcel: Migration applied. Now updating the edge functions.",
+      "time": "8m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard:   Oh — you were asking what I think about the cancelled status approach specific",
+      "time": "10m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Got it — the 👀 on every single message. That's excessive and weird. I should be",
+      "time": "10m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard:   Ha — I see the 👀 reactions stacking up. Sorry for the delayed responses. I'm ",
+      "time": "11m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected. Costs tracked: $549/mo actual, $447.39/mo API-equivale",
       "time": "15m ago",
       "agent": "Marcel"
     },
     {
+      "icon": "🪨",
+      "text": "Howard: I think that covers the core sync loop pretty well:  - Sheet edit → creates/upda",
+      "time": "24m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: On your clipboard. Now if someone deletes a calendar event, the next hourly refr",
+      "time": "30m ago",
+      "agent": "Howard"
+    },
+    {
       "icon": "🎨",
-      "text": "Marcel: Data collection complete. Costs tracked at $549/mo actual vs $433.44/mo API-equi",
+      "text": "Marcel: Dashboard data collected. Costs tracked: $549/mo actual, $446.24/mo API-equivale",
       "time": "30m ago",
       "agent": "Marcel"
     },
     {
-      "icon": "🎨",
-      "text": "Marcel: Data collection complete. Costs tracked: $549/mo actual, $433.42/mo API-equivale",
-      "time": "45m ago",
-      "agent": "Marcel"
-    },
-    {
       "icon": "🪨",
-      "text": "Howard:   Everything parses correctly and it already found the calendar. The data also s",
-      "time": "60m ago",
+      "text": "Howard:   Currently nothing happens — the row stays in the spreadsheet as a ghost. The h",
+      "time": "31m ago",
       "agent": "Howard"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully.",
-      "time": "60m ago",
+      "text": "Marcel: The Sailing Lessons Booking feature is built and pushed. Here's what was accompl",
+      "time": "31m ago",
       "agent": "Marcel"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard:   Let me check — the script might not have calendar write access, or the date/ti",
-      "time": "1h ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard:   The simple `onEdit` trigger might not have fired. Let's test: go back to the A",
-      "time": "1h ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard:   The on-edit trigger fires automatically, but the row needs **all four required",
-      "time": "1h ago",
-      "agent": "Howard"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected. Costs tracked at $549/mo actual vs $431.90 API-equival",
-      "time": "1h ago",
+      "text": "Marcel: No references to `/connect` on the training page — already updated.   Now let me",
+      "time": "31m ago",
       "agent": "Marcel"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: No — just run **setupTriggers** and **fullSyncSheetToCalendar**. Those two are t",
-      "time": "1h ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: One-time only. Click **Advanced → Go to (unsafe)** and grant access. After that ",
-      "time": "1h ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: No deploy needed — Apps Script triggers run server-side without deploying.  Run ",
-      "time": "1h ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: That's the OAuth authorization prompt. Run it again — this time a popup should a",
-      "time": "1h ago",
-      "agent": "Howard"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected. Costs tracking at $549/mo actual vs $430 API-equivalen",
-      "time": "2h ago",
+      "text": "Marcel: The training page CTAs are already pointing to `/sailing`. That was already upda",
+      "time": "31m ago",
       "agent": "Marcel"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard:   That's not in the code — it's baked into the Apps Script project itself. When ",
-      "time": "2h ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: All clear. No issues to escalate — all agents healthy, all crons green, memory u",
-      "time": "2h ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: All systems nominal. Let me update the memory file.",
-      "time": "2h ago",
-      "agent": "Howard"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Data collection complete. Costs tracked: $549/mo actual, $429.52/mo API-equivale",
-      "time": "2h ago",
+      "text": "Marcel: Now let me update the briancline.co training page CTAs:",
+      "time": "32m ago",
       "agent": "Marcel"
     },
     {
-      "icon": "🪨",
-      "text": "Howard: It says \"No functions\" right now next to Run/Debug — that's because the file has",
-      "time": "2h ago",
-      "agent": "Howard"
+      "icon": "🎨",
+      "text": "Marcel: Build successful. Let me commit:",
+      "time": "32m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Clean compile. Let me also check it builds:",
+      "time": "32m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Also remove unused `emailChecked`:",
+      "time": "32m ago",
+      "agent": "Marcel"
     }
   ],
   "billing": {
@@ -1157,16 +1157,16 @@
     ],
     "monthlySummary": {
       "actual": 549,
-      "apiEquivalent": 433.85,
+      "apiEquivalent": 450.58,
       "anthropicPlan": 200,
-      "anthropicApiEquiv": 284.85,
-      "anthropicSavings": 84.85,
+      "anthropicApiEquiv": 301.58,
+      "anthropicSavings": 101.58,
       "otherApis": 0,
       "infrastructure": 349
     }
   },
   "metadata": {
-    "lastUpdated": "2026-03-05T19:36:05.394Z",
+    "lastUpdated": "2026-03-05T21:36:04.980Z",
     "version": "3.0",
     "source": "Real data from session transcripts + curated static data"
   }
