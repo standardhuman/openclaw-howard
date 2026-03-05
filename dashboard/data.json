@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T00:51:05.542Z",
+  "lastUpdated": "2026-03-05T07:51:05.389Z",
   "needsAttention": [
     {
       "title": "2024 Tax Return",
@@ -700,12 +700,12 @@
       "station": "Helm",
       "avatar": "/avatars/howard-robot-v2.png",
       "status": "standby",
-      "costThisMonth": 145.28,
-      "totalTokens": 81198782,
-      "lastActive": "48m ago",
-      "lastActiveTs": 1772668992381,
-      "currentTask": "Marcel seems unresponsive. Even to slash commands.",
-      "tasksCompleted": 34,
+      "costThisMonth": 151.27,
+      "totalTokens": 83883291,
+      "lastActive": "5h ago",
+      "lastActiveTs": 1772677910037,
+      "currentTask": "should i give her a slash new command?",
+      "tasksCompleted": 36,
       "productivity": 58
     },
     {
@@ -732,13 +732,13 @@
       "station": "Workshop",
       "avatar": "/avatars/marcel-robot-v2.png",
       "status": "active",
-      "costThisMonth": 116.71,
-      "totalTokens": 103614331,
+      "costThisMonth": 121.06,
+      "totalTokens": 107115657,
       "lastActive": "just now",
-      "lastActiveTs": 1772671859557,
-      "currentTask": "oh, can you do it?",
-      "tasksCompleted": 361,
-      "productivity": 60
+      "lastActiveTs": 1772697059534,
+      "currentTask": "Excellent. Marcel are you familiar with phase 2 of our website migration that we",
+      "tasksCompleted": 392,
+      "productivity": 61
     },
     {
       "name": "Noa",
@@ -888,15 +888,15 @@
   "organization": {
     "monthlyCosts": {
       "actual": 549,
-      "apiEquivalent": 410.99,
+      "apiEquivalent": 421.34,
       "infrastructure": 349,
       "target": 500
     },
     "anthropic": {
       "plan": "Max 20X",
       "planCost": 200,
-      "apiEquivalentUsage": 261.99,
-      "savings": 61.99,
+      "apiEquivalentUsage": 272.34,
+      "savings": 72.34,
       "apiUsage": null,
       "source": "transcript-estimate"
     },
@@ -917,18 +917,18 @@
     "costsByModel": [
       {
         "name": "claude-opus-4-6",
-        "cost": 261.99,
+        "cost": 272.34,
         "percent": 100
       }
     ],
     "costsByAgent": [
       {
         "agent": "Howard",
-        "cost": 145.28
+        "cost": 151.27
       },
       {
         "agent": "Marcel",
-        "cost": 116.71
+        "cost": 121.06
       },
       {
         "agent": "Jacques",
@@ -985,122 +985,122 @@
   "recentActivity": [
     {
       "icon": "🎨",
-      "text": "Marcel: Scheduler is production-ready. All three legs of the booking flow work end-to-en",
+      "text": "Marcel: Build succeeds. Let me verify the Lucide `Sailboat` icon import works (it was in",
+      "time": "3m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Good, installed. Let me verify the build works:",
+      "time": "3m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Now add `@stripe/react-stripe-js` to package.json:",
+      "time": "3m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Now DivingOrder.jsx with separate Stripe elements, full service agreement, and c",
+      "time": "5m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Now the main Diving.jsx with all changes (service type card, custom icons, stick",
+      "time": "6m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Now I have the full picture. Let me implement all 6 changes. I'll work through t",
+      "time": "7m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Found them at `~/AI/business/briancline-co/website/`. Let me read the actual fil",
+      "time": "7m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Let me read the spec and all relevant files first.",
       "time": "8m ago",
       "agent": "Marcel"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: All three green:  ✅ **Supabase** — booking saved with `google_event_id: va9c67i1",
-      "time": "8m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Now let me verify all three:",
-      "time": "8m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Browser isn't cooperating. Let me just do it via curl — simulate the exact same ",
-      "time": "8m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel:   Go ahead — book something on `schedule.briancline.co`. I'll check your calenda",
-      "time": "10m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: All good. Here's the summary:  ✅ **Google OAuth** — fixed (new credentials, API ",
-      "time": "11m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Both working. Let me clean up the test data:",
-      "time": "11m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Email sent successfully. Check your inbox at standardhuman@gmail.com — you shoul",
-      "time": "11m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: No auth header needed — just the API call. Let me test:",
-      "time": "11m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Now test the email edge function:",
-      "time": "11m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Cleaned up. Google Calendar integration is fully working. The email issue from e",
-      "time": "12m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: **\"Connect Call with Test McTest\"** — right there on March 10 at 2:00 PM PT (sho",
-      "time": "12m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Event created. Let me verify it shows up on your calendar:",
-      "time": "12m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: API propagation takes a couple minutes. Let me wait and retry:",
-      "time": "13m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel:   No, just your account. That's the one with the OAuth tokens. Let me retry:",
-      "time": "14m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: The Google Calendar API isn't enabled on your new OAuth project. You need to ena",
-      "time": "14m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Booking created. Now call the calendar edge function:",
-      "time": "14m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Calendar access works. Now let me test the full booking flow end-to-end — I'll c",
-      "time": "14m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Got it. Let me verify:",
-      "time": "14m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel:   The gog process got killed before the callback server could receive the redire",
+      "text": "Marcel: Dashboard data collected. Costs tracked: $549/mo actual, $420.09/mo API-equivale",
       "time": "15m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: The `useNavigate` is inside `EstimateCard` which is a nested function, not the m",
+      "time": "17m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Build succeeds. Let me verify the Diving.jsx looks correct:",
+      "time": "17m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: No CSP header in this vercel.json — it was the blisscapes one. Good, no change n",
+      "time": "17m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Now update CSP to allow Stripe and the Supabase edge functions:",
+      "time": "18m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Update vercel.json with rewrite and CSP for Stripe:",
+      "time": "18m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Now update App.jsx to add the route:",
+      "time": "18m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Now create the DivingOrder.jsx:",
+      "time": "19m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Now update the support section — replace How It Works / What's Included headers ",
+      "time": "19m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Now replace the emoji in InputCard usages:",
+      "time": "20m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Now update the hero icon and all InputCard icons:",
+      "time": "20m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Now update the \"About our pricing\" info icon:",
+      "time": "20m ago",
       "agent": "Marcel"
     }
   ],
@@ -1157,16 +1157,16 @@
     ],
     "monthlySummary": {
       "actual": 549,
-      "apiEquivalent": 410.99,
+      "apiEquivalent": 421.34,
       "anthropicPlan": 200,
-      "anthropicApiEquiv": 261.99,
-      "anthropicSavings": 61.99,
+      "anthropicApiEquiv": 272.34,
+      "anthropicSavings": 72.34,
       "otherApis": 0,
       "infrastructure": 349
     }
   },
   "metadata": {
-    "lastUpdated": "2026-03-05T00:51:05.544Z",
+    "lastUpdated": "2026-03-05T07:51:05.390Z",
     "version": "3.0",
     "source": "Real data from session transcripts + curated static data"
   }
