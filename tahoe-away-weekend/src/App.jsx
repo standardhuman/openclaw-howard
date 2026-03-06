@@ -541,7 +541,22 @@ function RSVPSection() {
       ) : (
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
           {rsvps.map((person) => (
-            <div key={person.id} className="card !p-3">
+            <button key={person.id} onClick={() => {
+              if (deadlinePassed) return
+              setForm({
+                name: person.name,
+                email: person.email || '',
+                status: person.status || 'confirmed',
+                dietary: person.dietary || '',
+                notes: person.notes || '',
+                can_drive: person.can_drive || false,
+                car_seats: person.car_seats || 0,
+                needs_ride: person.needs_ride || false,
+                departure_area: person.departure_area || '',
+              })
+              setFormOpen(true)
+              document.getElementById('rsvp')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }} className={`card !p-3 text-left w-full ${deadlinePassed ? '' : 'hover:border-amber/40 cursor-pointer transition'}`}>
               <div className="flex items-center justify-between">
                 <span className="text-sm font-medium">{person.name}</span>
                 <span className={`text-xs px-2 py-0.5 rounded-full border ${STATUS_COLORS[person.status] || 'text-slate-400 border-slate-600'}`}>
@@ -555,7 +570,8 @@ function RSVPSection() {
                   {person.departure_area && <span className="text-xs text-slate-500">{person.departure_area}</span>}
                 </div>
               )}
-            </div>
+              {!deadlinePassed && <div className="text-xs text-slate-600 mt-1">Tap to edit</div>}
+            </button>
           ))}
         </div>
       )}
