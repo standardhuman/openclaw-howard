@@ -1,2 +1,6 @@
 skills/lifeskills/
 billing-dashboard/.env
+
+# Dashboard data files — contain raw agent task text that may include secrets
+dashboard/data-backup*.json
+dashboard/server.log
