@@ -1,0 +1,1173 @@
+{
+  "lastUpdated": "2026-03-06T07:51:04.692Z",
+  "needsAttention": [
+    {
+      "title": "2024 Tax Return",
+      "status": "OVERDUE",
+      "detail": "CPA engaged — Elan Kamesar",
+      "urgency": "critical",
+      "icon": "🚨",
+      "details": "~11 months overdue. Estimated liability ~$9,200 + ~$3,100 penalties = ~$12,343. True 2024 gross: $67,666. CPA: Elan Kamesar (ekamesar@gmail.com), email sent Mar 2. 1099-K reconciliation clean ($64,895.50). Waiting for CPA reply."
+    },
+    {
+      "title": "1120-S Filing",
+      "status": "Due March 15",
+      "detail": "12 days — extension recommended",
+      "urgency": "critical",
+      "icon": "📋",
+      "details": "S-Corp return due March 15. Quinn recommends Form 7004 extension. Missing: YNAB business expenses, anode inventory count, owner distributions. CPA email covers this. EDD Account ID: 291-1666-2."
+    },
+    {
+      "title": "Crew Party",
+      "status": "TOMORROW",
+      "detail": "March 5 — Latitude 38 launch event",
+      "urgency": "critical",
+      "icon": "🎉",
+      "details": "Biggest networking opportunity of Q1. Elevator pitch due today. Business cards overdue. QR landing page for provider signups needed. Face-to-face with marine service providers — seed the Marketplace."
+    },
+    {
+      "title": "Beleza Overcharge",
+      "status": "NEEDS REFUND",
+      "detail": "~$151 Stripe refund pending",
+      "urgency": "medium",
+      "icon": "💳",
+      "details": "Billing override bug sent HullTotal to Stripe instead of adjusted amount. Beleza overcharged ~$303 vs ~$151. Bug fixed in App.tsx. Partial refund needed in Stripe."
+    },
+    {
+      "title": "USCG Vessel Documentation",
+      "status": "Expired 4/30/2025",
+      "detail": "Maris COD lapsed ~10 months",
+      "urgency": "high",
+      "icon": "⚓",
+      "details": "Coast Guard Certificate of Documentation for Maris (Official #1149206) expired 4/30/2025. Requires reinstatement ($31). Renew at uscg.mil/nvdc or call (800) 799-8362."
+    }
+  ],
+  "sprintProgress": {
+    "appName": "SailorSkills Pro",
+    "launchDate": "2026-03-01",
+    "overallProgress": 95,
+    "openIssues": 3,
+    "currentBuild": "TestFlight Build 55",
+    "weeks": [
+      {
+        "label": "Week 1",
+        "progress": 100
+      },
+      {
+        "label": "Week 2",
+        "progress": 100
+      },
+      {
+        "label": "Week 3",
+        "progress": 100
+      },
+      {
+        "label": "Week 4",
+        "progress": 90
+      }
+    ],
+    "issues": [
+      {
+        "title": "GoPro BLE/WiFi real-device verification",
+        "status": "blocked"
+      },
+      {
+        "title": "Brian field test of Build 55",
+        "status": "open"
+      },
+      {
+        "title": "Cyrus security remediation (service role key)",
+        "status": "open"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "SailorSkills Pro",
+      "status": "launched",
+      "progress": 95,
+      "metric": "Build 55 in TestFlight",
+      "nextAction": "Brian field test + GoPro verification",
+      "icon": "🚀",
+      "checklist": [
+        {
+          "text": "Build 55 submitted to TestFlight",
+          "done": true
+        },
+        {
+          "text": "Stripe sandbox configured",
+          "done": true
+        },
+        {
+          "text": "Pricing engine complete",
+          "done": true
+        },
+        {
+          "text": "Boat data backfilled",
+          "done": true
+        },
+        {
+          "text": "OpenTelemetry instrumented",
+          "done": true
+        },
+        {
+          "text": "Brian field test",
+          "done": false
+        },
+        {
+          "text": "GoPro BLE/WiFi test on device",
+          "done": false
+        },
+        {
+          "text": "Security remediation (service role key)",
+          "done": false
+        }
+      ],
+      "recentActivity": [
+        "Build 55 shipped to TestFlight",
+        "OpenTelemetry instrumented (custom spans)",
+        "53 unit tests + 36 E2E tests",
+        "Stripe sandbox + pricing engine complete"
+      ],
+      "docs": [
+        {
+          "label": "MVP Roadmap",
+          "url": "obsidian://open?vault=Brian%27s%20Vault&file=SailorSkills/Development/MVP%20Tracker"
+        },
+        {
+          "label": "Security Audit",
+          "url": "file:///Users/brian/AI/business/sailorskills/pro/docs/security-audit-initial.md"
+        }
+      ]
+    },
+    {
+      "name": "SailorSkills Marketplace",
+      "status": "in-progress",
+      "progress": 60,
+      "metric": "Demo ready for Crew Party",
+      "nextAction": "Seed trust graph, provider signup QR page",
+      "icon": "🌐",
+      "checklist": [
+        {
+          "text": "Trust graph schema + traversal",
+          "done": true
+        },
+        {
+          "text": "Network search page",
+          "done": true
+        },
+        {
+          "text": "Placeholder profiles + claim flow",
+          "done": true
+        },
+        {
+          "text": "Location hierarchy (Bay Area)",
+          "done": true
+        },
+        {
+          "text": "Admin trust graph CRUD",
+          "done": true
+        },
+        {
+          "text": "Deployed to marketplace.sailorskills.com",
+          "done": true
+        },
+        {
+          "text": "Seed 150 boat owners",
+          "done": false
+        },
+        {
+          "text": "Seed 25 service providers",
+          "done": false
+        },
+        {
+          "text": "Provider signup landing page",
+          "done": false
+        }
+      ],
+      "recentActivity": [
+        "Trust graph + traversal functions deployed",
+        "Placeholder profile claim flow shipped",
+        "Mobile nav scroll fixes",
+        "Deployed at marketplace.sailorskills.com"
+      ],
+      "docs": [
+        {
+          "label": "Trust Graph Design",
+          "url": "file:///Users/brian/clawd/docs/plans/2026-07-trust-graph-design.md"
+        }
+      ]
+    },
+    {
+      "name": "Mission Control Dashboard",
+      "status": "in-progress",
+      "progress": 70,
+      "metric": "7 pages built, live at localhost:3333",
+      "nextAction": "Fix cron health, update stale data, deploy to dashboard.briancline.co",
+      "icon": "📊",
+      "checklist": [
+        {
+          "text": "Team page (replaces team.briancline.co)",
+          "done": true
+        },
+        {
+          "text": "System page",
+          "done": true
+        },
+        {
+          "text": "Tasks kanban",
+          "done": true
+        },
+        {
+          "text": "Calendar cron viz",
+          "done": true
+        },
+        {
+          "text": "Projects page",
+          "done": true
+        },
+        {
+          "text": "Memory browser",
+          "done": true
+        },
+        {
+          "text": "Docs search",
+          "done": true
+        },
+        {
+          "text": "Fix cron health (gateway RPC)",
+          "done": false
+        },
+        {
+          "text": "Deploy to dashboard.briancline.co",
+          "done": false
+        }
+      ],
+      "recentActivity": [
+        "All 7 pages built by Marcel",
+        "Reese wrote full spec (17 API endpoints)",
+        "Dark theme, sidebar nav, real data"
+      ],
+      "docs": [
+        {
+          "label": "Dashboard Spec",
+          "url": "obsidian://open?vault=Brian%27s%20Vault&file=Organization/Mission%20Control%20Dashboard%20Spec"
+        },
+        {
+          "label": "Upgrade Plan",
+          "url": "obsidian://open?vault=Brian%27s%20Vault&file=Organization/Mission%20Control%20Upgrade%20Plan"
+        }
+      ]
+    },
+    {
+      "name": "Billing Dashboard",
+      "status": "active",
+      "progress": 90,
+      "metric": "38 boats, $6,689.58 Feb total",
+      "nextAction": "Resolve Beleza overcharge, Tom Purcell invoices",
+      "icon": "💰",
+      "checklist": [
+        {
+          "text": "Price adjustment (%, $, flat)",
+          "done": true
+        },
+        {
+          "text": "Charge breakdown modal",
+          "done": true
+        },
+        {
+          "text": "Smart charge/invoice labels",
+          "done": true
+        },
+        {
+          "text": "Anode installation fee ($15/ea)",
+          "done": true
+        },
+        {
+          "text": "Stripe override passthrough fix",
+          "done": true
+        },
+        {
+          "text": "Missing conditions checker",
+          "done": true
+        },
+        {
+          "text": "JSON + CSV dual storage",
+          "done": true
+        },
+        {
+          "text": "Video panel (BOATY port)",
+          "done": true
+        },
+        {
+          "text": "Beleza partial refund",
+          "done": false
+        },
+        {
+          "text": "Tom Purcell open invoices",
+          "done": false
+        }
+      ],
+      "recentActivity": [
+        "February billing: 38 boats, $6,689.58",
+        "Stripe override bug fixed",
+        "Anode installation fee added",
+        "BOATY video rename/upload ported to TypeScript"
+      ],
+      "docs": []
+    },
+    {
+      "name": "Taxes",
+      "status": "overdue",
+      "progress": 30,
+      "metric": "CPA engaged, extension needed",
+      "nextAction": "File Form 7004, gather missing docs",
+      "icon": "📄",
+      "checklist": [
+        {
+          "text": "Income reconciliation done",
+          "done": true
+        },
+        {
+          "text": "1099-K reconciliation clean",
+          "done": true
+        },
+        {
+          "text": "10 tax docs collected and filed",
+          "done": true
+        },
+        {
+          "text": "CPA found: Elan Kamesar",
+          "done": true
+        },
+        {
+          "text": "CPA email sent (Mar 2)",
+          "done": true
+        },
+        {
+          "text": "File Form 7004 extension",
+          "done": false
+        },
+        {
+          "text": "Gather YNAB biz expenses",
+          "done": false
+        },
+        {
+          "text": "Count anode inventory",
+          "done": false
+        },
+        {
+          "text": "Document owner distributions",
+          "done": false
+        },
+        {
+          "text": "File 2024 personal return",
+          "done": false
+        },
+        {
+          "text": "File 2025 S-Corp return",
+          "done": false
+        }
+      ],
+      "recentActivity": [
+        "CPA email sent to Elan Kamesar (Mar 2)",
+        "Quinn tax review: 3-part analysis delivered",
+        "10 tax docs filed in ~/AI/finance/",
+        "EDD back-filing status checked"
+      ],
+      "docs": [
+        {
+          "label": "Tax Overview",
+          "url": "obsidian://open?vault=Brian%27s%20Vault&file=SailorSkills/Business/Taxes/Tax%20Overview"
+        }
+      ]
+    },
+    {
+      "name": "Detailing Site",
+      "status": "complete",
+      "progress": 100,
+      "metric": "Live at sailorskills.com/detailing",
+      "nextAction": "Monitor form submissions",
+      "icon": "✨",
+      "checklist": [
+        {
+          "text": "Landing page + quote form",
+          "done": true
+        },
+        {
+          "text": "Resend email integration",
+          "done": true
+        },
+        {
+          "text": "Deployed to Vercel",
+          "done": true
+        },
+        {
+          "text": "Subdomain configured",
+          "done": true
+        }
+      ],
+      "recentActivity": [
+        "Built and deployed by Marcel",
+        "Combined landing + quote form",
+        "detailing.sailorskills.com live"
+      ],
+      "docs": []
+    },
+    {
+      "name": "NVC Course Site",
+      "status": "complete",
+      "progress": 100,
+      "metric": "Live at newt-bailey.vercel.app",
+      "nextAction": "Share with Newt Bailey",
+      "icon": "💬",
+      "checklist": [
+        {
+          "text": "8 pages built",
+          "done": true
+        },
+        {
+          "text": "All handout content as HTML",
+          "done": true
+        },
+        {
+          "text": "22 daily posts organized by week",
+          "done": true
+        },
+        {
+          "text": "Mobile-friendly design",
+          "done": true
+        }
+      ],
+      "recentActivity": [
+        "Built by Marcel from Google Drive content",
+        "Communication Dojo Feb 2026 course"
+      ],
+      "docs": []
+    },
+    {
+      "name": "Sarah Hiring",
+      "status": "on-hold",
+      "progress": 40,
+      "metric": "Postponed Feb 11",
+      "nextAction": "Revisit in a few months",
+      "icon": "⏸️",
+      "checklist": [
+        {
+          "text": "Term sheet drafted",
+          "done": true
+        },
+        {
+          "text": "Revenue model built",
+          "done": true
+        },
+        {
+          "text": "Insurance quote obtained",
+          "done": false
+        },
+        {
+          "text": "Training plan outlined",
+          "done": false
+        }
+      ],
+      "recentActivity": [
+        "Sarah postponed — wants stable income first",
+        "USL&H required (confirmed by Novamar)"
+      ],
+      "docs": [
+        {
+          "label": "Term Sheet",
+          "url": "obsidian://open?vault=Brian%27s%20Vault&file=SailorSkills/Business/Employee%20Expansion/Sarah%20Contractor%20Term%20Sheet"
+        }
+      ]
+    },
+    {
+      "name": "AI Org Infrastructure",
+      "status": "active",
+      "progress": 85,
+      "metric": "13 agents, all Opus 4.6",
+      "nextAction": "Discord setup, reverse prompting live",
+      "icon": "🤖",
+      "checklist": [
+        {
+          "text": "13 agents configured",
+          "done": true
+        },
+        {
+          "text": "13 Telegram bots wired",
+          "done": true
+        },
+        {
+          "text": "Cross-agent comms enabled",
+          "done": true
+        },
+        {
+          "text": "All agents on Opus 4.6",
+          "done": true
+        },
+        {
+          "text": "Reverse prompting in Dawn Patrol",
+          "done": true
+        },
+        {
+          "text": "3 midday crons added",
+          "done": true
+        },
+        {
+          "text": "Obsidian-First Rule propagated",
+          "done": true
+        },
+        {
+          "text": "Anti-AI-speak rules propagated",
+          "done": true
+        },
+        {
+          "text": "Discord team setup",
+          "done": false
+        }
+      ],
+      "recentActivity": [
+        "Mission Control dashboard built",
+        "Reverse prompting added to Dawn Patrol",
+        "3 midday crons: 10am/2pm/5pm",
+        "Duplicate crons cleaned up"
+      ],
+      "docs": [
+        {
+          "label": "Org Manual",
+          "url": "obsidian://open?vault=Brian%27s%20Vault&file=Organization/Operations%20Manual"
+        },
+        {
+          "label": "AI Team Overview",
+          "url": "obsidian://open?vault=Brian%27s%20Vault&file=Organization/AI%20Team%20Overview"
+        }
+      ]
+    }
+  ],
+  "todos": {
+    "Business": [
+      {
+        "text": "Crew Party elevator pitch — draft today",
+        "done": false
+      },
+      {
+        "text": "Crew Party business cards — order/print today",
+        "done": false
+      },
+      {
+        "text": "Crew Party QR landing page for provider signups",
+        "done": false
+      },
+      {
+        "text": "Check for CPA reply from Elan Kamesar",
+        "done": false
+      },
+      {
+        "text": "File Form 7004 extension before March 15",
+        "done": false
+      },
+      {
+        "text": "Refund Beleza ~$151 in Stripe",
+        "done": false
+      },
+      {
+        "text": "Resolve Tom Purcell / Que Sera Sera open invoices",
+        "done": false
+      },
+      {
+        "text": "Fouad/Andiamo dispute — send response email",
+        "done": false
+      },
+      {
+        "text": "Create Islander 30 Notion entry (Jay Amado)",
+        "done": false
+      },
+      {
+        "text": "Renew USCG vessel documentation for Maris ($31)",
+        "done": false
+      },
+      {
+        "text": "File Form 576D boat property tax declaration",
+        "done": false
+      },
+      {
+        "text": "Claim unclaimed Blue Shield property via sco.ca.gov",
+        "done": false
+      }
+    ],
+    "Personal": [
+      {
+        "text": "Smog car",
+        "done": false
+      },
+      {
+        "text": "Plan Portland trip to visit Christina Hart",
+        "done": false
+      },
+      {
+        "text": "Email Progressive claims file request (Subaru)",
+        "done": false
+      }
+    ],
+    "TMC": [
+      {
+        "text": "Send Jimmy Carr DOATCEO interview to the men",
+        "done": false,
+        "link": "https://www.youtube.com/watch?v=uHLAazKUU68"
+      },
+      {
+        "text": "Make Team No Events page",
+        "done": false
+      }
+    ]
+  },
+  "timeAllocation": [
+    {
+      "label": "Platform Dev (Pro + Marketplace)",
+      "value": 35,
+      "color": "#89b4fa",
+      "details": "Pro: Build 55, field test pending. Marketplace: trust graph deployed, Crew Party demo prep."
+    },
+    {
+      "label": "Hull Cleaning (diving)",
+      "value": 25,
+      "color": "#a6e3a1",
+      "details": "~43 services/month, ~$6,400/month revenue. 92 active clients."
+    },
+    {
+      "label": "AI Org / Infrastructure",
+      "value": 20,
+      "color": "#cba6f7",
+      "details": "13 agents, Mission Control dashboard, cron automation, memory maintenance."
+    },
+    {
+      "label": "Business / Taxes",
+      "value": 10,
+      "color": "#f9e2af",
+      "details": "2024 return overdue, 2025 S-Corp due Mar 15. CPA engaged. Billing dashboard active."
+    },
+    {
+      "label": "Networking / Growth",
+      "value": 5,
+      "color": "#f38ba8",
+      "details": "Crew Party Mar 5, Marketplace seeding, provider acquisition."
+    },
+    {
+      "label": "Personal / Wellbeing",
+      "value": 5,
+      "color": "#94e2d5",
+      "details": "TMC, Communication Dojo, mountain biking, Pocket walks."
+    }
+  ],
+  "deadlines": [
+    {
+      "date": "2026-03-03",
+      "text": "Elevator pitch draft",
+      "icon": "🎤",
+      "status": "due-today"
+    },
+    {
+      "date": "2026-03-03",
+      "text": "Business cards ordered",
+      "icon": "🃏",
+      "status": "overdue"
+    },
+    {
+      "date": "2026-03-05",
+      "text": "Crew Party — Latitude 38",
+      "icon": "🎉",
+      "daysAway": 2
+    },
+    {
+      "date": "2026-03-15",
+      "text": "1120-S filing deadline",
+      "icon": "📋",
+      "daysAway": 12
+    },
+    {
+      "date": "2026-03-05",
+      "text": "TMC Wednesday Circle",
+      "icon": "🔵",
+      "daysAway": 2
+    }
+  ],
+  "agents": [
+    {
+      "name": "Howard",
+      "emoji": "🪨",
+      "role": "Chief of Staff",
+      "team": "Core Team",
+      "station": "Helm",
+      "avatar": "/avatars/howard-robot-v2.png",
+      "status": "standby",
+      "costThisMonth": 206.56,
+      "totalTokens": 120449877,
+      "lastActive": "2h ago",
+      "lastActiveTs": 1772775841492,
+      "currentTask": "[media attached: /Users/brian/.openclaw/media/inbound/file_175---4e520d8a-ff53-4",
+      "tasksCompleted": 46,
+      "productivity": 62
+    },
+    {
+      "name": "Jacques",
+      "emoji": "🤿",
+      "role": "Dev Partner",
+      "team": "Core Team",
+      "station": "Deck",
+      "avatar": "/avatars/jacques-robot-v2.png",
+      "status": "standby",
+      "costThisMonth": 0,
+      "totalTokens": 0,
+      "lastActive": "never",
+      "lastActiveTs": 0,
+      "currentTask": "Awaiting orders",
+      "tasksCompleted": 0,
+      "productivity": 0
+    },
+    {
+      "name": "Marcel",
+      "emoji": "🎨",
+      "role": "Creative Director",
+      "team": "Core Team",
+      "station": "Workshop",
+      "avatar": "/avatars/marcel-robot-v2.png",
+      "status": "active",
+      "costThisMonth": 119.71,
+      "totalTokens": 107121630,
+      "lastActive": "just now",
+      "lastActiveTs": 1772783459529,
+      "currentTask": "Excellent. Marcel are you familiar with phase 2 of our website migration that we",
+      "tasksCompleted": 486,
+      "productivity": 61
+    },
+    {
+      "name": "Noa",
+      "emoji": "🔍",
+      "role": "Research Analyst",
+      "team": "Scheduled Crew",
+      "station": "Crow's Nest",
+      "avatar": "/avatars/noa-robot-v2.png",
+      "status": "standby",
+      "costThisMonth": 0,
+      "totalTokens": 0,
+      "lastActive": "standby",
+      "lastActiveTs": 0,
+      "currentTask": "Awaiting orders",
+      "tasksCompleted": 0,
+      "productivity": 0
+    },
+    {
+      "name": "Kai",
+      "emoji": "💡",
+      "role": "Strategist",
+      "team": "Scheduled Crew",
+      "station": "Chart Room",
+      "avatar": "/avatars/kai-robot-v2.png",
+      "status": "standby",
+      "costThisMonth": 0,
+      "totalTokens": 0,
+      "lastActive": "standby",
+      "lastActiveTs": 0,
+      "currentTask": "Awaiting orders",
+      "tasksCompleted": 0,
+      "productivity": 0
+    },
+    {
+      "name": "Blake",
+      "emoji": "🧪",
+      "role": "QA Specialist",
+      "team": "On-Demand",
+      "station": "Engine Room",
+      "avatar": "/avatars/blake-robot-v2.png",
+      "status": "standby",
+      "costThisMonth": 0,
+      "totalTokens": 0,
+      "lastActive": "standby",
+      "lastActiveTs": 0,
+      "currentTask": "Awaiting orders",
+      "tasksCompleted": 0,
+      "productivity": 0
+    },
+    {
+      "name": "Quinn",
+      "emoji": "📊",
+      "role": "Ops & Finance",
+      "team": "On-Demand",
+      "station": "Supply Hold",
+      "avatar": "/avatars/quinn-robot-v2.png",
+      "status": "standby",
+      "costThisMonth": 0,
+      "totalTokens": 0,
+      "lastActive": "standby",
+      "lastActiveTs": 0,
+      "currentTask": "Awaiting orders",
+      "tasksCompleted": 0,
+      "productivity": 0
+    },
+    {
+      "name": "Sage",
+      "emoji": "🤝",
+      "role": "Sales",
+      "team": "On-Demand",
+      "station": "Gangway",
+      "avatar": "/avatars/sage-robot-v2.png",
+      "status": "standby",
+      "costThisMonth": 0,
+      "totalTokens": 0,
+      "lastActive": "standby",
+      "lastActiveTs": 0,
+      "currentTask": "Awaiting orders",
+      "tasksCompleted": 0,
+      "productivity": 0
+    },
+    {
+      "name": "Milo",
+      "emoji": "📣",
+      "role": "Marketing",
+      "team": "On-Demand",
+      "station": "Main Deck",
+      "avatar": "/avatars/milo-robot-v2.png",
+      "status": "standby",
+      "costThisMonth": 0,
+      "totalTokens": 0,
+      "lastActive": "standby",
+      "lastActiveTs": 0,
+      "currentTask": "Awaiting orders",
+      "tasksCompleted": 0,
+      "productivity": 0
+    },
+    {
+      "name": "Reese",
+      "emoji": "🎯",
+      "role": "Product Manager",
+      "team": "On-Demand",
+      "station": "Drafting Table",
+      "avatar": "/avatars/reese-robot-v2.png",
+      "status": "standby",
+      "costThisMonth": 0,
+      "totalTokens": 0,
+      "lastActive": "standby",
+      "lastActiveTs": 0,
+      "currentTask": "Awaiting orders",
+      "tasksCompleted": 0,
+      "productivity": 0
+    },
+    {
+      "name": "Avery",
+      "emoji": "⚖️",
+      "role": "Legal",
+      "team": "On-Demand",
+      "station": "Captain's Quarters",
+      "avatar": "/avatars/avery-robot-v2.png",
+      "status": "standby",
+      "costThisMonth": 0,
+      "totalTokens": 0,
+      "lastActive": "standby",
+      "lastActiveTs": 0,
+      "currentTask": "Awaiting orders",
+      "tasksCompleted": 0,
+      "productivity": 0
+    },
+    {
+      "name": "Cyrus",
+      "emoji": "🔒",
+      "role": "Security",
+      "team": "On-Demand",
+      "station": "Stern",
+      "avatar": "/avatars/cyrus-robot-v2.png",
+      "status": "standby",
+      "costThisMonth": 0,
+      "totalTokens": 0,
+      "lastActive": "standby",
+      "lastActiveTs": 0,
+      "currentTask": "Awaiting orders",
+      "tasksCompleted": 0,
+      "productivity": 0
+    }
+  ],
+  "organization": {
+    "monthlyCosts": {
+      "actual": 549,
+      "apiEquivalent": 475.27,
+      "infrastructure": 349,
+      "target": 500
+    },
+    "anthropic": {
+      "plan": "Max 20X",
+      "planCost": 200,
+      "apiEquivalentUsage": 326.27,
+      "savings": 126.27,
+      "apiUsage": null,
+      "source": "transcript-estimate"
+    },
+    "otherApis": {
+      "deepseek": {
+        "cost": 0,
+        "balance": 4.44
+      },
+      "kimi": {
+        "cost": 0,
+        "note": "Free via NVIDIA"
+      },
+      "gemini": {
+        "cost": 0,
+        "note": "Free tier (image model)"
+      }
+    },
+    "costsByModel": [
+      {
+        "name": "claude-opus-4-6",
+        "cost": 326.27,
+        "percent": 100
+      }
+    ],
+    "costsByAgent": [
+      {
+        "agent": "Howard",
+        "cost": 206.56
+      },
+      {
+        "agent": "Marcel",
+        "cost": 119.71
+      },
+      {
+        "agent": "Jacques",
+        "cost": 0
+      }
+    ],
+    "infrastructure": {
+      "hosting": [
+        {
+          "name": "Anthropic Max 20X",
+          "cost": 200,
+          "detail": "Claude subscription (OAuth token)"
+        },
+        {
+          "name": "Vercel Pro",
+          "cost": 20,
+          "detail": "Hosting & deployments"
+        },
+        {
+          "name": "Supabase",
+          "cost": 25,
+          "detail": "Database & auth"
+        },
+        {
+          "name": "Domains",
+          "cost": 41,
+          "detail": "Annual renewals (amortized)"
+        }
+      ],
+      "services": [
+        {
+          "name": "Stripe",
+          "cost": 32,
+          "detail": "Payment processing fees"
+        },
+        {
+          "name": "Resend",
+          "cost": 18,
+          "detail": "Email API"
+        },
+        {
+          "name": "1Password",
+          "cost": 8,
+          "detail": "Family plan"
+        },
+        {
+          "name": "Brave Search",
+          "cost": 5,
+          "detail": "API credits"
+        }
+      ]
+    }
+  },
+  "recentActivity": [
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected successfully.",
+      "time": "15m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected. Costs tracked: $549/mo actual, $475.23/mo API-equivale",
+      "time": "30m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected successfully.",
+      "time": "45m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected successfully.",
+      "time": "60m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Data collection complete. Costs tracked: $549/mo actual, $475.18/mo API-equivale",
+      "time": "1h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected successfully.",
+      "time": "1h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected successfully.",
+      "time": "2h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Data collection complete. Costs tracked at $549/mo actual vs $475 API-equivalent",
+      "time": "2h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Done. Hard refresh and you should see:  - **Nav centered** with `justify-center`",
+      "time": "2h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Clean build. Deploy:",
+      "time": "2h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now build and check:",
+      "time": "2h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: A few more:",
+      "time": "2h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now let me check for any other stray emojis:",
+      "time": "2h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now check for any remaining emojis in the rideshare board component and other sp",
+      "time": "2h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now the bottom CTA:",
+      "time": "2h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now the hero and bottom CTA:",
+      "time": "2h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now the roster rideshare badges and rideshare board:",
+      "time": "2h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now the RSVP Now button and status buttons:",
+      "time": "2h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: There are a lot. Let me do a targeted sweep — replace the key UI-facing emojis w",
+      "time": "2h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now update remaining emoji strings in the RSVP form, hero, calendar buttons, rid",
+      "time": "2h ago",
+      "agent": "Howard"
+    }
+  ],
+  "billing": {
+    "subscriptions": [
+      {
+        "name": "Anthropic Max 20X",
+        "cost": 200,
+        "period": "monthly",
+        "status": "active"
+      },
+      {
+        "name": "Vercel Pro",
+        "cost": 20,
+        "period": "monthly",
+        "status": "active"
+      },
+      {
+        "name": "Supabase",
+        "cost": 25,
+        "period": "monthly",
+        "status": "active"
+      },
+      {
+        "name": "Domains",
+        "cost": 41,
+        "period": "monthly",
+        "status": "active"
+      },
+      {
+        "name": "Stripe",
+        "cost": 32,
+        "period": "monthly",
+        "status": "active"
+      },
+      {
+        "name": "Resend",
+        "cost": 18,
+        "period": "monthly",
+        "status": "active"
+      },
+      {
+        "name": "1Password",
+        "cost": 8,
+        "period": "monthly",
+        "status": "active"
+      },
+      {
+        "name": "Brave Search",
+        "cost": 5,
+        "period": "monthly",
+        "status": "active"
+      }
+    ],
+    "monthlySummary": {
+      "actual": 549,
+      "apiEquivalent": 475.27,
+      "anthropicPlan": 200,
+      "anthropicApiEquiv": 326.27,
+      "anthropicSavings": 126.27,
+      "otherApis": 0,
+      "infrastructure": 349
+    }
+  },
+  "metadata": {
+    "lastUpdated": "2026-03-06T07:51:04.693Z",
+    "version": "3.0",
+    "source": "Real data from session transcripts + curated static data"
+  }
+}

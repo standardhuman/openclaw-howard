@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-midnight: #0f1729;
+  --color-deep-blue: #1a2744;
+  --color-forest: #1b3a2d;
+  --color-forest-light: #2d5a45;
+  --color-amber: #d4a04a;
+  --color-amber-light: #e8c47a;
+  --color-warm: #f5e6c8;
+  --color-slate-blue: #2a3f5f;
+  --color-card: #162033;
+  --color-card-border: #243352;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f1729;
+  color: #e2e8f0;
+}
+
+.gradient-hero {
+  background: linear-gradient(180deg, #0a1220 0%, #1a2744 40%, #1b3a2d 100%);
+}
+
+.card {
+  background: #162033;
+  border: 1px solid #243352;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+.card:hover {
+  border-color: #d4a04a44;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.badge-confirmed { background: #2d5a45; color: #86efac; }
+.badge-maybe { background: #5a4a1b; color: #fde68a; }
+.badge-cant { background: #5a1b1b; color: #fca5a5; }
+.badge-noresponse { background: #2a3352; color: #94a3b8; }
+
+.day-tab {
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+.day-tab.active {
+  background: #d4a04a;
+  color: #0f1729;
+}
+.day-tab:not(.active) {
+  background: #1a2744;
+  color: #94a3b8;
+  border-color: #243352;
+}
+.day-tab:not(.active):hover {
+  border-color: #d4a04a66;
+  color: #e2e8f0;
+}
