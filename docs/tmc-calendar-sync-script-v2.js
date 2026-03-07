@@ -1,14 +1,21 @@
 /**
- * TMC Brotherhood Events — Bidirectional Sync v2
+ * TMC Brotherhood Events — Bidirectional Sync v2.1
  * 
  * Spreadsheet ↔ Google Calendar
  * 
  * SETUP:
  * 1. Open the spreadsheet → Extensions → Apps Script
  * 2. Paste this entire file into Code.gs (replace existing code)
- * 3. Run setupTriggers() once
+ * 3. Run setupTriggers() once (installs triggers + creates dropdown validation)
  * 4. Authorize when prompted
- * 5. Run fullSyncSheetToCalendar() to push existing rows
+ * 5. Run fullSyncSheetToCalendar() to push existing "Publish" rows
+ * 
+ * PUBLISH COLUMN (G):
+ * - (blank)    → Draft. Event is not on the calendar.
+ * - Publish    → Create or update the calendar event + invite members.
+ * - Unpublish  → Remove the calendar event. Row stays in sheet for planning.
+ * 
+ * Events are ONLY synced to the calendar when column G = "Publish".
  * 
  * SHEETS:
  * - Sheet1: Main event tracker
@@ -16,7 +23,7 @@
  * 
  * COLUMNS (Sheet1):
  * A: Sponsor | B: Co-sponsor | C: Event Name | D: Theme
- * E: Location | F: Other Notes | G: Scheduled | H: Date
+ * E: Location | F: Other Notes | G: Publish | H: Date
  * I: Start Time | J: End Time | K: Attendees (auto)
  * L: Headcount (auto) | M: Status (auto) | N: Calendar Link (auto)
  * O: Event ID (hidden)
@@ -35,7 +42,7 @@ const COL = {
   THEME: 4,
   LOCATION: 5,
   OTHER: 6,
-  SCHEDULED: 7,
+  PUBLISH: 7,       // "Publish" | "Unpublish" | blank (draft)
   DATE: 8,
   START: 9,
   END: 10,
@@ -67,11 +74,12 @@ function setupTriggers() {
     .everyHours(1)
     .create();
 
-  // Ensure headers and directory exist
+  // Ensure headers, dropdown, and directory exist
   ensureHeaders();
+  ensurePublishDropdown();
   ensureDirectorySheet();
 
-  Logger.log('Setup complete: triggers installed, headers set, directory ready.');
+  Logger.log('Setup complete: triggers installed, headers set, Publish dropdown ready, directory ready.');
 }
 
 /**
@@ -84,13 +92,30 @@ function ensureHeaders() {
   const headers = [
     'Full Name Event Sponsor', 'Full Name Co-sponsor',
     'Brotherhood Event Name', 'Brotherhood Event Theme',
-    'Brotherhood Event Location', 'Other', 'Scheduled', 'Date',
+    'Brotherhood Event Location', 'Other', 'Publish', 'Date',
     'Start Time', 'End Time', 'Attendees', 'Headcount',
     'Status', 'Calendar Link', 'Event ID'
   ];
 
   const range = sheet.getRange(1, 1, 1, headers.length);
   range.setValues([headers]);
+}
+
+/**
+ * Add data validation dropdown to the Publish column (G).
+ * Applies to rows 2–500 (extend if needed).
+ */
+function ensurePublishDropdown() {
+  const sheet = SpreadsheetApp.getActive().getSheetByName(SHEET_NAME);
+  if (!sheet) return;
+
+  const rule = SpreadsheetApp.newDataValidation()
+    .requireValueInList(['Publish', 'Unpublish'], true)  // true = show dropdown
+    .setAllowInvalid(false)  // prevent free text
+    .build();
+
+  // Apply to G2:G500
+  sheet.getRange(HEADER_ROW + 1, COL.PUBLISH, 499, 1).setDataValidation(rule);
 }
 
 /**
@@ -122,17 +147,51 @@ function onSheetEdit(e) {
 }
 
 /**
- * Push a single row to the calendar.
+ * Push a single row to the calendar — only if Publish column = "Publish".
+ * If "Unpublish", delete the calendar event and clear auto-columns.
+ * If blank (draft), do nothing.
  */
 function syncRowToCalendar(sheet, row) {
   const data = sheet.getRange(row, 1, 1, EVENT_ID_COL).getValues()[0];
 
+  const publishState = (data[COL.PUBLISH - 1] || '').toString().trim();
+  const existingEventId = data[COL.EVENT_ID - 1];
+  const calendar = CalendarApp.getCalendarById(CALENDAR_ID);
+
+  // ── UNPUBLISH: delete calendar event, clear auto-columns ──
+  if (publishState === 'Unpublish') {
+    if (existingEventId) {
+      try {
+        const event = calendar.getEventById(existingEventId);
+        if (event) {
+          Logger.log('Unpublishing: ' + event.getTitle());
+          event.deleteEvent();
+        }
+      } catch (e) {}
+      // Clear auto-columns
+      sheet.getRange(row, COL.EVENT_ID).setValue('');
+      sheet.getRange(row, COL.ATTENDEES).setValue('');
+      sheet.getRange(row, COL.HEADCOUNT).setValue('');
+      sheet.getRange(row, COL.STATUS).setValue('Unpublished');
+      sheet.getRange(row, COL.CAL_LINK).setValue('');
+    }
+    return;
+  }
+
+  // ── DRAFT (blank): do nothing ──
+  if (publishState !== 'Publish') return;
+
+  // ── PUBLISH: create or update calendar event ──
   const eventName = data[COL.NAME - 1];
   const dateVal = data[COL.DATE - 1];
   const startVal = data[COL.START - 1];
   const endVal = data[COL.END - 1];
 
-  if (!eventName || !dateVal || !startVal || !endVal) return;
+  if (!eventName || !dateVal || !startVal || !endVal) {
+    // Not enough data to publish — set status as a hint
+    sheet.getRange(row, COL.STATUS).setValue('Missing details');
+    return;
+  }
 
   const startDt = combineDateAndTime(dateVal, startVal);
   const endDt = combineDateAndTime(dateVal, endVal);
@@ -151,19 +210,22 @@ function syncRowToCalendar(sheet, row) {
   if (other) desc += '\n' + other;
   desc = desc.trim();
 
-  const existingEventId = data[COL.EVENT_ID - 1];
-  const calendar = CalendarApp.getCalendarById(CALENDAR_ID);
-
   let event = null;
+  let isNewEvent = false;
 
   if (existingEventId) {
     try {
       event = calendar.getEventById(existingEventId);
       if (event) {
-        event.setTitle(eventName);
-        event.setTime(startDt, endDt);
-        event.setDescription(desc);
-        if (location) event.setLocation(location);
+        // Only update fields that actually changed to avoid
+        // Google sending update notifications to all guests
+        if (event.getTitle() !== eventName) event.setTitle(eventName);
+        if (event.getStartTime().getTime() !== startDt.getTime() ||
+            event.getEndTime().getTime() !== endDt.getTime()) {
+          event.setTime(startDt, endDt);
+        }
+        if (stripHtml(event.getDescription() || '') !== desc) event.setDescription(desc);
+        if (location && event.getLocation() !== location) event.setLocation(location);
       }
     } catch (e) {
       event = null;
@@ -176,14 +238,15 @@ function syncRowToCalendar(sheet, row) {
       location: location,
     });
     sheet.getRange(row, COL.EVENT_ID).setValue(event.getId());
+    isNewEvent = true;
   }
 
-  // Invite all Team No members (skip duplicates)
-  inviteAllMembers(event);
-
-  // Mark as scheduled
-  if (!data[COL.SCHEDULED - 1]) {
-    sheet.getRange(row, COL.SCHEDULED).setValue('Yes');
+  // On new events: invite all members.
+  // On existing events: only add members who aren't already guests.
+  if (isNewEvent) {
+    inviteAllMembers(event);
+  } else {
+    inviteNewMembersOnly(event);
   }
 
   // Update auto-columns for this row
@@ -294,7 +357,7 @@ function calendarToSheet() {
 
     const newRow = [
       sponsor, cosponsor, title, theme, location, other,
-      'Yes',
+      'Publish',
       Utilities.formatDate(startDt, tz, 'M/d/yy'),
       Utilities.formatDate(startDt, tz, 'h:mm a'),
       Utilities.formatDate(endDt, tz, 'h:mm a'),
@@ -332,6 +395,36 @@ function inviteAllMembers(event) {
     if (!existingGuests.has(email.toLowerCase())) {
       event.addGuest(email);
     }
+  }
+}
+
+/**
+ * Only invite members who aren't already on the guest list.
+ * Used for existing events to catch new directory additions
+ * without re-notifying everyone.
+ */
+function inviteNewMembersOnly(event) {
+  const directory = getEmailDirectory();
+  const emails = Object.keys(directory);
+  if (emails.length === 0) return;
+
+  const existingGuests = new Set();
+  try {
+    const guests = event.getGuestList(false);
+    for (const g of guests) {
+      existingGuests.add(g.getEmail().toLowerCase());
+    }
+  } catch (e) { return; }
+
+  let added = 0;
+  for (const email of emails) {
+    if (!existingGuests.has(email.toLowerCase())) {
+      event.addGuest(email);
+      added++;
+    }
+  }
+  if (added > 0) {
+    Logger.log('Added ' + added + ' new member(s) to: ' + event.getTitle());
   }
 }
 
