@@ -21,12 +21,12 @@
  * - Sheet1: Main event tracker
  * - Member Directory: Email → Name lookup (auto-created on first run)
  * 
- * COLUMNS (Sheet1):
+ * COLUMNS (Events sheet):
  * A: Sponsor | B: Co-sponsor | C: Event Name | D: Theme
- * E: Location | F: Other Notes | G: Publish | H: Date
- * I: Start Time | J: End Time | K: Attendees (auto)
- * L: Headcount (auto) | M: Status (auto) | N: Calendar Link (auto)
- * O: Event ID (hidden)
+ * E: Location | F: Other Notes | G: Bros o' Mo? | H: Publish
+ * I: Date | J: Start Time | K: End Time | L: Attendees (auto)
+ * M: Headcount (auto) | N: Status (auto) | O: Calendar Link (auto)
+ * P: Event ID (hidden)
  */
 
 // ─── TEST MODE ───────────────────────────────────────────
@@ -42,7 +42,7 @@ const TEST_CALENDAR_ID = '';
 const CALENDAR_ID = TEST_MODE && TEST_CALENDAR_ID ? TEST_CALENDAR_ID : PROD_CALENDAR_ID;
 const SHEET_NAME = 'Events';
 const DIRECTORY_SHEET = 'Member Directory';
-const EVENT_ID_COL = 15; // Column O
+const EVENT_ID_COL = 16; // Column P
 const HEADER_ROW = 1;
 
 const COL = {
@@ -52,16 +52,26 @@ const COL = {
   THEME: 4,
   LOCATION: 5,
   OTHER: 6,
-  PUBLISH: 7,       // "Publish" | "Unpublish" | blank (draft)
-  DATE: 8,
-  START: 9,
-  END: 10,
-  ATTENDEES: 11,
-  HEADCOUNT: 12,
-  STATUS: 13,
-  CAL_LINK: 14,
-  EVENT_ID: 15,
+  BROS: 7,           // "Team Only" | "TMC Only" | "Men Only" | etc.
+  PUBLISH: 8,        // "Publish" | "Unpublish" | blank (draft)
+  DATE: 9,
+  START: 10,
+  END: 11,
+  ATTENDEES: 12,
+  HEADCOUNT: 13,
+  STATUS: 14,
+  CAL_LINK: 15,
+  EVENT_ID: 16,
 };
+
+const BROS_OPTIONS = [
+  'Team Only',
+  'TMC Only',
+  'Men Only',
+  'Men & Women',
+  'Men & Children',
+  'Everyone',
+];
 
 // ─── SETUP ───────────────────────────────────────────────
 
@@ -84,16 +94,17 @@ function setupTriggers() {
     .everyHours(1)
     .create();
 
-  // Ensure headers, dropdown, and directory exist
+  // Ensure headers, dropdowns, and directory exist
   ensureHeaders();
+  ensureBrosDropdown();
   ensurePublishDropdown();
   ensureDirectorySheet();
 
-  Logger.log('Setup complete: triggers installed, headers set, Publish dropdown ready, directory ready.');
+  Logger.log('Setup complete: triggers installed, headers set, dropdowns ready, directory ready.');
 }
 
 /**
- * Ensure Sheet1 has all column headers.
+ * Ensure Events sheet has all column headers.
  */
 function ensureHeaders() {
   const sheet = SpreadsheetApp.getActive().getSheetByName(SHEET_NAME);
@@ -102,8 +113,8 @@ function ensureHeaders() {
   const headers = [
     'Full Name Event Sponsor', 'Full Name Co-sponsor',
     'Brotherhood Event Name', 'Brotherhood Event Theme',
-    'Brotherhood Event Location', 'Other', 'Publish', 'Date',
-    'Start Time', 'End Time', 'Attendees', 'Headcount',
+    'Brotherhood Event Location', 'Other', "Bros o' Mo?", 'Publish',
+    'Date', 'Start Time', 'End Time', 'Attendees', 'Headcount',
     'Status', 'Calendar Link', 'Event ID'
   ];
 
@@ -112,19 +123,45 @@ function ensureHeaders() {
 }
 
 /**
- * Add data validation dropdown to the Publish column (G).
- * Applies to rows 2–500 (extend if needed).
+ * Add data validation dropdown to the Bros o' Mo? column (G).
+ * Includes a header note explaining each option.
+ */
+function ensureBrosDropdown() {
+  const sheet = SpreadsheetApp.getActive().getSheetByName(SHEET_NAME);
+  if (!sheet) return;
+
+  const rule = SpreadsheetApp.newDataValidation()
+    .requireValueInList(BROS_OPTIONS, true)
+    .setAllowInvalid(false)
+    .build();
+
+  sheet.getRange(HEADER_ROW + 1, COL.BROS, 499, 1).setDataValidation(rule);
+
+  // Add a note to the header explaining each option
+  const headerCell = sheet.getRange(1, COL.BROS);
+  headerCell.setNote(
+    "Who's invited?\n\n" +
+    "Team Only — Just your team\n" +
+    "TMC Only — All TMC brothers\n" +
+    "Men Only — TMC + outside men welcome\n" +
+    "Men & Women — Open to men and women\n" +
+    "Men & Children — Guys can bring their kids\n" +
+    "Everyone — Men, women, and children"
+  );
+}
+
+/**
+ * Add data validation dropdown to the Publish column (H).
  */
 function ensurePublishDropdown() {
   const sheet = SpreadsheetApp.getActive().getSheetByName(SHEET_NAME);
   if (!sheet) return;
 
   const rule = SpreadsheetApp.newDataValidation()
-    .requireValueInList(['Publish', 'Unpublish'], true)  // true = show dropdown
-    .setAllowInvalid(false)  // prevent free text
+    .requireValueInList(['Publish', 'Unpublish'], true)
+    .setAllowInvalid(false)
     .build();
 
-  // Apply to G2:G500
   sheet.getRange(HEADER_ROW + 1, COL.PUBLISH, 499, 1).setDataValidation(rule);
 }
 
@@ -212,11 +249,13 @@ function syncRowToCalendar(sheet, row) {
   const theme = data[COL.THEME - 1] || '';
   const other = data[COL.OTHER - 1] || '';
   const location = data[COL.LOCATION - 1] || '';
+  const bros = data[COL.BROS - 1] || '';
 
   let desc = '';
   if (theme) desc += theme + '\n\n';
   if (sponsor) desc += 'Sponsor: ' + sponsor + '\n';
   if (cosponsor) desc += 'Co-sponsor: ' + cosponsor + '\n';
+  if (bros) desc += 'Open to: ' + bros + '\n';
   if (other) desc += '\n' + other;
   desc = desc.trim();
 
@@ -337,22 +376,24 @@ function calendarToSheet() {
     }
 
     // Parse structured description
-    let cosponsor = '', theme = '', other = '';
+    let cosponsor = '', theme = '', other = '', bros = '';
     const cosponsorMatch = desc.match(/Co-sponsor:\s*(.+)/i);
     const sponsorMatch = desc.match(/Sponsor:\s*(.+)/i);
+    const brosMatch = desc.match(/Open to:\s*(.+)/i);
     if (sponsorMatch) {
       // Only use if we didn't already get creator name
       if (!sponsor) sponsor = sponsorMatch[1].trim();
     }
     if (cosponsorMatch) cosponsor = cosponsorMatch[1].trim();
+    if (brosMatch) bros = brosMatch[1].trim();
 
-    // First line that's not a sponsor tag = theme
+    // First line that's not a structured tag = theme
     const lines = desc.split('\n').map(l => l.trim()).filter(Boolean);
-    if (lines.length > 0 && !lines[0].match(/^(Sponsor|Co-sponsor):/i)) {
+    if (lines.length > 0 && !lines[0].match(/^(Sponsor|Co-sponsor|Open to):/i)) {
       theme = lines[0];
     }
     other = lines.filter(l =>
-      l !== theme && !l.match(/^Sponsor:/i) && !l.match(/^Co-sponsor:/i)
+      l !== theme && !l.match(/^Sponsor:/i) && !l.match(/^Co-sponsor:/i) && !l.match(/^Open to:/i)
     ).join('\n');
 
     const startDt = event.getStartTime();
@@ -372,6 +413,7 @@ function calendarToSheet() {
 
     const newRow = [
       sponsor, cosponsor, title, theme, location, other,
+      bros,
       'Publish',
       Utilities.formatDate(startDt, tz, 'M/d/yy'),
       Utilities.formatDate(startDt, tz, 'h:mm a'),
@@ -838,6 +880,7 @@ function runAllTests() {
   sheet.getRange(testRow, COL.COSPONSOR).setValue('Test Co-sponsor');
   sheet.getRange(testRow, COL.THEME).setValue('Test Theme');
   sheet.getRange(testRow, COL.LOCATION).setValue('Test Location');
+  sheet.getRange(testRow, COL.BROS).setValue('Men & Women');
   sheet.getRange(testRow, COL.DATE).setValue('12/31/26');
   syncRowToCalendar(sheet, testRow);
   const eventId = sheet.getRange(testRow, COL.EVENT_ID).getValue();
@@ -855,6 +898,7 @@ function runAllTests() {
     assert('Publish: title matches', event.getTitle() === 'TEST EVENT - DELETE ME');
     assert('Publish: location matches', event.getLocation() === 'Test Location');
     assert('Publish: description has sponsor', (event.getDescription() || '').indexOf('Test Sponsor') > -1);
+    assert('Publish: description has Bros', (event.getDescription() || '').indexOf('Open to: Men & Women') > -1);
   }
 
   // ── Test 4: Update published event ──
