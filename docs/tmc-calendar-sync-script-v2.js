@@ -30,7 +30,7 @@
  */
 
 const CALENDAR_ID = 'b7cad28ac6a1dc2c862ddfb8af611eb955f6748c042309ef8ea5bdc27b9c31ec@group.calendar.google.com';
-const SHEET_NAME = 'Sheet1';
+const SHEET_NAME = 'Events';
 const DIRECTORY_SHEET = 'Member Directory';
 const EVENT_ID_COL = 15; // Column O
 const HEADER_ROW = 1;
