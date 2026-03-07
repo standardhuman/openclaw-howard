@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-07T18:06:05.280Z",
+  "lastUpdated": "2026-03-07T19:51:07.060Z",
   "needsAttention": [
     {
       "title": "2024 Tax Return",
@@ -829,14 +829,14 @@
       "team": "Core Team",
       "station": "Helm",
       "avatar": "/avatars/howard-robot-v2.png",
-      "status": "active",
-      "costThisMonth": 348.31,
-      "totalTokens": 203405418,
-      "lastActive": "just now",
-      "lastActiveTs": 1772906756720,
+      "status": "standby",
+      "costThisMonth": 354.43,
+      "totalTokens": 205879172,
+      "lastActive": "21m ago",
+      "lastActiveTs": 1772911779425,
       "currentTask": "[media attached: /Users/brian/.openclaw/media/inbound/2b3b51e7-4c97-4f0e-820c-fb",
-      "tasksCompleted": 66,
-      "productivity": 70
+      "tasksCompleted": 65,
+      "productivity": 71
     },
     {
       "name": "Jacques",
@@ -848,7 +848,7 @@
       "status": "standby",
       "costThisMonth": 4.97,
       "totalTokens": 5487847,
-      "lastActive": "19h ago",
+      "lastActive": "21h ago",
       "lastActiveTs": 1772839184363,
       "currentTask": "[Queued messages while agent was busy]\n\n---\nQueued #1\nConversation info (untrust",
       "tasksCompleted": 2,
@@ -862,12 +862,12 @@
       "station": "Workshop",
       "avatar": "/avatars/marcel-robot-v2.png",
       "status": "active",
-      "costThisMonth": 144.86,
-      "totalTokens": 125405104,
+      "costThisMonth": 145.49,
+      "totalTokens": 125585754,
       "lastActive": "just now",
-      "lastActiveTs": 1772906759362,
+      "lastActiveTs": 1772913059372,
       "currentTask": "Conversation info (untrusted metadata):\n```json\n{\n  \"conversation_label\": \"Sailo",
-      "tasksCompleted": 616,
+      "tasksCompleted": 623,
       "productivity": 63
     },
     {
@@ -936,8 +936,8 @@
     },
     {
       "name": "Sage",
-      "emoji": "🌿",
-      "role": "Sales & Client Relations",
+      "emoji": "🤝",
+      "role": "Sales",
       "team": "On-Demand",
       "station": "Gangway",
       "avatar": "/avatars/sage-robot-v2.png",
@@ -1018,15 +1018,15 @@
   "organization": {
     "monthlyCosts": {
       "actual": 549,
-      "apiEquivalent": 647.15,
+      "apiEquivalent": 653.9,
       "infrastructure": 349,
       "target": 500
     },
     "anthropic": {
       "plan": "Max 20X",
       "planCost": 200,
-      "apiEquivalentUsage": 498.15,
-      "savings": 298.15,
+      "apiEquivalentUsage": 504.9,
+      "savings": 304.9,
       "apiUsage": null,
       "source": "transcript-estimate"
     },
@@ -1047,18 +1047,18 @@
     "costsByModel": [
       {
         "name": "claude-opus-4-6",
-        "cost": 498.15,
+        "cost": 504.9,
         "percent": 100
       }
     ],
     "costsByAgent": [
       {
         "agent": "Howard",
-        "cost": 348.31
+        "cost": 354.43
       },
       {
         "agent": "Marcel",
-        "cost": 144.86
+        "cost": 145.49
       },
       {
         "agent": "Jacques",
@@ -1114,123 +1114,123 @@
   },
   "recentActivity": [
     {
-      "icon": "🪨",
-      "text": "Howard: The API is returning all 15 agents. But some roles are wrong — Sage is \"Sales\" (",
-      "time": "just now",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: Progress Pulse complete. All systems nominal — no issues requiring Brian's atten",
-      "time": "6m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: I can see the key issues. Let me update the memory file with the morning activit",
-      "time": "6m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: Now let me check for any failed cron jobs and the Evening Debrief error:",
-      "time": "6m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: Now let me check for today's memory file and recent activity:",
-      "time": "6m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard:   Running the 10am Progress Pulse silently.",
-      "time": "6m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: Team dashboard updated and pushed — should auto-deploy to Vercel shortly.  Remov",
-      "time": "11m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: Both dashboard files updated and pushed. Here's a summary of what changed:  **ne",
-      "time": "12m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: Now let me commit and push:",
-      "time": "12m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: Now update `data.json`. This file has the same curated content plus live agent s",
-      "time": "14m ago",
-      "agent": "Howard"
-    },
-    {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully.",
+      "text": "Marcel: Data collection complete. Dashboard updated with current costs and usage stats.",
       "time": "15m ago",
       "agent": "Marcel"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Good, I can see both files. The `data-curated.json` is the hand-curated source o",
-      "time": "16m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard:   Let me read both files first to understand the schema.",
-      "time": "16m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: Done on the bios — Howard, Blake, Sage, and Ellis DMs now show role descriptions",
-      "time": "16m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: This data is pretty stale (March 3). Let me spawn a subagent to do a proper refr",
-      "time": "16m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: DM topics set for Howard, Blake, Sage, and Ellis. Now let me also set topics on ",
-      "time": "16m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard:   Let me set bios as room topics on the DM rooms, and update the team page.  Fir",
-      "time": "18m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard:   Unfortunately Matrix user profiles are minimal by design — just display name a",
+      "text": "Howard: Done. #marine now has you, Marcel, Howard, Quinn, Blake, and Reese.",
       "time": "22m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: No username — just the password. Put `KLRopenclaw!650` in the **Password** field",
-      "time": "27m ago",
+      "text": "Howard:   Blake is QA, Reese is PM — did you mean Reese? Or do you want both?",
+      "time": "22m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: The error says \"device identity required\" (code 1008). The gateway has `dangerou",
-      "time": "29m ago",
+      "text": "Howard:   Yeah, that was my mistake — when I was setting DM room topics earlier, I accid",
+      "time": "24m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs $655.3",
+      "time": "30m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Yep — the #marine room has Sage with a wellbeing topic. That's completely wrong.",
+      "time": "31m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard:   You're right — #marine should be about the briancline.co marine services pages",
+      "time": "32m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected successfully.",
+      "time": "45m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual vs $",
+      "time": "1h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Data collection complete. Dashboard updated with current costs and usage metrics",
+      "time": "1h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Done. #personal is now you, Howard, Noa, Rio, and Kai. Sage is out, Rio is in.",
+      "time": "1h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard:   What should the #personal room members be? Currently it's you, Howard, Noa, Sa",
+      "time": "1h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs $648.8",
+      "time": "2h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Fixed. Rio → Wellbeing Coach 🌊, Sage → Sales & Client Relations 🌿. The persona",
+      "time": "2h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Rio is Wellbeing Coach, Sage is Sales & Client Relations. I had them right origi",
+      "time": "2h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard:   You're right — I had Rio and Sage swapped. Let me check what the actual roles ",
+      "time": "2h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Data collection complete. Dashboard updated with current costs and usage stats.",
+      "time": "2h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: team.briancline.co should now show all 15 agents with correct roles. Pushed to g",
+      "time": "2h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: The API is returning all 15 agents. But some roles are wrong — Sage is \"Sales\" (",
+      "time": "2h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Progress Pulse complete. All systems nominal — no issues requiring Brian's atten",
+      "time": "2h ago",
       "agent": "Howard"
     }
   ],
@@ -1287,16 +1287,16 @@
     ],
     "monthlySummary": {
       "actual": 549,
-      "apiEquivalent": 647.15,
+      "apiEquivalent": 653.9,
       "anthropicPlan": 200,
-      "anthropicApiEquiv": 498.15,
-      "anthropicSavings": 298.15,
+      "anthropicApiEquiv": 504.9,
+      "anthropicSavings": 304.9,
       "otherApis": 0,
       "infrastructure": 349
     }
   },
   "metadata": {
-    "lastUpdated": "2026-03-07T18:06:05.281Z",
+    "lastUpdated": "2026-03-07T19:51:07.061Z",
     "version": "3.0",
     "source": "Real data from session transcripts + curated static data"
   }
