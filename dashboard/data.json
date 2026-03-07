@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-07T09:45:00-08:00",
+  "lastUpdated": "2026-03-07T18:06:05.280Z",
   "needsAttention": [
     {
       "title": "2024 Tax Return",
@@ -821,58 +821,6 @@
       "daysAway": 39
     }
   ],
-  "recentActivity": [
-    {
-      "text": "Matrix homeserver: 5 project rooms live, Space hierarchy created",
-      "date": "2026-03-07",
-      "details": "Synapse running, encryption issues resolved, agent accounts provisioned."
-    },
-    {
-      "text": "Dimov Tax engaged as CPA — George Dimov, $1,730 total",
-      "date": "2026-03-06",
-      "details": "Replaced Elan Kamesar. info@dimovtax.com. Covers 2024 personal + 2025 S-Corp."
-    },
-    {
-      "text": "Tahoe Away Weekend site live at tahoe-away-weekend-26.briancline.co",
-      "date": "2026-03-06",
-      "details": "RSVP system built. Built by Ellis."
-    },
-    {
-      "text": "briancline.co Phase 1 COMPLETE, Phase 2 spec delivered",
-      "date": "2026-03-05",
-      "details": "Phase 2 Tier 1 active development."
-    },
-    {
-      "text": "Wix migration COMPLETE — 196 redirects, Wix is dead",
-      "date": "2026-03-05",
-      "details": "sailorskills.com fully migrated off Wix."
-    },
-    {
-      "text": "Scheduler app: 8 bugs fixed, Google Calendar OAuth still broken",
-      "date": "2026-03-06",
-      "details": "Ellis working on scheduler. OAuth integration pending."
-    },
-    {
-      "text": "TMC calendar sync: Apps Script deployed",
-      "date": "2026-03-05",
-      "details": "Wes deployed Apps Script for TMC calendar synchronization."
-    },
-    {
-      "text": "Mission Control dashboard: all 7 pages built by Marcel",
-      "date": "2026-03-03",
-      "details": "Team, System, Tasks, Calendar, Projects, Memory, Docs pages. Dark theme, sidebar nav, real data."
-    },
-    {
-      "text": "NVC course site live at newt-bailey.vercel.app",
-      "date": "2026-03-02",
-      "details": "8 pages, all Communication Dojo content."
-    },
-    {
-      "text": "February billing completed: 38 boats, $6,689.58",
-      "date": "2026-03-01",
-      "details": "Anode installation fee added, Stripe override bug fixed."
-    }
-  ],
   "agents": [
     {
       "name": "Howard",
@@ -882,82 +830,50 @@
       "station": "Helm",
       "avatar": "/avatars/howard-robot-v2.png",
       "status": "active",
-      "costThisMonth": 338.2,
-      "totalTokens": 197609496,
-      "lastActive": "1m ago",
-      "lastActiveTs": 1772904899069,
-      "currentTask": "Matrix homeserver management, Space hierarchy",
-      "tasksCompleted": 64,
+      "costThisMonth": 348.31,
+      "totalTokens": 203405418,
+      "lastActive": "just now",
+      "lastActiveTs": 1772906756720,
+      "currentTask": "[media attached: /Users/brian/.openclaw/media/inbound/2b3b51e7-4c97-4f0e-820c-fb",
+      "tasksCompleted": 66,
       "productivity": 70
     },
     {
       "name": "Jacques",
-      "emoji": "🔧",
-      "role": "Pro App Lead",
+      "emoji": "🤿",
+      "role": "Dev Partner",
       "team": "Core Team",
       "station": "Deck",
       "avatar": "/avatars/jacques-robot-v2.png",
       "status": "standby",
       "costThisMonth": 4.97,
       "totalTokens": 5487847,
-      "lastActive": "18h ago",
+      "lastActive": "19h ago",
       "lastActiveTs": 1772839184363,
-      "currentTask": "Awaiting orders",
+      "currentTask": "[Queued messages while agent was busy]\n\n---\nQueued #1\nConversation info (untrust",
       "tasksCompleted": 2,
       "productivity": 51
     },
     {
       "name": "Marcel",
       "emoji": "🎨",
-      "role": "Marketplace Lead",
+      "role": "Creative Director",
       "team": "Core Team",
       "station": "Workshop",
       "avatar": "/avatars/marcel-robot-v2.png",
       "status": "active",
-      "costThisMonth": 144.68,
-      "totalTokens": 125353514,
+      "costThisMonth": 144.86,
+      "totalTokens": 125405104,
       "lastActive": "just now",
-      "lastActiveTs": 1772904959361,
-      "currentTask": "Dashboard data collection + SailorSkills site work",
-      "tasksCompleted": 614,
+      "lastActiveTs": 1772906759362,
+      "currentTask": "Conversation info (untrusted metadata):\n```json\n{\n  \"conversation_label\": \"Sailo",
+      "tasksCompleted": 616,
       "productivity": 63
     },
     {
-      "name": "Ellis",
-      "emoji": "🏕️",
-      "role": "Personal Sites Builder",
-      "team": "Core Team",
-      "station": "Campfire",
-      "avatar": "/avatars/ellis-robot-v2.png",
-      "status": "active",
-      "costThisMonth": 0,
-      "totalTokens": 0,
-      "lastActive": "active",
-      "lastActiveTs": 0,
-      "currentTask": "Personal/community sites — Tahoe, CIIR, scheduler",
-      "tasksCompleted": 0,
-      "productivity": 0
-    },
-    {
-      "name": "Wes",
-      "emoji": "🤝",
-      "role": "Client Work Builder",
-      "team": "Core Team",
-      "station": "Dock",
-      "avatar": "/avatars/wes-robot-v2.png",
-      "status": "active",
-      "costThisMonth": 0,
-      "totalTokens": 0,
-      "lastActive": "active",
-      "lastActiveTs": 0,
-      "currentTask": "TMC website, Blisscapes, external clients",
-      "tasksCompleted": 0,
-      "productivity": 0
-    },
-    {
       "name": "Noa",
-      "emoji": "🔬",
-      "role": "Research & Strategy",
+      "emoji": "🔍",
+      "role": "Research Analyst",
       "team": "Scheduled Crew",
       "station": "Crow's Nest",
       "avatar": "/avatars/noa-robot-v2.png",
@@ -972,8 +888,8 @@
     },
     {
       "name": "Kai",
-      "emoji": "⚡",
-      "role": "Ideas & Innovation",
+      "emoji": "💡",
+      "role": "Strategist",
       "team": "Scheduled Crew",
       "station": "Chart Room",
       "avatar": "/avatars/kai-robot-v2.png",
@@ -988,8 +904,8 @@
     },
     {
       "name": "Blake",
-      "emoji": "🔍",
-      "role": "QA Engineer",
+      "emoji": "🧪",
+      "role": "QA Specialist",
       "team": "On-Demand",
       "station": "Engine Room",
       "avatar": "/avatars/blake-robot-v2.png",
@@ -1005,7 +921,7 @@
     {
       "name": "Quinn",
       "emoji": "📊",
-      "role": "Finance & Compliance",
+      "role": "Ops & Finance",
       "team": "On-Demand",
       "station": "Supply Hold",
       "avatar": "/avatars/quinn-robot-v2.png",
@@ -1021,7 +937,7 @@
     {
       "name": "Sage",
       "emoji": "🌿",
-      "role": "Wellbeing & Culture",
+      "role": "Sales & Client Relations",
       "team": "On-Demand",
       "station": "Gangway",
       "avatar": "/avatars/sage-robot-v2.png",
@@ -1037,7 +953,7 @@
     {
       "name": "Milo",
       "emoji": "📣",
-      "role": "Marketing & Comms",
+      "role": "Marketing",
       "team": "On-Demand",
       "station": "Main Deck",
       "avatar": "/avatars/milo-robot-v2.png",
@@ -1052,8 +968,8 @@
     },
     {
       "name": "Reese",
-      "emoji": "📋",
-      "role": "Project Manager",
+      "emoji": "🎯",
+      "role": "Product Manager",
       "team": "On-Demand",
       "station": "Drafting Table",
       "avatar": "/avatars/reese-robot-v2.png",
@@ -1069,7 +985,7 @@
     {
       "name": "Avery",
       "emoji": "⚖️",
-      "role": "Legal & Risk",
+      "role": "Legal",
       "team": "On-Demand",
       "station": "Captain's Quarters",
       "avatar": "/avatars/avery-robot-v2.png",
@@ -1084,27 +1000,11 @@
     },
     {
       "name": "Cyrus",
-      "emoji": "🛡️",
-      "role": "Security & Infrastructure",
+      "emoji": "🔒",
+      "role": "Security",
       "team": "On-Demand",
       "station": "Stern",
       "avatar": "/avatars/cyrus-robot-v2.png",
-      "status": "standby",
-      "costThisMonth": 0,
-      "totalTokens": 0,
-      "lastActive": "standby",
-      "lastActiveTs": 0,
-      "currentTask": "Awaiting orders",
-      "tasksCompleted": 0,
-      "productivity": 0
-    },
-    {
-      "name": "Rio",
-      "emoji": "🌊",
-      "role": "Operations",
-      "team": "On-Demand",
-      "station": "Galley",
-      "avatar": "/avatars/rio-robot-v2.png",
       "status": "standby",
       "costThisMonth": 0,
       "totalTokens": 0,
@@ -1118,15 +1018,15 @@
   "organization": {
     "monthlyCosts": {
       "actual": 549,
-      "apiEquivalent": 636.86,
+      "apiEquivalent": 647.15,
       "infrastructure": 349,
       "target": 500
     },
     "anthropic": {
       "plan": "Max 20X",
       "planCost": 200,
-      "apiEquivalentUsage": 487.86,
-      "savings": 287.86,
+      "apiEquivalentUsage": 498.15,
+      "savings": 298.15,
       "apiUsage": null,
       "source": "transcript-estimate"
     },
@@ -1147,18 +1047,18 @@
     "costsByModel": [
       {
         "name": "claude-opus-4-6",
-        "cost": 487.86,
+        "cost": 498.15,
         "percent": 100
       }
     ],
     "costsByAgent": [
       {
         "agent": "Howard",
-        "cost": 338.2
+        "cost": 348.31
       },
       {
         "agent": "Marcel",
-        "cost": 144.68
+        "cost": 144.86
       },
       {
         "agent": "Jacques",
@@ -1212,6 +1112,128 @@
       ]
     }
   },
+  "recentActivity": [
+    {
+      "icon": "🪨",
+      "text": "Howard: The API is returning all 15 agents. But some roles are wrong — Sage is \"Sales\" (",
+      "time": "just now",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Progress Pulse complete. All systems nominal — no issues requiring Brian's atten",
+      "time": "6m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: I can see the key issues. Let me update the memory file with the morning activit",
+      "time": "6m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now let me check for any failed cron jobs and the Evening Debrief error:",
+      "time": "6m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now let me check for today's memory file and recent activity:",
+      "time": "6m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard:   Running the 10am Progress Pulse silently.",
+      "time": "6m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Team dashboard updated and pushed — should auto-deploy to Vercel shortly.  Remov",
+      "time": "11m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Both dashboard files updated and pushed. Here's a summary of what changed:  **ne",
+      "time": "12m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now let me commit and push:",
+      "time": "12m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now update `data.json`. This file has the same curated content plus live agent s",
+      "time": "14m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected successfully.",
+      "time": "15m ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Good, I can see both files. The `data-curated.json` is the hand-curated source o",
+      "time": "16m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard:   Let me read both files first to understand the schema.",
+      "time": "16m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Done on the bios — Howard, Blake, Sage, and Ellis DMs now show role descriptions",
+      "time": "16m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: This data is pretty stale (March 3). Let me spawn a subagent to do a proper refr",
+      "time": "16m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: DM topics set for Howard, Blake, Sage, and Ellis. Now let me also set topics on ",
+      "time": "16m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard:   Let me set bios as room topics on the DM rooms, and update the team page.  Fir",
+      "time": "18m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard:   Unfortunately Matrix user profiles are minimal by design — just display name a",
+      "time": "22m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: No username — just the password. Put `KLRopenclaw!650` in the **Password** field",
+      "time": "27m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: The error says \"device identity required\" (code 1008). The gateway has `dangerou",
+      "time": "29m ago",
+      "agent": "Howard"
+    }
+  ],
   "billing": {
     "subscriptions": [
       {
@@ -1265,16 +1287,16 @@
     ],
     "monthlySummary": {
       "actual": 549,
-      "apiEquivalent": 636.86,
+      "apiEquivalent": 647.15,
       "anthropicPlan": 200,
-      "anthropicApiEquiv": 487.86,
-      "anthropicSavings": 287.86,
+      "anthropicApiEquiv": 498.15,
+      "anthropicSavings": 298.15,
       "otherApis": 0,
       "infrastructure": 349
     }
   },
   "metadata": {
-    "lastUpdated": "2026-03-07T09:45:00-08:00",
+    "lastUpdated": "2026-03-07T18:06:05.281Z",
     "version": "3.0",
     "source": "Real data from session transcripts + curated static data"
   }
