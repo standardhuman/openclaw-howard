@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-06T19:51:05.626Z",
+  "lastUpdated": "2026-03-06T23:51:05.163Z",
   "needsAttention": [
     {
       "title": "2024 Tax Return",
@@ -485,12 +485,12 @@
       "name": "AI Org Infrastructure",
       "status": "active",
       "progress": 85,
-      "metric": "13 agents, all Opus 4.6",
+      "metric": "15 agents, all Opus 4.6",
       "nextAction": "Discord setup, reverse prompting live",
       "icon": "🤖",
       "checklist": [
         {
-          "text": "13 agents configured",
+          "text": "15 agents configured",
           "done": true
         },
         {
@@ -638,7 +638,7 @@
       "label": "AI Org / Infrastructure",
       "value": 20,
       "color": "#cba6f7",
-      "details": "13 agents, Mission Control dashboard, cron automation, memory maintenance."
+      "details": "15 agents, Mission Control dashboard, cron automation, memory maintenance."
     },
     {
       "label": "Business / Taxes",
@@ -699,14 +699,14 @@
       "team": "Core Team",
       "station": "Helm",
       "avatar": "/avatars/howard-robot-v2.png",
-      "status": "standby",
-      "costThisMonth": 230.48,
-      "totalTokens": 131613621,
-      "lastActive": "8m ago",
-      "lastActiveTs": 1772826203337,
-      "currentTask": "Do you make sure all of their info is also organized in Obsidian if it's not alr",
-      "tasksCompleted": 53,
-      "productivity": 63
+      "status": "active",
+      "costThisMonth": 292.3,
+      "totalTokens": 174102733,
+      "lastActive": "1m ago",
+      "lastActiveTs": 1772841002720,
+      "currentTask": "Conversation info (untrusted metadata):\n```json\n{\n  \"message_id\": \"$DQ1I1gWsaI3E",
+      "tasksCompleted": 57,
+      "productivity": 67
     },
     {
       "name": "Jacques",
@@ -716,13 +716,13 @@
       "station": "Deck",
       "avatar": "/avatars/jacques-robot-v2.png",
       "status": "standby",
-      "costThisMonth": 0,
-      "totalTokens": 0,
-      "lastActive": "never",
-      "lastActiveTs": 0,
-      "currentTask": "Awaiting orders",
-      "tasksCompleted": 0,
-      "productivity": 0
+      "costThisMonth": 4.97,
+      "totalTokens": 5487847,
+      "lastActive": "31m ago",
+      "lastActiveTs": 1772839184363,
+      "currentTask": "[Queued messages while agent was busy]\n\n---\nQueued #1\nConversation info (untrust",
+      "tasksCompleted": 2,
+      "productivity": 51
     },
     {
       "name": "Marcel",
@@ -732,12 +732,12 @@
       "station": "Workshop",
       "avatar": "/avatars/marcel-robot-v2.png",
       "status": "active",
-      "costThisMonth": 120.63,
-      "totalTokens": 108358992,
+      "costThisMonth": 125.87,
+      "totalTokens": 112959102,
       "lastActive": "just now",
-      "lastActiveTs": 1772826659518,
-      "currentTask": "Excellent. Marcel are you familiar with phase 2 of our website migration that we",
-      "tasksCompleted": 535,
+      "lastActiveTs": 1772841059678,
+      "currentTask": "Conversation info (untrusted metadata):\n```json\n{\n  \"message_id\": \"$DQ1I1gWsaI3E",
+      "tasksCompleted": 545,
       "productivity": 61
     },
     {
@@ -888,15 +888,15 @@
   "organization": {
     "monthlyCosts": {
       "actual": 549,
-      "apiEquivalent": 500.11,
+      "apiEquivalent": 572.14,
       "infrastructure": 349,
       "target": 500
     },
     "anthropic": {
       "plan": "Max 20X",
       "planCost": 200,
-      "apiEquivalentUsage": 351.11,
-      "savings": 151.11,
+      "apiEquivalentUsage": 423.14,
+      "savings": 223.14,
       "apiUsage": null,
       "source": "transcript-estimate"
     },
@@ -917,22 +917,22 @@
     "costsByModel": [
       {
         "name": "claude-opus-4-6",
-        "cost": 351.11,
+        "cost": 423.14,
         "percent": 100
       }
     ],
     "costsByAgent": [
       {
         "agent": "Howard",
-        "cost": 230.48
+        "cost": 292.3
       },
       {
         "agent": "Marcel",
-        "cost": 120.63
+        "cost": 125.87
       },
       {
         "agent": "Jacques",
-        "cost": 0
+        "cost": 4.97
       }
     ],
     "infrastructure": {
@@ -985,123 +985,123 @@
   "recentActivity": [
     {
       "icon": "🪨",
-      "text": "Howard: Obsidian team profiles are all updated:  - **Ellis & Wes** — full profile pages ",
+      "text": "Howard: Saved Brian's issue list to `~/clawd/reports/2026-03-06-marketplace-brian-issues",
+      "time": "2m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Brian — that's a great bug list. Noted and saved. Reese has the floor per your r",
+      "time": "2m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Brian — the full QA report is saved at `~/clawd/reports/2026-03-06-marketplace-q",
       "time": "8m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: All done. Here's what I accomplished:  1. **Rio's profile** — Copied to `Organiz",
+      "text": "Howard: ⏱️ Subagent main timed out  So the website link for the primary listing goes to ",
       "time": "8m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Now update the Agent Roster:",
+      "text": "Howard: Good — killed my duplicate. Now let me save the consolidated report from Milo's ",
       "time": "8m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Now update all existing profiles with Telegram + Projects sections, and update t",
+      "text": "Howard: Still running at 6 minutes on Opus. Milo's Blake report is comprehensive enough ",
+      "time": "8m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard:   That's a much more thorough report from Milo's Blake run. The database schema ",
       "time": "9m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Now I have everything. Let me do all the writes and edits. Starting with Rio mov",
+      "text": "Howard: So the website link for the primary listing goes to sailorskills.com/diving whic",
+      "time": "9m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now let me check the Sailor Skills Diving website link to see where it leads.",
+      "time": "9m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: sailorskills.com redirects to briancline.co, NOT to marketplace.sailorskills.com",
+      "time": "9m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: /admin shows a 404. That's actually fine if admin routes require auth and aren't",
+      "time": "9m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: The \"Write a Review\" modal works — clean form with service type, date, boat info",
+      "time": "9m ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Confirmed — the website link for Sailor Skills Diving resolves to `https://marke",
       "time": "10m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Good, I have the format. Now let me read the remaining profiles to know what nee",
+      "text": "Howard: Provider detail page for Sailor Skills Diving looks clean. Notice: the phone num",
       "time": "10m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Now let me read Howard's profile as the template, and a couple others to underst",
+      "text": "Howard: Interesting — resizing caused a URL change to /estimate? That's odd behavior, mi",
       "time": "10m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Let me first read the template (Howard's profile) and the existing files to unde",
+      "text": "Howard: Mobile service listing looks good — cards stack properly, phone numbers are tapp",
       "time": "10m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Kicked off a subagent to do the full Obsidian update — Ellis and Wes profiles, R",
+      "text": "Howard: Good — the marketplace Vercel project is `prj_V5qMTVXZlpsZwff3heDBb90LhK72`, nam",
       "time": "10m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Good — I can see the pattern. Here's what's missing:  1. **Ellis and Wes** — no ",
+      "text": "Howard: Mobile view looks clean and responsive. The homepage (which appears to be the /p",
       "time": "10m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Here's everything for all 15 bots:  ---  **Bios (for \"About\" field in BotFather)",
-      "time": "12m ago",
+      "text": "Howard: No favicon link tag either. Now let me test mobile viewport.",
+      "time": "11m ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Now let me check what photos we have — Ellis and Wes don't have avatars yet, and",
-      "time": "12m ago",
+      "text": "Howard:   Brian confirmed `sailorskills.com` should be the production URL (currently jus",
+      "time": "11m ago",
       "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: Let me pull the persona files to get the bios and check for photos.",
-      "time": "13m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard:   Some ideas:  **Ellis** (personal/community sites — Tahoe, CIIR, Scheduler, dat",
-      "time": "15m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Data collection complete. Costs tracked: $549/mo actual, $498.15/mo API-equivale",
-      "time": "15m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Data collection complete. Costs tracked: $549/mo actual, $498.13/mo API-equivale",
-      "time": "30m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully.",
-      "time": "45m ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully.",
-      "time": "1h ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Dashboard data collected. Costs tracked: $549/mo actual, $498.08/mo API-equivale",
-      "time": "1h ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully.",
-      "time": "2h ago",
-      "agent": "Marcel"
     }
   ],
   "billing": {
@@ -1157,16 +1157,16 @@
     ],
     "monthlySummary": {
       "actual": 549,
-      "apiEquivalent": 500.11,
+      "apiEquivalent": 572.14,
       "anthropicPlan": 200,
-      "anthropicApiEquiv": 351.11,
-      "anthropicSavings": 151.11,
+      "anthropicApiEquiv": 423.14,
+      "anthropicSavings": 223.14,
       "otherApis": 0,
       "infrastructure": 349
     }
   },
   "metadata": {
-    "lastUpdated": "2026-03-06T19:51:05.627Z",
+    "lastUpdated": "2026-03-06T23:51:05.164Z",
     "version": "3.0",
     "source": "Real data from session transcripts + curated static data"
   }

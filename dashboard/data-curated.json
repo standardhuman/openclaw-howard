@@ -266,11 +266,11 @@
       "name": "AI Org Infrastructure",
       "status": "active",
       "progress": 85,
-      "metric": "13 agents, all Opus 4.6",
+      "metric": "15 agents, all Opus 4.6",
       "nextAction": "Discord setup, reverse prompting live",
       "icon": "🤖",
       "checklist": [
-        { "text": "13 agents configured", "done": true },
+        { "text": "15 agents configured", "done": true },
         { "text": "13 Telegram bots wired", "done": true },
         { "text": "Cross-agent comms enabled", "done": true },
         { "text": "All agents on Opus 4.6", "done": true },
@@ -295,7 +295,7 @@
   "timeAllocation": [
     { "label": "Platform Dev (Pro + Marketplace)", "value": 35, "color": "#89b4fa", "details": "Pro: Build 55, field test pending. Marketplace: trust graph deployed, Crew Party demo prep." },
     { "label": "Hull Cleaning (diving)", "value": 25, "color": "#a6e3a1", "details": "~43 services/month, ~$6,400/month revenue. 92 active clients." },
-    { "label": "AI Org / Infrastructure", "value": 20, "color": "#cba6f7", "details": "13 agents, Mission Control dashboard, cron automation, memory maintenance." },
+    { "label": "AI Org / Infrastructure", "value": 20, "color": "#cba6f7", "details": "15 agents, Mission Control dashboard, cron automation, memory maintenance." },
     { "label": "Business / Taxes", "value": 10, "color": "#f9e2af", "details": "2024 return overdue, 2025 S-Corp due Mar 15. CPA engaged. Billing dashboard active." },
     { "label": "Networking / Growth", "value": 5, "color": "#f38ba8", "details": "Crew Party Mar 5, Marketplace seeding, provider acquisition." },
     { "label": "Personal / Wellbeing", "value": 5, "color": "#94e2d5", "details": "TMC, Communication Dojo, mountain biking, Pocket walks." }
@@ -357,6 +357,8 @@
     { "name": "Noa", "emoji": "🔬", "status": "Active", "role": "Research" },
     { "name": "Kai", "emoji": "⚡", "status": "Active", "role": "Strategy" },
     { "name": "Sage", "emoji": "🤝", "status": "Standby", "role": "Sales" },
-    { "name": "Avery", "emoji": "⚖️", "status": "Active", "role": "Legal" }
+    { "name": "Avery", "emoji": "⚖️", "status": "Active", "role": "Legal" },
+    { "name": "Ellis", "emoji": "🏕️", "status": "Active", "role": "Personal Sites Builder" },
+    { "name": "Wes", "emoji": "🤝", "status": "Active", "role": "Client Sites Builder" }
   ]
 }

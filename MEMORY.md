@@ -217,3 +217,21 @@ Full team built during Feb 15 hackathon. Personas at `~/clawd/agents/`. Roster a
 **Obsidian doc:** `SailorSkills/Business/Domain Restructure - briancline.co.md`
 
 *Last updated: March 4, 2026*
+
+## Matrix Homeserver — Full Setup (March 6, 2026)
+
+**Space Structure:** "Brian Cline Co" top-level Space (`!kXDqfRYBQVIBxeOqFJ:briancline.co`) with sub-spaces: General, Products, Services, Clients.
+
+**Project Rooms (all requireMention: false):**
+- #marketplace (`!IueNVwWlNACCVPyarX:briancline.co`) — Marcel, Reese, Blake, Milo, Noa
+- #pro (`!PHfOmTJynRUKtOiPmj:briancline.co`) — Jacques, Reese, Blake, Cyrus
+- #marine (`!gEmPKZdOKsVhJQWLoV:briancline.co`) — Marcel, Quinn, Sage
+- #tmc (`!xWZzbjcPqhdOfRlkcl:briancline.co`) — Wes, Blake
+- #personal-sites (`!fZmDjIsLTLTmduDcyT:briancline.co`) — Ellis, Blake
+- All include Howard + Brian.
+
+**Room Avatars:** Pro (generated diver icon), TMC (existing favicon), Marine (BC monogram), Marketplace (generated network/compass), Personal Sites (generated constellation cabin).
+
+**Brian's Avatar:** Stylized illustrated portrait at `~/clawd/avatars/brian-stylized-avatar.png` (`mxc://briancline.co/rifxxxSTkLhbAAcPveLTpBtF`). Also generated Pixar and robot versions — Brian chose the illustrated one.
+
+**imageModel.primary broken:** `google/gemini-2.5-flash-preview` returns "Unknown model" in image tool. Needs updating.
