@@ -1,6 +1,6 @@
 // Direct REST API wrapper — avoids Supabase JS client which ad blockers interfere with
-const BASE = 'https://aaxnoeirtjlizdhnbqbr.supabase.co/rest/v1'
-const KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFheG5vZWlydGpsaXpkaG5icWJyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI3ODM5MzYsImV4cCI6MjA3ODM1OTkzNn0.VNi_UCqEiUAM8AoAtH1QrPJUocJILq28a3RV-W1qyII'
+const BASE = `${import.meta.env.VITE_SUPABASE_URL}/rest/v1`
+const KEY = import.meta.env.VITE_SUPABASE_ANON_KEY
 
 const hdrs = (extra) => ({
   'apikey': KEY,

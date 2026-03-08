@@ -328,7 +328,10 @@ function RSVPSection() {
       const sb = getSupabase()
       if (!sb) { setError('Unable to connect. Try again.'); setSubmitting(false); return }
 
-      const existing = rsvps.find(r => r.name.toLowerCase() === form.name.trim().toLowerCase())
+      // Match by email (not name) to prevent impersonation
+      const existing = form.email
+        ? rsvps.find(r => r.email && r.email.toLowerCase() === form.email.trim().toLowerCase())
+        : null
       const payload = {
         status: form.status,
         email: form.email || null,
@@ -343,7 +346,7 @@ function RSVPSection() {
 
       let result
       if (existing) {
-        result = await sb.from('tahoe_rsvps').update(payload).eq('id', existing.id)
+        result = await sb.from('tahoe_rsvps').update({ name: form.name.trim(), ...payload }).eq('id', existing.id)
       } else {
         result = await sb.from('tahoe_rsvps').insert({ name: form.name.trim(), ...payload })
       }
