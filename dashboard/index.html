@@ -477,7 +477,7 @@
       <input type="password" id="auth-input" placeholder="Enter passphrase" autocomplete="off"
         style="padding:12px 20px; border-radius:8px; border:1px solid #45475a; background:#313244; color:#cdd6f4; font-size:1rem; width:250px; text-align:center; outline:none; margin-bottom: 12px;">
       <button type="submit" style="padding:12px 24px; border-radius:8px; border:none; background:#89b4fa; color:#1e1e2e; font-size:1rem; font-weight:600; cursor:pointer;">Enter</button>
-      <div id="auth-error" style="color:#f38ba8; margin-top:8px; font-size:0.85rem; display:none;">Nope. Try "pocket"</div>
+      <div id="auth-error" style="color:#f38ba8; margin-top:8px; font-size:0.85rem; display:none;">Incorrect passphrase.</div>
       <div style="margin-top: 16px; font-size: 0.85rem; color: #6c7086;">
         <a href="javascript:void(0)" onclick="resetAuth()" style="color: #89b4fa; text-decoration: none;">Reset session</a>
       </div>
@@ -712,7 +712,7 @@
       for (var i = 0; i < s.length; i++) { hash = ((hash << 5) - hash) + s.charCodeAt(i); hash |= 0; }
       console.log('Hash calculated:', hash);
       console.log('Expected hash:', -982936170);
-      if (hash === -982936170) { // "pocket"
+      if (hash === (window.DASHBOARD_AUTH_HASH || -982936170)) {
         console.log('Password accepted!');
         localStorage.setItem('dashboard-auth', Date.now().toString());
         document.getElementById('auth-gate').style.display = 'none';

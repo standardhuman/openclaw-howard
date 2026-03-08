@@ -14,6 +14,16 @@ const DATA_FILE = path.join(DIR, 'data.json');
 const CURATED_FILE = path.join(DIR, 'data-curated.json');
 const TASKS_FILE = path.join(DIR, 'tasks.json');
 
+// Dashboard auth hash — loaded from env var or .env.local
+// Generate with: node -e "let h=0;for(let c of 'yourpassword')h=((h<<5)-h)+c.charCodeAt(0)|0;console.log(h)"
+const DASHBOARD_AUTH_HASH = process.env.DASHBOARD_AUTH_HASH || (() => {
+  try {
+    const envLocal = fs.readFileSync(path.join(DIR, '.env.local'), 'utf-8');
+    const match = envLocal.match(/DASHBOARD_AUTH_HASH=(.+)/);
+    return match ? match[1].trim() : null;
+  } catch { return null; }
+})();
+
 // Agent workspace directories
 const AGENT_DIRS = {
   main: path.join(HOME, 'clawd'),
@@ -396,7 +406,12 @@ const server = http.createServer((req, res) => {
   const rootPath = path.join(DIR, filePath);
   if (fs.existsSync(rootPath) && fs.statSync(rootPath).isFile()) {
     const ext = path.extname(rootPath);
-    const data = fs.readFileSync(rootPath);
+    let data = fs.readFileSync(rootPath);
+    // Inject auth hash into HTML pages so the password isn't hardcoded in source
+    if (ext === '.html' && DASHBOARD_AUTH_HASH) {
+      const injection = `<script>window.DASHBOARD_AUTH_HASH=${DASHBOARD_AUTH_HASH};</script>`;
+      data = data.toString().replace('<head>', `<head>\n${injection}`);
+    }
     res.writeHead(200, { 'Content-Type': MIME[ext] || 'application/octet-stream' });
     return res.end(data);
   }

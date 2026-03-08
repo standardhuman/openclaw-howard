@@ -1,6 +1,6 @@
 # Noa's Source List
 
-Last updated: 2026-03-07 (v9)
+Last updated: 2026-03-08 (v10)
 
 ## 🎯 Primary Sources (check every night)
 
@@ -73,6 +73,8 @@ Last updated: 2026-03-07 (v9)
 - **Cova / @covacut** — AI content creator (20M+ views). Works with NVIDIA and Adobe. Uses Obsidian + Claude Code for content scaling. Featured on Greg Isenberg Mar 6. Discovered 2026-03-07.
 - **George Fraser** (Fivetran CEO) — "Anthropic, please make a new Slack" — thinking deeply about AI + enterprise communication gaps. Discovered 2026-03-07.
 - **Joseph Politano** (@JosephPolitano) — Economic analyst with detailed BLS tech employment data. Useful for labor market context. Discovered 2026-03-07.
+- **Daniel Phiri** (madalitso.me) — Senior dev advocate, ex-Weaviate. "Files are the interface" essay shows sharp AI architecture thinking. Discovered 2026-03-08.
+- **Lars Janssen** (fazy.medium.com) — "Verification debt" framing for AI code review bottleneck. Useful for understanding the review/verification challenge. Discovered 2026-03-08.
 
 ---
 

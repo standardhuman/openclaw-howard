@@ -303,7 +303,7 @@
           https://brians-mac-mini.taile67de1.ts.net:10443
         </a>
         <div style="font-size: 0.9rem; color: var(--text-muted); margin-top: 5px;">
-          Passphrase: "pocket" • Detailed cost tracking and API breakdowns
+          Detailed cost tracking and API breakdowns
         </div>
       </div>
     </div>
@@ -313,7 +313,7 @@
     function checkAuth() {
       var hash = 0, s = document.getElementById('auth-input').value;
       for (var i = 0; i < s.length; i++) { hash = ((hash << 5) - hash) + s.charCodeAt(i); hash |= 0; }
-      if (hash === -982936170) {
+      if (hash === (window.DASHBOARD_AUTH_HASH || -982936170)) {
         localStorage.setItem('dashboard-auth', Date.now().toString());
         document.getElementById('auth-gate').style.display = 'none';
         document.getElementById('main-dashboard').style.display = 'block';

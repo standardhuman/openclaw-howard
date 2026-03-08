@@ -5,8 +5,7 @@
       console.log('Password entered:', s);
       for (var i = 0; i < s.length; i++) { hash = ((hash << 5) - hash) + s.charCodeAt(i); hash |= 0; }
       console.log('Hash calculated:', hash);
-      console.log('Expected hash:', -982936170);
-      if (hash === -982936170) { // "pocket"
+      if (hash === (window.DASHBOARD_AUTH_HASH || -982936170)) {
         console.log('Password accepted!');
         localStorage.setItem('dashboard-auth', Date.now().toString());
         document.getElementById('auth-gate').style.display = 'none';
