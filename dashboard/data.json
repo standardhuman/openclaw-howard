@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-08T21:36:04.884Z",
+  "lastUpdated": "2026-03-08T23:51:02.899Z",
   "needsAttention": [
     {
       "title": "2024 Tax Return",
@@ -832,7 +832,7 @@
       "status": "standby",
       "costThisMonth": 390.01,
       "totalTokens": 224921269,
-      "lastActive": "35m ago",
+      "lastActive": "3h ago",
       "lastActiveTs": 1773003679890,
       "currentTask": "In the supabase service role key the one that’s in 1pass?",
       "tasksCompleted": 79,
@@ -862,12 +862,12 @@
       "station": "Workshop",
       "avatar": "/avatars/marcel-robot-v2.png",
       "status": "active",
-      "costThisMonth": 154.79,
-      "totalTokens": 128269749,
+      "costThisMonth": 155.6,
+      "totalTokens": 128502013,
       "lastActive": "just now",
-      "lastActiveTs": 1773005759369,
+      "lastActiveTs": 1773013859345,
       "currentTask": "Conversation info (untrusted metadata):\n```json\n{\n  \"conversation_label\": \"Sailo",
-      "tasksCompleted": 727,
+      "tasksCompleted": 736,
       "productivity": 63
     },
     {
@@ -1018,15 +1018,15 @@
   "organization": {
     "monthlyCosts": {
       "actual": 549,
-      "apiEquivalent": 698.77,
+      "apiEquivalent": 699.58,
       "infrastructure": 349,
       "target": 500
     },
     "anthropic": {
       "plan": "Max 20X",
       "planCost": 200,
-      "apiEquivalentUsage": 549.77,
-      "savings": 349.77,
+      "apiEquivalentUsage": 550.58,
+      "savings": 350.58,
       "apiUsage": null,
       "source": "transcript-estimate"
     },
@@ -1047,7 +1047,7 @@
     "costsByModel": [
       {
         "name": "claude-opus-4-6",
-        "cost": 549.77,
+        "cost": 550.58,
         "percent": 100
       }
     ],
@@ -1058,7 +1058,7 @@
       },
       {
         "agent": "Marcel",
-        "cost": 154.79
+        "cost": 155.6
       },
       {
         "agent": "Jacques",
@@ -1115,73 +1115,55 @@
   "recentActivity": [
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual vs $",
+      "text": "Marcel: Dashboard data collected successfully.",
       "time": "15m ago",
       "agent": "Marcel"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual with",
+      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs $699.4",
       "time": "30m ago",
       "agent": "Marcel"
     },
     {
-      "icon": "🪨",
-      "text": "Howard: Afternoon checkpoint complete. Quiet Sunday — memory updated with billing test c",
-      "time": "35m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: Now I have a clear picture. The afternoon has been quiet — Sunday, Brian is like",
-      "time": "35m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: The billing commits weren't captured in the midday sync (only the re-clone note ",
-      "time": "35m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: Good, today's memory file exists with substantial content already. Now let me ch",
-      "time": "36m ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard:   Running the afternoon checkpoint silently.",
-      "time": "36m ago",
-      "agent": "Howard"
-    },
-    {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual spen",
+      "text": "Marcel: Dashboard data collected successfully.",
       "time": "45m ago",
       "agent": "Marcel"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual with",
+      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs $699.2",
       "time": "1h ago",
       "agent": "Marcel"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual spen",
+      "text": "Marcel: Dashboard data collection complete. Costs tracked at $549/mo actual vs $701.85/m",
       "time": "1h ago",
       "agent": "Marcel"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs ~$698 ",
+      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs $701.7",
+      "time": "1h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected. Costs tracked at $549/mo actual vs $701.67/mo API-equi",
       "time": "2h ago",
       "agent": "Marcel"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected. Costs tracked at $549/mo actual, $697.87/mo API-equiva",
+      "text": "Marcel: Dashboard data collected successfully.",
+      "time": "2h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collection complete. Costs tracked at $549/mo actual spend.",
       "time": "2h ago",
       "agent": "Marcel"
     },
@@ -1193,44 +1175,62 @@
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs $697.6",
-      "time": "2h ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Dashboard data collected. Costs are tracking at $549/mo actual vs $697.60 API-eq",
+      "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual with",
       "time": "3h ago",
       "agent": "Marcel"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Midday sync complete. Updated memory file with commit activity and Obsidian vaul",
+      "text": "Howard: Afternoon checkpoint complete. Quiet Sunday — memory updated with billing test c",
       "time": "3h ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Quite a bit of unstaged work accumulated. Let me commit and push.",
+      "text": "Howard: Now I have a clear picture. The afternoon has been quiet — Sunday, Brian is like",
       "time": "3h ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard: Only one session active (this cron job itself). Let me check if there were any m",
+      "text": "Howard: The billing commits weren't captured in the midday sync (only the re-clone note ",
       "time": "3h ago",
       "agent": "Howard"
     },
     {
       "icon": "🪨",
-      "text": "Howard:   Running midday memory sync silently.",
+      "text": "Howard: Good, today's memory file exists with substantial content already. Now let me ch",
+      "time": "3h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard:   Running the afternoon checkpoint silently.",
       "time": "3h ago",
       "agent": "Howard"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected. Costs tracked at $549/mo actual vs $697 API-equivalent",
+      "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual spen",
       "time": "3h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual with",
+      "time": "3h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual spen",
+      "time": "3h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs ~$698 ",
+      "time": "4h ago",
       "agent": "Marcel"
     }
   ],
@@ -1287,16 +1287,16 @@
     ],
     "monthlySummary": {
       "actual": 549,
-      "apiEquivalent": 698.77,
+      "apiEquivalent": 699.58,
       "anthropicPlan": 200,
-      "anthropicApiEquiv": 549.77,
-      "anthropicSavings": 349.77,
+      "anthropicApiEquiv": 550.58,
+      "anthropicSavings": 350.58,
       "otherApis": 0,
       "infrastructure": 349
     }
   },
   "metadata": {
-    "lastUpdated": "2026-03-08T21:36:04.885Z",
+    "lastUpdated": "2026-03-08T23:51:02.900Z",
     "version": "3.0",
     "source": "Real data from session transcripts + curated static data"
   }
