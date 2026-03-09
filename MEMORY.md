@@ -62,7 +62,7 @@
 
 **Model Menu (Feb 13, 2026):** `/model opus` (default), `/model kimi` (free), `/model deepseek` ($0.28/$0.42), `/model deepseek-r`. All configured and working.
 
-**OpenClaw Version:** Updated to v2026.3.2 on March 6, 2026 (both npm global and fnm installs now aligned).
+**OpenClaw Version:** Updated to v2026.3.8 on March 9, 2026. Two npm global roots exist: `/opt/homebrew/lib/node_modules/` (homebrew node v25.4.0) and fnm's v22.22.0 path. LaunchAgent plist fixed to use `/opt/homebrew` path. fnm copy still at v2026.2.15 (stale — not used by gateway anymore).
 
 **Anthropic OAuth Token (Feb 16):** Using OAuth token (`sk-ant-oat01-...`) — Brian's preference. Token removed from `openclaw.json` and now injected at runtime via 1Password CLI (`op run`). Wrapper script: `~/.openclaw/gateway-start.sh`, env file: `~/.openclaw/gateway.env` with `op://Personal/Anthropic Claude Code OAuth Token/credential`. After reboot, 1Password must be unlocked for gateway to start. Also has API key in 1Password as "Anthropic API Credentials" if needed.
 
@@ -221,6 +221,8 @@ Full team built during Feb 15 hackathon. Personas at `~/clawd/agents/`. Roster a
 **Matrix Plugin — Working (March 7+):** Plugin installed and loaded, 15 Matrix accounts configured, 15 bindings, rooms mapped. Two bugs patched manually (keyed-async-queue shim, subpath import fix). Gateway restarted successfully — Matrix sync running, DMs and group rooms functional.
 
 **imageModel.primary broken (March 6):** `google/gemini-2.5-flash-preview` returns "Unknown model" in image tool. `nano-banana-pro` (Gemini 3 Pro Image) still works for generation. Needs config update.
+
+**Matrix plugin version pinning:** Must use v2026.3.2 at `~/.openclaw/extensions/matrix/`. The v2026.3.7 imports `openclaw/plugin-sdk/matrix` which doesn't exist. Clean install: `npm pack @openclaw/matrix@2026.3.2`, extract, `npm install`.
 
 ## Production Pipeline (March 8, 2026)
 
