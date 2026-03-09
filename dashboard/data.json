@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-08T23:51:02.899Z",
+  "lastUpdated": "2026-03-09T04:51:05.162Z",
   "needsAttention": [
     {
       "title": "2024 Tax Return",
@@ -830,13 +830,13 @@
       "station": "Helm",
       "avatar": "/avatars/howard-robot-v2.png",
       "status": "standby",
-      "costThisMonth": 390.01,
-      "totalTokens": 224921269,
+      "costThisMonth": 392.93,
+      "totalTokens": 226283452,
       "lastActive": "3h ago",
-      "lastActiveTs": 1773003679890,
+      "lastActiveTs": 1773019913274,
       "currentTask": "In the supabase service role key the one that’s in 1pass?",
-      "tasksCompleted": 79,
-      "productivity": 72
+      "tasksCompleted": 82,
+      "productivity": 73
     },
     {
       "name": "Jacques",
@@ -862,12 +862,12 @@
       "station": "Workshop",
       "avatar": "/avatars/marcel-robot-v2.png",
       "status": "active",
-      "costThisMonth": 155.6,
-      "totalTokens": 128502013,
+      "costThisMonth": 157.4,
+      "totalTokens": 129018239,
       "lastActive": "just now",
-      "lastActiveTs": 1773013859345,
+      "lastActiveTs": 1773031859336,
       "currentTask": "Conversation info (untrusted metadata):\n```json\n{\n  \"conversation_label\": \"Sailo",
-      "tasksCompleted": 736,
+      "tasksCompleted": 756,
       "productivity": 63
     },
     {
@@ -1018,15 +1018,15 @@
   "organization": {
     "monthlyCosts": {
       "actual": 549,
-      "apiEquivalent": 699.58,
+      "apiEquivalent": 704.31,
       "infrastructure": 349,
       "target": 500
     },
     "anthropic": {
       "plan": "Max 20X",
       "planCost": 200,
-      "apiEquivalentUsage": 550.58,
-      "savings": 350.58,
+      "apiEquivalentUsage": 555.31,
+      "savings": 355.31,
       "apiUsage": null,
       "source": "transcript-estimate"
     },
@@ -1047,18 +1047,18 @@
     "costsByModel": [
       {
         "name": "claude-opus-4-6",
-        "cost": 550.58,
+        "cost": 555.31,
         "percent": 100
       }
     ],
     "costsByAgent": [
       {
         "agent": "Howard",
-        "cost": 390.01
+        "cost": 392.93
       },
       {
         "agent": "Marcel",
-        "cost": 155.6
+        "cost": 157.4
       },
       {
         "agent": "Jacques",
@@ -1121,115 +1121,115 @@
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs $699.4",
+      "text": "Marcel: Data collection completed. Costs tracked at $549/mo actual vs $704 API-equivalen",
       "time": "30m ago",
       "agent": "Marcel"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully.",
+      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs $704 A",
       "time": "45m ago",
       "agent": "Marcel"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs $699.2",
+      "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual vs $",
       "time": "1h ago",
       "agent": "Marcel"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collection complete. Costs tracked at $549/mo actual vs $701.85/m",
+      "text": "Marcel: Data collection completed. Costs tracked at $549/mo actual vs $703.86/mo API-equ",
       "time": "1h ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs $701.7",
-      "time": "1h ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Dashboard data collected. Costs tracked at $549/mo actual vs $701.67/mo API-equi",
-      "time": "2h ago",
       "agent": "Marcel"
     },
     {
       "icon": "🎨",
       "text": "Marcel: Dashboard data collected successfully.",
+      "time": "1h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs $703.6",
       "time": "2h ago",
       "agent": "Marcel"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collection complete. Costs tracked at $549/mo actual spend.",
+      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs $703.5",
+      "time": "2h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs $703.5",
+      "time": "2h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs $703.4",
       "time": "2h ago",
       "agent": "Marcel"
     },
     {
       "icon": "🎨",
       "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual vs $",
-      "time": "2h ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual with",
-      "time": "3h ago",
-      "agent": "Marcel"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: Afternoon checkpoint complete. Quiet Sunday — memory updated with billing test c",
-      "time": "3h ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: Now I have a clear picture. The afternoon has been quiet — Sunday, Brian is like",
-      "time": "3h ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: The billing commits weren't captured in the midday sync (only the re-clone note ",
-      "time": "3h ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard: Good, today's memory file exists with substantial content already. Now let me ch",
-      "time": "3h ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🪨",
-      "text": "Howard:   Running the afternoon checkpoint silently.",
-      "time": "3h ago",
-      "agent": "Howard"
-    },
-    {
-      "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual spen",
       "time": "3h ago",
       "agent": "Marcel"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual with",
+      "text": "Marcel: Dashboard data collected. Costs are tracking at $549/mo actual vs $703 API-equiv",
       "time": "3h ago",
       "agent": "Marcel"
     },
     {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual spen",
+      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs $703.1",
       "time": "3h ago",
       "agent": "Marcel"
     },
     {
+      "icon": "🪨",
+      "text": "Howard:   Evening debrief came in. Quick highlights:  The pipeline work landed clean tod",
+      "time": "3h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now here's the debrief:  ---  📊 **Here's what I know about Sunday, March 8th:**",
+      "time": "3h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now I have the full picture. Let me update the memory file and compose the debri",
+      "time": "3h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard: Now let me check what's on Brian's calendar for tomorrow and this week.",
+      "time": "3h ago",
+      "agent": "Howard"
+    },
+    {
+      "icon": "🪨",
+      "text": "Howard:   Let me gather everything I need for tonight's debrief.",
+      "time": "3h ago",
+      "agent": "Howard"
+    },
+    {
       "icon": "🎨",
-      "text": "Marcel: Dashboard data collected successfully. Costs tracked at $549/mo actual vs ~$698 ",
+      "text": "Marcel: Dashboard data collected successfully. Costs are tracking at $549/mo actual vs $",
+      "time": "4h ago",
+      "agent": "Marcel"
+    },
+    {
+      "icon": "🎨",
+      "text": "Marcel: Data collection complete. Costs tracked at $549/mo actual vs $702.21/mo API-equi",
       "time": "4h ago",
       "agent": "Marcel"
     }
@@ -1287,16 +1287,16 @@
     ],
     "monthlySummary": {
       "actual": 549,
-      "apiEquivalent": 699.58,
+      "apiEquivalent": 704.31,
       "anthropicPlan": 200,
-      "anthropicApiEquiv": 550.58,
-      "anthropicSavings": 350.58,
+      "anthropicApiEquiv": 555.31,
+      "anthropicSavings": 355.31,
       "otherApis": 0,
       "infrastructure": 349
     }
   },
   "metadata": {
-    "lastUpdated": "2026-03-08T23:51:02.900Z",
+    "lastUpdated": "2026-03-09T04:51:05.162Z",
     "version": "3.0",
     "source": "Real data from session transcripts + curated static data"
   }

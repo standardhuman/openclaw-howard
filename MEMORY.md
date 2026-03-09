@@ -139,10 +139,10 @@ Everyone thinks crossing an ocean is the hardest part of sailing. It's actually 
 
 Full team built during Feb 15 hackathon. Personas at `~/clawd/agents/`. Roster at `~/clawd/agents/README.md`.
 
-**Core Team (full agents, own workspaces):**
-- 🪨 Howard — Chief of Staff (Opus 4.6, ~/clawd)
-- 🤿 Jacques — Dev Partner (DeepSeek, ~/clawd-jacques)
-- 🎨 Marcel — Creative Director (DeepSeek, ~/clawd-marcel)
+**Core Team (full agents, own workspaces, all Opus 4.6):**
+- 🪨 Howard — Chief of Staff (~/clawd)
+- 🤿 Jacques — Dev Partner (~/clawd-jacques)
+- 🎨 Marcel — Creative Director (~/clawd-marcel)
 
 **Scheduled (cron):**
 - 🔍 Noa — Research Analyst (midnight daily → ~/clawd/reports/YYYY-MM-DD-research.md)
@@ -168,7 +168,7 @@ Full team built during Feb 15 hackathon. Personas at `~/clawd/agents/`. Roster a
 
 **Telegram streamMode:** Set to `"off"` for all accounts — stops noisy intermediate messages.
 
-**Model Cost Optimization (Feb 16):** Howard=Opus 4.6, Jacques/Marcel/all subagents=DeepSeek V3.2. Estimated $70/day → $3-5/day.
+**Model Configuration (updated March 8):** ALL 15 agents run Claude Opus 4.6 on Max Plan (flat-rate subscription, no per-token cost). DeepSeek and Kimi are configured as optional cheaper models for cron jobs but are NOT needed — agents are not "broken" without them. The DeepSeek API key concern from February is resolved/irrelevant.
 
 **Email Sending Scope (Feb 22):** Howard can send email via `gog gmail send` (sends as Brian). Rule: only send to Brian's own addresses without asking. Ask permission for anyone else.
 
@@ -206,7 +206,7 @@ Full team built during Feb 15 hackathon. Personas at `~/clawd/agents/`. Roster a
 
 **Space Structure:** "Brian Cline Co" top-level Space (`!kXDqfRYBQVIBxeOqFJ:briancline.co`) with sub-spaces: General, Products, Services, Clients.
 
-**Project Rooms (all requireMention: false):**
+**Project Rooms (all requireMention: true, autoReply: false):**
 - #marketplace (`!IueNVwWlNACCVPyarX:briancline.co`) — Marcel, Reese, Blake, Milo, Noa
 - #pro (`!PHfOmTJynRUKtOiPmj:briancline.co`) — Jacques, Reese, Blake, Cyrus
 - #marine (`!gEmPKZdOKsVhJQWLoV:briancline.co`) — Marcel, Quinn, Sage
@@ -218,9 +218,29 @@ Full team built during Feb 15 hackathon. Personas at `~/clawd/agents/`. Roster a
 
 **Brian's Avatar:** Stylized illustrated portrait at `~/clawd/avatars/brian-stylized-avatar.png` (`mxc://briancline.co/rifxxxSTkLhbAAcPveLTpBtF`). Also generated Pixar and robot versions — Brian chose the illustrated one.
 
-**Matrix Plugin — Partially Working (March 6):** Plugin installed and loaded, 15 Matrix accounts configured, 15 bindings, 4 rooms mapped. Two bugs patched manually (keyed-async-queue shim, subpath import fix). API test message succeeded. BUT gateway never cleanly restarted — sync loop never started. Need clean gateway stop+start. Brian's DM in Element got no response (confirms sync not running).
+**Matrix Plugin — Working (March 7+):** Plugin installed and loaded, 15 Matrix accounts configured, 15 bindings, rooms mapped. Two bugs patched manually (keyed-async-queue shim, subpath import fix). Gateway restarted successfully — Matrix sync running, DMs and group rooms functional.
 
 **imageModel.primary broken (March 6):** `google/gemini-2.5-flash-preview` returns "Unknown model" in image tool. `nano-banana-pro` (Gemini 3 Pro Image) still works for generation. Needs config update.
+
+## Production Pipeline (March 8, 2026)
+
+**Phase 1 — COMPLETE:**
+- CI GitHub Actions on 4 repos (marketplace, billing, scheduler, briancline.co). All green.
+- Initial security audit by Cyrus — 3 critical, 5 high findings. Reports at `~/clawd/docs/security/`.
+- All critical security fixes shipped by Marcel (service_role key moved server-side, hardcoded secrets removed, env vars used).
+- Blake deploy verification process established.
+- Supabase service_role key rotated (Brian did manually in Supabase dashboard + Vercel env vars).
+
+**Phase 2 — IN PROGRESS:**
+- **Test suites deployed:** Billing (76 tests), Scheduler (69 tests), Marketplace (182 tests). All passing, all in CI.
+- **Dependabot configured** on 4 repos — weekly Monday PRs for npm + GitHub Actions.
+- Staging environments deferred (preview deploys sufficient at current scale).
+- `/security-review` in CI — not yet researched.
+- Twice-weekly security sweep cron (Sun/Wed 10pm) running via Cyrus.
+
+**Notion API Token:** Rotated March 8. New token from 1Password ("Notion - Howard Integration") added to OpenClaw `env` config. All Notion-dependent crons (Dawn Patrol, Evening Debrief, PPV Review, etc.) working again.
+
+**Billing repo re-cloned:** Fresh clone at `~/AI/business/sailorskills-platform/sailorskills-billing` (old copy had git object corruption).
 
 ## TMC Tahoe Away Weekend Site (March 2026)
 
