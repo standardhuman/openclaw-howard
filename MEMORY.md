@@ -202,6 +202,8 @@ Full team built during Feb 15 hackathon. Personas at `~/openclaw/agents/howard/a
 
 **No DBA needed** — operates under Sailor Skills LLC regardless of website domain.
 
+**Trust Graph Marketplace (March 22, 2026):** Brian's big idea — marketplace built around a **trust graph** instead of a directory. Core insight: value is the recommendation chain ("Bob asks Brian who does hull cleaning in Emeryville → Brian recommends Kaio"). Schema: `trust_edges` + `provider_skill_areas` tables with BFS traversal functions. Admin UI at `/admin/trust-graph` with bulk-add mode for seeding. Brian knows ~150 boat owners + dozen service providers to seed it. Deployed to marketplace.sailorskills.com. People must be on the platform to be in the graph (data integrity + agency).
+
 **Obsidian doc:** `SailorSkills/Business/Domain Restructure - briancline.co.md`
 
 *Last updated: March 6, 2026*
