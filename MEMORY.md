@@ -291,6 +291,11 @@ Fouad replied March 10 confirming he'll withdraw the Goldman Sachs dispute. Want
 
 Added "Featured In" section with sailing press links (Latitude 38 SHTP finish, Jan 2022 article, Doublehanded Farallones, YouTube interview). Inline links on "solo raced" and "teach sailing." Copy pass to kill AI voice patterns. "Hardest" → "second hardest and most clarifying thing." Sailing press links catalogued in Obsidian: `Personal/Sailing Press & Media Links.md`.
 
-## TMC House Cleaning Dashboard (New Project — March 10, 2026)
+## TMC House Cleaning Dashboard (March 2026)
 
-App for sponsors and sponsees in TMC House Cleaning program. Community contribution. Assigned to Ellis. Category: personal/community.
+App for sponsors and sponsees in TMC House Cleaning program. Community contribution.
+**Tech:** React 18 + TypeScript + Vite + Tailwind v4 + Recharts + React Router. Google OAuth for auth.
+**Location:** `~/clawd/house-cleaning-dashboard/`
+**Matrix room:** `#house-cleaning-dashboard` — Brian + Ellis (Ellis originally assigned, Howard built most of it March 23).
+**Features (as of March 23):** Dashboard with weekly scorecard + next milestone, Calendar with milestone details, Weekly Status Report (6 required + 6 optional sections, clipboard export), Settings page (localStorage), Sponsor Final Report (11-section form), Header Timeline progress bar, custom SVG icons throughout.
+**Remaining:** GCP deployment, real Google OAuth client ID, Vercel hosting.
