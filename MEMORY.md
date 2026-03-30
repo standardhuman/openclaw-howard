@@ -54,6 +54,8 @@
 
 **Heartbeats Disabled:** Set to "0" on Feb 13, 2026. HEARTBEAT.md was empty — pure waste (~21% of API calls, ~$113/month).
 
+**Paperclip AI (March 29, 2026):** Installed at ~/code/paperclip, running at http://127.0.0.1:3100. Three companies: SailorSkills (trust-graph marketplace + Pro app), The Road (philosophical thought experiment), Needs Are Normal (NVC merch e-commerce). 18 agents across companies connected to OpenClaw gateway via WebSocket adapter. 35 issues created, 13 heartbeat routines active, org charts set. Adds: ticket persistence, goal ancestry, budget enforcement, audit trails. OpenClaw remains execution layer.
+
 **Ajit TOS Ban (Feb 13, 2026):** Ajit got "only authorized for use with Claude Code" error. Same OAuth token type as Brian's. Strategy: keep running, build escape hatch, reduce API fingerprint.
 
 **Usage Audit (20 days):** $1,073 total ($546 Howard, $377 Jacques, $151 Marcel). ~$1,600/month projected. 49% cache reads, 41% cache writes, 10% output. Model diversity is the path to $60-100/month.
@@ -62,17 +64,26 @@
 
 **Model Menu (Feb 13, 2026):** `/model opus` (default), `/model kimi` (free), `/model deepseek` ($0.28/$0.42), `/model deepseek-r`. All configured and working.
 
-**OpenClaw Version:** Updated to v2026.3.8 on March 9, 2026. Two npm global roots exist: `/opt/homebrew/lib/node_modules/` (homebrew node v25.4.0) and fnm's v22.22.0 path. LaunchAgent plist fixed to use `/opt/homebrew` path. fnm copy still at v2026.2.15 (stale — not used by gateway anymore).
+**OpenClaw Version:** Updated to v2026.3.28 on March 29, 2026 (was v2026.3.8 since March 9). Patched 4 CVEs including CVE-2026-22172 (CVSS 9.9 critical). v2026.3.29 available. Two npm global roots exist: `/opt/homebrew/lib/node_modules/` (homebrew node v25.4.0) and fnm's v22.22.0 path. LaunchAgent plist uses `/opt/homebrew` path.
 
 **Anthropic OAuth Token (Feb 16):** Using OAuth token (`sk-ant-oat01-...`) — Brian's preference. Token removed from `openclaw.json` and now injected at runtime via 1Password CLI (`op run`). Wrapper script: `~/.openclaw/gateway-start.sh`, env file: `~/.openclaw/gateway.env` with `op://Personal/Anthropic Claude Code OAuth Token/credential`. After reboot, 1Password must be unlocked for gateway to start. Also has API key in 1Password as "Anthropic API Credentials" if needed.
 
 **Security Hardening (Feb 16):** Tailscale switched from funnel→serve (tailnet-only). Control UI: insecure auth disabled, device auth re-enabled. FileVault intentionally OFF for remote boot access. macOS firewall still needs enabling (requires sudo).
 
+**Claude Mythos / Capybara (leaked March 26, 2026):** Next-gen model above Opus tier. "Step change" in coding, reasoning, cybersecurity. New tier hierarchy: Capybara > Opus > Sonnet > Haiku. No public release date — likely H2 2026. Cyber defenders getting early access.
+
+**Claude Haiku 3 Deprecation:** April 19, 2026. Migrate any references to `claude-haiku-4-5`.
+
 **Gemini Flash Image Fallback:** `imageModel.primary` set to `google/gemini-2.5-flash-preview`. Screenshots auto-route to Gemini when using text-only models (DeepSeek, Kimi). Free tier.
 
 **AGENTS.md Trimmed 76%:** From ~3,436 tokens to ~833 tokens. Saves ~2,600 tokens per message. Verbose sections in `docs/agent-reference.md`.
 
-**Tailscale Serve (tailnet-only):** Gateway accessible at `https://brians-mac-mini.taile67de1.ts.net/` but only within tailnet (switched from funnel→serve Feb 16). Auth mode: `password`. Control UI device auth enabled, insecure auth disabled.
+**Tailscale Serve (tailnet-only):** Direct per-port Tailscale HTTPS serve entries (no Caddy needed — path-based routing breaks SPAs). URLs from phone (Tailscale app required):
+- `https://brians-mac-mini.taile67de1.ts.net:3100` → Paperclip
+- `https://brians-mac-mini.taile67de1.ts.net:8080` → Atomic KB
+- `https://brians-mac-mini.taile67de1.ts.net/` → OpenClaw Gateway (18789)
+- `:8443` → Matrix control, `:8448` → Synapse, `:10443` → Matrix control alt
+DNS CNAMEs set (paperclip/atomic/gateway/mission.briancline.co → ts.net hostname) but custom subdomain HTTPS doesn't work with Tailscale serve (SNI validation). Caddy installed (`/opt/homebrew/bin/caddy`) but not in use — launchd plist removed. Auth mode: `password`. Control UI device auth enabled.
 
 **Agent-to-Agent Messaging:** `tools.agentToAgent.enabled: true`. Howard can send tasks to Jacques/Marcel via `sessions_send`.
 
