@@ -78,12 +78,14 @@
 
 **AGENTS.md Trimmed 76%:** From ~3,436 tokens to ~833 tokens. Saves ~2,600 tokens per message. Verbose sections in `docs/agent-reference.md`.
 
-**Tailscale Serve (tailnet-only):** Direct per-port Tailscale HTTPS serve entries (no Caddy needed — path-based routing breaks SPAs). URLs from phone (Tailscale app required):
+**Tailscale Serve (tailnet-only):** Direct per-port Tailscale HTTPS serve entries (no Caddy — path-based routing breaks SPAs). URLs from phone (Tailscale app required):
 - `https://brians-mac-mini.taile67de1.ts.net:3100` → Paperclip
 - `https://brians-mac-mini.taile67de1.ts.net:8080` → Atomic KB
 - `https://brians-mac-mini.taile67de1.ts.net/` → OpenClaw Gateway (18789)
 - `:8443` → Matrix control, `:8448` → Synapse, `:10443` → Matrix control alt
-DNS CNAMEs set (paperclip/atomic/gateway/mission.briancline.co → ts.net hostname) but custom subdomain HTTPS doesn't work with Tailscale serve (SNI validation). Caddy installed (`/opt/homebrew/bin/caddy`) but not in use — launchd plist removed. Auth mode: `password`. Control UI device auth enabled.
+DNS CNAMEs set but custom subdomain HTTPS doesn't work with Tailscale serve (SNI validation). Caddy fully removed (Mar 30 — launchd plist deleted, service stopped). Auth mode: `password`. Control UI device auth enabled.
+
+**Paperclip LaunchAgent (March 30):** `com.paperclipai.server` auto-starts on login, auto-restarts on crash. Startup script `~/code/paperclip/start.sh` kills zombie postgres and clears port 3100 before launch.
 
 **Agent-to-Agent Messaging:** `tools.agentToAgent.enabled: true`. Howard can send tasks to Jacques/Marcel via `sessions_send`.
 
@@ -268,6 +270,10 @@ Full team built during Feb 15 hackathon. Personas at `~/openclaw/agents/howard/a
 ## TMC Tahoe Away Weekend Site (March 2026)
 
 Built by Ellis. RSVP system with Supabase (`tahoe_rsvps` table, 15 attendees seeded). Click-to-edit roster, rideshare board pulling from RSVP data, Google Calendar/ICS links. RSVP deadline March 27. Supabase JS SDK removed — replaced with fetch wrapper (bundle 406KB → 235KB, fixed AdGuard blocking). Obsidian doc: `SailorSkills/Projects/TMC Tahoe Away Weekend Site.md`.
+
+## SailorSkills Anode Inventory System (March 30, 2026)
+
+Full inventory tracked in Supabase (`SAILORSKILLS-inventory`). 56 SKUs, 168 units on hand as of March 30. Categories: shaft, collar, propeller, rudder, hull, bow thruster anodes. Pricing via `business_pricing_config`: 50% markup over cost, $2 minimum markup per anode, $15 installation labor. Inventory valued at ~$3,200 cost / ~$4,800 customer. Transaction records track before/after quantities per recount. Brian does recounts via voice memos → Howard transcribes and updates DB.
 
 ## Fouad/Andiamo Dispute — RESOLVED (March 10, 2026)
 
