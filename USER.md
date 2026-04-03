@@ -19,6 +19,10 @@
 - **Entrepreneur** — SailorSkills hull cleaning business + platform development, S-Corp
 - **Personal growth practitioner** — NVC, ACA, The Men's Circle (TMC)
 
+## Daily Routine (Weekdays)
+
+Smoothie → Gym (Reddit PPL) → Diving/work
+
 ## Work
 
 **SailorSkills** — Hull cleaning service for boats in East Bay marinas. Subscription-based diving service.

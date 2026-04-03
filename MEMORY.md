@@ -52,6 +52,8 @@
 
 **Local Embeddings:** Memory search switched from OpenAI to local `node-llama-cpp` + Metal GPU (Feb 13, 2026). No external API calls for semantic search. Model: `embeddinggemma-300M-Q8_0.gguf`.
 
+**Gemma 4 Local (April 2, 2026):** Installed via Ollama 0.20. 26B MoE variant (3.8B active params), 9.6GB. Benchmarks on M4 Pro 24GB: 59 tok/s prefill, 41.4 tok/s generation. Clean code output, perfect JSON. Apache 2.0 license. **Decision:** Wait for Ollama 0.20 stable before wiring into OpenClaw config. Potential use for The Road playtesting at scale (zero-cost game simulations) but NOT for production Executor role (31B Dense needs too much RAM, locks GPU).
+
 **Heartbeats Disabled:** Set to "0" on Feb 13, 2026. HEARTBEAT.md was empty — pure waste (~21% of API calls, ~$113/month).
 
 **Paperclip AI (March 29, 2026):** Installed at ~/code/paperclip, running at http://127.0.0.1:3100. Three companies: SailorSkills (trust-graph marketplace + Pro app), The Road (philosophical thought experiment), Needs Are Normal (NVC merch e-commerce). 18 agents across companies connected to OpenClaw gateway via WebSocket adapter. 35 issues created, 13 heartbeat routines active, org charts set. Adds: ticket persistence, goal ancestry, budget enforcement, audit trails. OpenClaw remains execution layer.
@@ -96,6 +98,10 @@ DNS CNAMEs set but custom subdomain HTTPS doesn't work with Tailscale serve (SNI
 **Dashboard Sync Script:** `~/openclaw/agents/howard/dashboard/sync.sh` — bash+jq, no AI, auto-updates deadlines and progress.
 
 **briancline.io headshot:** Edited version at `~/AI/business/briancline-co/website/generated_imgs/2025-02-05-headshot-v3.png` (bald, softened wrinkles, slightly reduced white beard patches).
+
+**AI-generated contextual photos (April 1):** Source photos in `~/AI/generated_imgs/source images/`, generated images in `~/AI/generated_imgs/`. Brian loved mountain biking + sailing-with-GGB shots. Hair transplant curiosity sparked by "with hair" request.
+
+**Hair transplant research (April 1):** Brian exploring FUE transplant, potentially in Turkey (~$4K all-inclusive). Estimated Norwood 5-6, coarse hair (good coverage), age 46 (stable pattern). Shortlist: ASMED/Dr. Erdoğan (Istanbul), AHD/Dr. Doğanay (Antalya), HLC/Dr. Öztan (Ankara). Next steps: friend interview, photos for virtual consults, submit to 2-3 clinics. Obsidian: `Personal/Health & Wellness/Hair Transplant Research.md`.
 
 ---
 
@@ -205,7 +211,7 @@ Full team built during Feb 15 hackathon. Personas at `~/openclaw/agents/howard/a
 - Scheduler app live at schedule.briancline.co
 - Link audit in progress (Mar 4) — YouTube/article links reported broken
 
-**Copy Overhaul (March 18):** Site copy rewritten around Brian's "close quarters" metaphor. Projects regrouped by theme. Hero refined (open sea, intimacy, meeting people where they are). Tab-based category filter added to project grid. AI voice patterns killed across copy.
+**Copy Overhaul (March 18 → March 31):** Site copy originally rewritten around "close quarters" metaphor. **Updated March 31:** Hero changed to "Building tools that get below the surface." Body: "Sailor, diver, builder. I make software for people who work on the water — and for anyone solving problems that don't show up until you're already in." Title now "Brian Cline | Below the Surface". Brian approved: "It's perfect the way it is now." Tab-based category filter on project grid. AI voice patterns killed across copy.
 
 **Phase 2:** Redesign in Marketplace visual style (future).
 
@@ -237,7 +243,9 @@ Full team built during Feb 15 hackathon. Personas at `~/openclaw/agents/howard/a
 
 **Brian's Avatar:** Stylized illustrated portrait at `~/openclaw/agents/howard/avatars/brian-stylized-avatar.png` (`mxc://briancline.co/rifxxxSTkLhbAAcPveLTpBtF`). Also generated Pixar and robot versions — Brian chose the illustrated one.
 
-**Matrix Plugin — Working (March 7+):** Plugin installed and loaded, 15 Matrix accounts configured, 15 bindings, rooms mapped. Two bugs patched manually (keyed-async-queue shim, subpath import fix). Gateway restarted successfully — Matrix sync running, DMs and group rooms functional.
+**Matrix Plugin — Working (March 7+):** Plugin installed and loaded, 15 Matrix accounts configured, rooms mapped. Two bugs patched manually (keyed-async-queue shim, subpath import fix). Gateway restarted successfully — Matrix sync running, DMs and group rooms functional.
+
+**Matrix Bindings Fix (April 2):** Discovered ALL agent bindings were empty — rooms routed everything to Howard (main agent). Root cause: bindings were never created when agent team was built. Applied 42 bindings connecting Matrix accounts → agent definitions. All agents now respond correctly in their rooms. Rio channel confirmed working.
 
 **imageModel.primary broken (March 6):** `google/gemini-2.5-flash-preview` returns "Unknown model" in image tool. `nano-banana-pro` (Gemini 3 Pro Image) still works for generation. Needs config update.
 
@@ -274,6 +282,8 @@ Built by Ellis. RSVP system with Supabase (`tahoe_rsvps` table, 15 attendees see
 ## SailorSkills Anode Inventory System (March 30, 2026)
 
 Full inventory tracked in Supabase (`SAILORSKILLS-inventory`). 56 SKUs, 168 units on hand as of March 30. Categories: shaft, collar, propeller, rudder, hull, bow thruster anodes. Pricing via `business_pricing_config`: 50% markup over cost, $2 minimum markup per anode, $15 installation labor. Inventory valued at ~$3,200 cost / ~$4,800 customer. Transaction records track before/after quantities per recount. Brian does recounts via voice memos → Howard transcribes and updates DB.
+
+**Pricing clarification (March 31):** BoatZincs gives Brian only 10% off their list price (cost = list_price × 0.90). The `sale_price` column in the catalog showed deeper discounts than reality — needs correction. With 50% markup, Brian's customer price is above BoatZincs list.
 
 ## Fouad/Andiamo Dispute — RESOLVED (March 10, 2026)
 
